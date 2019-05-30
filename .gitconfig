@@ -1,0 +1,10 @@
+[user]
+	email = otreblain@gmail.com
+	name = otreblan
+	signingkey = F4BDAE562ACD62FC
+[merge]
+	tool = vimdiff
+[core]
+	editor = vim
+[commit]
+	gpgsign = true
