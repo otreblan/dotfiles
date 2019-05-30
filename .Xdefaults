@@ -1,0 +1,50 @@
+URxvt*buffered: true
+#URxvt*transparent: true
+*depth: 32
+#URxvt*background: #010101
+#URxvt*foreground: #eeeeee
+
+URxvt*scrollBar: false
+#URxvt*shading: 30
+#URxvt*blurRadius: 10
+
+URxvt*font: xft:Inconsolata for powerline:size=11, xft:InconsolataGo Nerd Font:style=Regular:size=11
+#URxvt*font: xft:TerminessTTF Nerd Font:size=15
+#URxvt*font: xft:Inconsolata:size=15
+#URxvt*copyCommand:  xclip -i -selection clipboard
+#URxvt*pasteCommand: xclip -o -selection clipboard
+
+#Colores
+
+#Negro:
+#*color0: #4b5164
+#*color0: #000000
+*color0: #000000
+URxvt*color0: rgba:0000/0000/0000/bbbb
+*color8: #616981
+#Rojo:
+*color1: #E14245
+*color9: #316F7E
+#Verde:
+*color2: #5CA75B
+*color10: #ADD488
+#Amarillo:
+*color3: #F6AB32
+*color11: #FDC35F
+#Azul:
+*color4: #4877B1
+*color12: #8CA9BF
+#Magenta:
+*color5: #A660C3
+*color13: #E2AFEC
+#Cyan:
+*color6: #5294E2
+*color14: #73C5E2
+#Blanco:
+*color7: #A9A9AA
+*color15: #FCFCFC
+
+*background: #000000
+*foreground: #FCFCFC
+URxvt*background: 0
+URxvt*foreground: 15
