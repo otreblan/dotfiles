@@ -19,6 +19,7 @@ filetype indent on
 "autocmd FileType cpp set cindent " c indent
 "autocmd FileType py set nocindent " no c indent for python
 
+"Vim-plug autoinstaller
 if empty(glob('~/.vim/autoload/plug.vim')) && empty(glob('/usr/share/vim/vimfiles/autoload/plug.vim'))
 	silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
 		\ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim &&
@@ -31,8 +32,6 @@ call plug#begin('~/.vim/plugs')
 	Plug 'lervag/vimtex'
 	Plug 'valloric/youcompleteme'
 	Plug 'KabbAmine/zeavim.vim'
-	"Plug 'hiphish/info.vim'
-	"Plug 'alx741/vinfo'
 	Plug 'deviantfero/wpgtk.vim'
 	Plug 'vim-airline/vim-airline-themes'
 	Plug 'sirver/ultisnips' | Plug 'honza/vim-snippets'
@@ -44,7 +43,12 @@ call plug#begin('~/.vim/plugs')
 	Plug 'mhinz/vim-rfc'
 	Plug 'scrooloose/nerdtree'
 	Plug 'Xuyuanp/nerdtree-git-plugin'
+
+	"Plug 'hiphish/info.vim'
+	"Plug 'alx741/vinfo'
 	"Plug 'vim-scripts/LanguageTool'
+
+	"Options
 	let g:airline_powerline_fonts = 1
 	let g:airline#extensions#tabline#enabled = 1
 	let g:airline#extensions#promptline#snapshot_file = "~/.shell_prompt.sh"
@@ -57,6 +61,7 @@ call plug#begin('~/.vim/plugs')
 	"let g:languagetool_jar = '~/LanguageTool-4.5/languagetool-commandline.jar'
 	"let g:airline_theme= 'wpgtk'
 	"let g:ycm_key_invoke_completion = '<C-l>'
+
 	imap <C-l> <Nul>
 	function! MyDocs(context)
 		Zeavim
@@ -66,12 +71,15 @@ call plug#end()
 
 "Busca marcas
 nmap ña /<++><CR> :nohls <CR> ca<
+
 "Cambia buffers
 nmap ñl :bnext!<CR>
 nmap ñh :bprevious!<CR>
+
 "Pone fecha
 nmap ñ<Space> a<C-r>=system('date +%Y-%m-%d\ %H:%M:%S \| tr -d "\n"')<CR>
 
+"LaTeX things
 function Latex()
 	"nmap ññ :w <CR> \| :!make <CR><CR>
 	set spell spelllang=es
@@ -80,8 +88,8 @@ function Latex()
 	nmap ñs :!zathura *.pdf & <CR><CR>
 	nmap ñq a<++><Esc>
 endfunction
+
 "Guardado para LaTeX
 autocmd FileType tex call Latex()
 autocmd FileType cpp set keywordprg=cppman
 autocmd FileType c set keywordprg=~/manvim.sh\ 3
-"colo wpgtkAlt
