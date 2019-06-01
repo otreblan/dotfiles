@@ -1,2 +1,17 @@
 #!/bin/bash
-echo "Hello world"
+
+#For less headaches
+cd ${HOME}
+
+#Vim bootstraping
+
+#Cheking if vim is installed
+if command -v vim >/dev/null 2>&1; then
+	echo "Installing plugins"
+
+	vim '+source ~/.yadm/plugInstall.vim'\
+		'+PlugUpdate'\
+		'+PlugClean!'\
+		'+PlugUpdate'\
+		'+qall'
+fi

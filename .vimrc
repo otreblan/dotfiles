@@ -16,16 +16,6 @@ set shiftwidth=4 "set cindent debería identar automáticame
 
 filetype on "detect filetypes
 filetype indent on
-"autocmd FileType cpp set cindent " c indent
-"autocmd FileType py set nocindent " no c indent for python
-
-"Vim-plug autoinstaller
-if empty(glob('~/.vim/autoload/plug.vim')) && empty(glob('/usr/share/vim/vimfiles/autoload/plug.vim'))
-	silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
-		\ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim &&
-		\ mkdir -p ~/.vim/plugs
-	autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
-endif
 
 call plug#begin('~/.vim/plugs')
 	Plug 'vim-airline/vim-airline'
@@ -44,10 +34,6 @@ call plug#begin('~/.vim/plugs')
 	Plug 'scrooloose/nerdtree'
 	Plug 'Xuyuanp/nerdtree-git-plugin'
 
-	"Plug 'hiphish/info.vim'
-	"Plug 'alx741/vinfo'
-	"Plug 'vim-scripts/LanguageTool'
-
 	"Options
 	let g:airline_powerline_fonts = 1
 	let g:airline#extensions#tabline#enabled = 1
@@ -57,9 +43,6 @@ call plug#begin('~/.vim/plugs')
 	let g:vimtex_toc_config= {'layer_status': {'content': 1,'label': 0,'todo': 0,'include': 0}}
 	let g:vimtex_doc_handlers = ['MyDocs']
 	let g:UltiSnipsExpandTrigger = '<C-j>'
-	"let g:languagetool_lang = 'es'
-	"let g:languagetool_jar = '~/LanguageTool-4.5/languagetool-commandline.jar'
-	"let g:airline_theme= 'wpgtk'
 	"let g:ycm_key_invoke_completion = '<C-l>'
 
 	imap <C-l> <Nul>
