@@ -3,6 +3,9 @@
 #For less headaches
 cd ${HOME}
 
+#Submodules
+yadm submodule update --recursive --init
+
 #Installing packages
 
 #Arch Linux
@@ -14,8 +17,38 @@ else
 	exit 1
 fi
 
+#Packages in the repositories
 echo "Installing packages"
 xargs -a ${HOME}/.yadm/${PACMAN}-packages sudo ${PACMAN} ${PACINSTALL}
+
+
+#Packages in the aur
+if command -v yay >/dev/null 2>&1; then
+	echo "Yay already installed"
+else
+	echo "Yay not found" >&2
+	echo "Installing yay"
+
+	#Yay installation
+	cd /tmp
+	git clone https://aur.archlinux.org/yay.git
+	cd yay
+	makepkg -s
+	sudo pacman -U *.pkg.tar.xz
+	cd ..
+	rm -rf yay
+	cd ${HOME}
+fi
+
+if command -v yay >/dev/null 2>&1; then
+	AUR="yay"
+	AURINSTALL="-S --needed"
+else
+	echo "Couldn't install yay" >&2
+	exit 2
+fi
+
+xargs -a ${HOME}/.yadm/${AUR}-packages ${AUR} ${AURINSTALL}
 
 #Vim bootstraping
 

@@ -1,4 +1,5 @@
 base-devel
+pulseaudio
 xorg
 i3-gaps
 compton
@@ -19,3 +20,5 @@ zathura
 zathura-pdf-poppler
 inkscape
 rofi
+ibus
+ibus-anthy
