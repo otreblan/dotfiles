@@ -3,6 +3,19 @@
 #For less headaches
 cd ${HOME}
 
+#Installing packages
+
+#Arch Linux
+if command -v pacman >/dev/null 2>&1; then
+	PACMAN="pacman"
+	PACINSTALL="-Syu --needed"
+else
+	echo "Pacman not found" >&2
+	exit 1
+fi
+
+xargs -a ${PACMAN}-packages ${PACMAN} ${PACINSTALL}
+
 #Vim bootstraping
 
 #Cheking if vim is installed
