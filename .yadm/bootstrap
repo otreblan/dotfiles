@@ -14,7 +14,8 @@ else
 	exit 1
 fi
 
-xargs -a ${PACMAN}-packages ${PACMAN} ${PACINSTALL}
+echo "Installing packages"
+xargs -a ${HOME}/.yadm/${PACMAN}-packages sudo ${PACMAN} ${PACINSTALL}
 
 #Vim bootstraping
 
