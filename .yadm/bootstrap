@@ -50,6 +50,9 @@ fi
 
 xargs -a ${HOME}/.yadm/${AUR}-packages ${AUR} ${AURINSTALL}
 
+#Downloading wallpaper
+curl http://i.imgur.com/xOdmlgL.jpg -o ${HOME}/.bg.jpg
+
 #Vim bootstraping
 
 #Cheking if vim is installed
