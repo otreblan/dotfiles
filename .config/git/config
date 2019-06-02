@@ -6,6 +6,7 @@
 	tool = vimdiff
 [core]
 	editor = vim
+	autocrlf = input
 [commit]
 	gpgsign = true
 [color]
