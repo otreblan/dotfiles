@@ -33,6 +33,7 @@ call plug#begin('~/.vim/plugs')
 	Plug 'mhinz/vim-rfc'
 	Plug 'scrooloose/nerdtree'
 	Plug 'Xuyuanp/nerdtree-git-plugin'
+	Plug 'dag/vim-fish'
 
 	"Options
 	let g:airline_powerline_fonts = 1
