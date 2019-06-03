@@ -12,11 +12,13 @@ set number "Esta cosa pone los números de las líneas
 
 set tabstop=4 "debería hacer que el tab tenga el tamaño de 4 espacios
 set shiftwidth=4 "set cindent debería identar automáticame
+set foldmethod=marker "For folding with  { { { (without spaces)
 "set encoding=utf-8
 
 filetype on "detect filetypes
 filetype indent on
 
+" Plugins {{{
 call plug#begin('~/.vim/plugs')
 	Plug 'vim-airline/vim-airline'
 	Plug 'lervag/vimtex'
@@ -52,6 +54,7 @@ call plug#begin('~/.vim/plugs')
 		return 1
 	endfunction
 call plug#end()
+" }}}
 
 "Busca marcas
 nmap ña /<++><CR> :nohls <CR> ca<
