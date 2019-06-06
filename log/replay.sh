@@ -19,7 +19,7 @@
 LEVEL=0
 NEXTLEVEL=""
 DATE=""
-SEPARATOR="-"
+SEPARATOR="-" #Date separator
 
 until [[ $((LEVEL++)) -eq 4 ]]
 do
@@ -32,10 +32,16 @@ do
 		rofi -dmenu |\
 		sed "s/.*[^0-9]\+\([0-9]\+\)/\1/g")
 
-	# Changing to hour separator
-	if (( LEVEL > 3 ))
+	# Changing to date-hour separator
+	if (( LEVEL > 2 ))
 	then
-		SEPARATOR=":"
+		SEPARATOR="\|"
+
+		# Changing to hour separator
+		if (( LEVEL > 3 ))
+		then
+			SEPARATOR=":"
+		fi
 	fi
 
 	# Going to the next level
