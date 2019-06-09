@@ -35,7 +35,7 @@ alias ls='ls --color=auto'
 alias grep='grep --colour'
 alias Syu='sudo powerpill -Syu'
 alias man="~/manvim.sh"
-alias emacs="emacs --no-window-system"
+#alias emacs="emacs --no-window-system"
 
 #vi mode
 set -o vi
