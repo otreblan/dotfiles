@@ -70,3 +70,5 @@ fi
 cd ${HOME}/.config/ranger/plugins/ranger_devicons
 make
 cd ${HOME}
+#Installing lua packages
+sudo luarocks install --server=http://luarocks.org/dev digestif

@@ -1,5 +1,7 @@
 base-devel
 pulseaudio
+luarocks
+bash-language-server
 xorg
 i3-gaps
 compton
