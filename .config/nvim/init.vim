@@ -12,6 +12,7 @@ set number "Esta cosa pone los números de las líneas
 
 set tabstop=4 "debería hacer que el tab tenga el tamaño de 4 espacios
 set shiftwidth=4 "set cindent debería identar automáticame
+set foldenable
 set foldmethod=marker "For folding with  { { { (without spaces)
 "set encoding=utf-8
 
@@ -47,6 +48,16 @@ call plug#begin('~/.config/nvim/plugs')
 	let g:tex_flavor = "latex"
 	let g:vimtex_toc_config= {'layer_status': {'content': 1,'label': 0,'todo': 0,'include': 0}}
 	let g:vimtex_doc_handlers = ['MyDocs']
+
+	"Coc extensions
+	let g:coc_global_extensions = [
+									\"coc-ultisnips",
+									\"coc-snippets",
+									\"coc-marketplace",
+									\"coc-vimtex",
+									\"coc-sh",
+									\"coc-json"
+									\]
 	"let g:UltiSnipsExpandTrigger = '<C-j>'
 	"let g:ycm_key_invoke_completion = '<C-l>'
 

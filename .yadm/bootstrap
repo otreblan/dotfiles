@@ -84,10 +84,5 @@ if command -v nvim >/dev/null 2>&1; then
 			'+PlugUpdate'\
 			'+PlugClean!'\
 			'+PlugUpdate'\
-			'+CocInstall coc-utilsnips'\
-			'+CocInstall coc-snippets'\
-			'+CocInstall coc-marketplace'\
-			'+CocInstall coc-vimtex'\
-			'+CocInstall coc-json'\
 			'+qall'
 fi
