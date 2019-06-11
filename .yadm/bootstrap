@@ -75,6 +75,7 @@ sudo luarocks install --server=http://luarocks.org/dev digestif
 
 #Neovim bootstraping
 
+#Because a bug that inserts text on neovim, this doesn't work.
 #Cheking if neovim is installed
 if command -v nvim >/dev/null 2>&1; then
 	echo "Installing plugins"
