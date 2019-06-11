@@ -72,3 +72,21 @@ make
 cd ${HOME}
 #Installing lua packages
 sudo luarocks install --server=http://luarocks.org/dev digestif
+
+#Neovim bootstraping
+
+#Cheking if neovim is installed
+if command -v nvim >/dev/null 2>&1; then
+	echo "Installing plugins"
+
+		nvim \
+			'+PlugUpdate'\
+			'+PlugClean!'\
+			'+PlugUpdate'\
+			'+CocInstall coc-utilsnips'\
+			'+CocInstall coc-snippets'\
+			'+CocInstall coc-marketplace'\
+			'+CocInstall coc-vimtex'\
+			'+CocInstall coc-json'\
+			'+qall'
+fi

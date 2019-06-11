@@ -40,3 +40,5 @@ alias man="~/manvim.sh"
 #vi mode
 set -o vi
 neofetch
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
