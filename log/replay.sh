@@ -59,4 +59,8 @@ REPLAY=$(\
 	sed "s/.*[^0-9]\+\([0-9]\+\)/\1/g")
 
 # Play
-scriptreplay -t ${REPLAY}.txt -s ${REPLAY}.log
+
+asciinema play ${REPLAY}.cast
+
+#Deprecated
+#scriptreplay -t ${REPLAY}.txt -s ${REPLAY}.log

@@ -88,3 +88,6 @@ highlight Pmenu ctermbg=237 ctermfg=white
 highlight PmenuSel ctermbg=220 ctermfg=black
 highlight PmenuSbar ctermbg=16
 highlight PmenuThumb ctermbg=2
+
+"Pmenu for commands
+set wildoptions=pum
