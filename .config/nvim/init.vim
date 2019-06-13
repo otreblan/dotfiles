@@ -39,6 +39,7 @@ call plug#begin('~/.config/nvim/plugs')
 	Plug 'scrooloose/nerdtree'
 	Plug 'Xuyuanp/nerdtree-git-plugin'
 	Plug 'dag/vim-fish'
+	Plug 'kabbamine/vcoolor.vim'
 
 	"Options
 	let g:airline_powerline_fonts = 1
@@ -97,8 +98,8 @@ autocmd FileType c set keywordprg=~/manvim.sh\ 3
 "Syntax Highlighting
 highlight Pmenu ctermbg=237 ctermfg=white
 highlight PmenuSel ctermbg=220 ctermfg=black
-highlight PmenuSbar ctermbg=16
-highlight PmenuThumb ctermbg=2
+highlight PmenuSbar ctermbg=233
+highlight PmenuThumb ctermbg=7
 
 "Pmenu for commands
 set wildoptions=pum
