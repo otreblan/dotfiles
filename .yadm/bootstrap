@@ -72,6 +72,7 @@ make
 cd ${HOME}
 #Installing lua packages
 sudo luarocks install --server=http://luarocks.org/dev digestif
+sudo luarocks install --server=http://luarocks.org/dev lua-lsp
 
 #Neovim bootstraping
 

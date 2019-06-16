@@ -36,6 +36,10 @@
 			"args": ["start"],
 			"filetypes": ["sh"],
 			"ignoredRootPaths": ["~"]
+		},
+		"lua": {
+			"command": "lua-lsp",
+			"filetypes": ["lua"]
 		}
 	},
 	"diagnostic.virtualText": true,

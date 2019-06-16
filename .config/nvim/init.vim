@@ -96,10 +96,15 @@ autocmd FileType cpp set keywordprg=cppman
 autocmd FileType c set keywordprg=~/manvim.sh\ 3
 
 "Syntax Highlighting
+
+"Completion menu
 highlight Pmenu ctermbg=237 ctermfg=white
 highlight PmenuSel ctermbg=220 ctermfg=black
 highlight PmenuSbar ctermbg=233
 highlight PmenuThumb ctermbg=7
+
+"Folder text
+highlight Folded ctermbg=235 ctermfg=80
 
 "Pmenu for commands
 set wildoptions=pum
