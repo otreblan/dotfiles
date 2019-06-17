@@ -39,6 +39,8 @@ call plug#begin('~/.config/nvim/plugs')
 	Plug 'scrooloose/nerdtree'
 	Plug 'Xuyuanp/nerdtree-git-plugin'
 	Plug 'dag/vim-fish'
+	Plug 'tbastos/vim-lua'
+	Plug 'octol/vim-cpp-enhanced-highlight'
 	Plug 'kabbamine/vcoolor.vim'
 
 	"Options
@@ -49,6 +51,10 @@ call plug#begin('~/.config/nvim/plugs')
 	let g:tex_flavor = "latex"
 	let g:vimtex_toc_config= {'layer_status': {'content': 1,'label': 0,'todo': 0,'include': 0}}
 	let g:vimtex_doc_handlers = ['MyDocs']
+	let g:markdown_fenced_languages = [
+		\ 'vim',
+		\ 'help'
+	\]
 
 	"Coc extensions
 	let g:coc_global_extensions = [
@@ -57,6 +63,7 @@ call plug#begin('~/.config/nvim/plugs')
 									\"coc-marketplace",
 									\"coc-vimtex",
 									\"coc-sh",
+									\"coc-vimlsp",
 									\"coc-json"
 									\]
 	"let g:UltiSnipsExpandTrigger = '<C-j>'

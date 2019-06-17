@@ -74,6 +74,9 @@ cd ${HOME}
 sudo luarocks install --server=http://luarocks.org/dev digestif
 sudo luarocks install --server=http://luarocks.org/dev lua-lsp
 
+#Installing yarn packages
+yarn global add vim-language-server
+
 #Neovim bootstraping
 
 #Because a bug that inserts text on neovim, this doesn't work.
