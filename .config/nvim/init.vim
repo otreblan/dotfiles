@@ -115,3 +115,19 @@ highlight Folded ctermbg=235 ctermfg=80
 
 "Pmenu for commands
 set wildoptions=pum
+
+"Something for diagnostics
+set updatetime=300
+
+"Documentation
+
+autocmd CursorHold * silent call CocActionAsync('doHover')
+nnoremap <silent> Ñ :call <SID>show_documentation()<CR>
+
+function! s:show_documentation()
+	if (index(['vim','help'], &filetype) >= 0)
+		execute 'h '.expand('<cword>')
+	else
+		call CocAction('doHover')
+	endif
+endfunction
