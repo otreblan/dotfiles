@@ -1,7 +1,6 @@
 base-devel
 pulseaudio
 luarocks
-bash-language-server
 bash-completion
 xorg
 i3-gaps
@@ -31,3 +30,4 @@ pavucontrol
 paprefs
 yarn
 asciinema
+npm
