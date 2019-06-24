@@ -42,6 +42,8 @@ call plug#begin('~/.config/nvim/plugs')
 	Plug 'tbastos/vim-lua'
 	Plug 'octol/vim-cpp-enhanced-highlight'
 	Plug 'kabbamine/vcoolor.vim'
+	Plug 'junegunn/fzf.vim'
+	Plug '/usr/bin/fzf'
 
 	"Options
 	let g:airline_powerline_fonts = 1
