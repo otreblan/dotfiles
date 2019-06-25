@@ -44,39 +44,67 @@ call plug#begin('~/.config/nvim/plugs')
 	Plug 'kabbamine/vcoolor.vim'
 	Plug 'junegunn/fzf.vim'
 	Plug '/usr/bin/fzf'
+	Plug 'mhinz/vim-startify'
 
-	"Options
-	let g:airline_powerline_fonts = 1
-	let g:airline#extensions#tabline#enabled = 1
-	let g:airline#extensions#promptline#snapshot_file = "~/.shell_prompt.sh"
-	let g:vimtex_view_method = 'zathura'
-	let g:tex_flavor = "latex"
-	let g:vimtex_toc_config= {'layer_status': {'content': 1,'label': 0,'todo': 0,'include': 0}}
-	let g:vimtex_doc_handlers = ['MyDocs']
-	let g:markdown_fenced_languages = [
-		\ 'vim',
-		\ 'help'
-	\]
-
-	"Coc extensions
-	let g:coc_global_extensions = [
-									\"coc-ultisnips",
-									\"coc-snippets",
-									\"coc-marketplace",
-									\"coc-vimtex",
-									\"coc-sh",
-									\"coc-vimlsp",
-									\"coc-json"
-									\]
-	"let g:UltiSnipsExpandTrigger = '<C-j>'
-	"let g:ycm_key_invoke_completion = '<C-l>'
-
-	imap <C-l> <Nul>
-	function! MyDocs(context)
-		Zeavim
-		return 1
-	endfunction
 call plug#end()
+" Options {{{
+let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#promptline#snapshot_file = "~/.shell_prompt.sh"
+let g:vimtex_view_method = 'zathura'
+let g:tex_flavor = "latex"
+let g:vimtex_toc_config= {'layer_status': {'content': 1,'label': 0,'todo': 0,'include': 0}}
+let g:vimtex_doc_handlers = ['MyDocs']
+let g:markdown_fenced_languages = [
+	\ 'vim',
+	\ 'help'
+\]
+
+"Start page options
+let g:startify_fortune_use_unicode = 1
+function! s:center(lines) abort
+	let longest_line   = max(map(copy(a:lines), 'strwidth(v:val)'))
+	let centered_lines = map(copy(a:lines),
+				\ 'repeat(" ", (&columns / 2) - (longest_line / 2)) . v:val')
+	return centered_lines
+endfunction
+
+let g:startify_custom_header = s:center(startify#fortune#cowsay())
+"let g:startify_custom_footer = s:center(['foo', 'bar', 'baz'])
+
+function! s:list_commits()
+	let git = 'git -C ' . getcwd()
+	let commits = systemlist(git .' lg | head -n10')
+	let git = 'G'. git[1:]
+	return map(commits, '{"line": matchstr(v:val, "\\s\\zs.*"), "cmd": "'. git .' show ". matchstr(v:val, "^\\x\\+") }')
+endfunction
+
+let g:startify_lists = [
+	\ { 'header': ['   MRU'],            'type': 'files' },
+	\ { 'header': ['   MRU '. getcwd()], 'type': 'dir' },
+	\ { 'header': ['   Sessions'],       'type': 'sessions' },
+	\ { 'header': ['   Commits'],        'type': function('s:list_commits') },
+	\ ]
+
+"Coc extensions
+let g:coc_global_extensions = [
+								\"coc-ultisnips",
+								\"coc-snippets",
+								\"coc-marketplace",
+								\"coc-vimtex",
+								\"coc-sh",
+								\"coc-vimlsp",
+								\"coc-json"
+								\]
+"let g:UltiSnipsExpandTrigger = '<C-j>'
+"let g:ycm_key_invoke_completion = '<C-l>'
+
+imap <C-l> <Nul>
+function! MyDocs(context)
+	Zeavim
+	return 1
+endfunction
+" }}}
 " }}}
 
 "Busca marcas
