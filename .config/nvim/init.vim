@@ -45,6 +45,7 @@ call plug#begin('~/.config/nvim/plugs')
 	Plug 'junegunn/fzf.vim'
 	Plug '/usr/bin/fzf'
 	Plug 'mhinz/vim-startify'
+	Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
 
 call plug#end()
 " Options {{{
@@ -74,7 +75,7 @@ let g:startify_custom_header = s:center(startify#fortune#cowsay())
 
 function! s:list_commits()
 	let git = 'git -C ' . getcwd()
-	let commits = systemlist(git .' lg | head -n10')
+	let commits = systemlist(git .' lg | head -n20')
 	let git = 'G'. git[1:]
 	return map(commits, '{"line": matchstr(v:val, "\\s\\zs.*"), "cmd": "'. git .' show ". matchstr(v:val, "^\\x\\+") }')
 endfunction
