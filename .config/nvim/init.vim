@@ -58,6 +58,7 @@ let g:vimtex_toc_config= {'layer_status': {'content': 1,'label': 0,'todo': 0,'in
 let g:vimtex_doc_handlers = ['MyDocs']
 let g:markdown_fenced_languages = [
 	\ 'vim',
+	\ 'sh',
 	\ 'help'
 \]
 
