@@ -93,7 +93,7 @@ let g:startify_lists = [
 
 " This is for the file type icons on the start page
 function! StartifyEntryFormat()
-	return 'WebDevIconsGetFileTypeSymbol(absolute_path) ." ". entry_path'
+	return '.WebDevIconsGetFileTypeSymbol(absolute_path) ."  ". entry_path'
 endfunction
 " }}}
 
