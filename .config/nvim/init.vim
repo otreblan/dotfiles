@@ -62,8 +62,8 @@ let g:markdown_fenced_languages = [
 	\ 'help'
 \]
 
-"Start page options
-let g:startify_fortune_use_unicode = 1
+" Startify options {{{
+" Cowsay centering
 function! s:center(lines) abort
 	let longest_line   = max(map(copy(a:lines), 'strwidth(v:val)'))
 	let centered_lines = map(copy(a:lines),
@@ -71,9 +71,11 @@ function! s:center(lines) abort
 	return centered_lines
 endfunction
 
+"Some options
+let g:startify_fortune_use_unicode = 1
 let g:startify_custom_header = s:center(startify#fortune#cowsay())
-"let g:startify_custom_footer = s:center(['foo', 'bar', 'baz'])
 
+" The git commits part of the start page
 function! s:list_commits()
 	let git = 'git -C ' . getcwd()
 	let commits = systemlist(git .' lg | head -n20')
@@ -81,12 +83,19 @@ function! s:list_commits()
 	return map(commits, '{"line": matchstr(v:val, "\\s\\zs.*"), "cmd": "'. git .' show ". matchstr(v:val, "^\\x\\+") }')
 endfunction
 
+" This is the center of the start page
 let g:startify_lists = [
 	\ { 'header': ['   MRU'],            'type': 'files' },
 	\ { 'header': ['   MRU '. getcwd()], 'type': 'dir' },
 	\ { 'header': ['   Sessions'],       'type': 'sessions' },
 	\ { 'header': ['   Commits'],        'type': function('s:list_commits') },
 	\ ]
+
+" This is for the file type icons on the start page
+function! StartifyEntryFormat()
+	return 'WebDevIconsGetFileTypeSymbol(absolute_path) ." ". entry_path'
+endfunction
+" }}}
 
 "Coc extensions
 let g:coc_global_extensions = [
@@ -134,16 +143,17 @@ autocmd FileType tex call Latex()
 autocmd FileType cpp set keywordprg=cppman
 autocmd FileType c set keywordprg=~/manvim.sh\ 3
 
-"Syntax Highlighting
+" Syntax Highlighting {{{
 
-"Completion menu
+" Completion menu
 highlight Pmenu ctermbg=237 ctermfg=white
 highlight PmenuSel ctermbg=220 ctermfg=black
 highlight PmenuSbar ctermbg=233
 highlight PmenuThumb ctermbg=7
 
-"Folder text
+" Folder text
 highlight Folded ctermbg=235 ctermfg=80
+" }}}
 
 "Pmenu for commands
 set wildoptions=pum
@@ -151,15 +161,5 @@ set wildoptions=pum
 "Something for diagnostics
 set updatetime=300
 
-"Documentation
-
+" Documentation on hover
 autocmd CursorHold * silent call CocActionAsync('doHover')
-nnoremap <silent> Ñ :call <SID>show_documentation()<CR>
-
-function! s:show_documentation()
-	if (index(['vim','help'], &filetype) >= 0)
-		execute 'h '.expand('<cword>')
-	else
-		call CocAction('doHover')
-	endif
-endfunction
