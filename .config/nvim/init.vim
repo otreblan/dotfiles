@@ -105,6 +105,7 @@ let g:coc_global_extensions = [
 								\"coc-vimtex",
 								\"coc-sh",
 								\"coc-vimlsp",
+								\"coc-python",
 								\"coc-json"
 								\]
 "let g:UltiSnipsExpandTrigger = '<C-j>'
