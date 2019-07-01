@@ -33,6 +33,7 @@ call plug#begin('~/.config/nvim/plugs')
 	Plug 'ryanoasis/vim-devicons'
 	Plug 'edkolev/promptline.vim'
 	Plug 'tpope/vim-fugitive'
+	Plug 'tpope/vim-rhubarb'
 	Plug 'sophacles/vim-processing'
 	Plug 'tpope/vim-dispatch'
 	Plug 'mhinz/vim-rfc'
