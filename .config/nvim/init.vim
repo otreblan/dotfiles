@@ -46,9 +46,12 @@ call plug#begin('~/.config/nvim/plugs')
 	Plug '/usr/bin/fzf'
 	Plug 'mhinz/vim-startify'
 	Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
+	Plug 'OmniSharp/omnisharp-vim'
 
 call plug#end()
 " Options {{{
+let g:OmniSharp_server_stdio = 1
+let g:OmniSharp_server_use_mono = 1
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#promptline#snapshot_file = "~/.shell_prompt.sh"
