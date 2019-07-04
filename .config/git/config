@@ -3,7 +3,7 @@
 	name = otreblan
 	signingkey = F4BDAE562ACD62FC
 [merge]
-	tool = vimdiff
+	tool = nvim -f -c \"Gdiff\" \"$MERGED\"
 [core]
 	editor = nvim
 	autocrlf = input
