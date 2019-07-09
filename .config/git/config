@@ -2,8 +2,10 @@
 	email = otreblain@gmail.com
 	name = otreblan
 	signingkey = F4BDAE562ACD62FC
+[mergetool "nvim"]
+	cmd = nvim -f -c \"Gdiff\" \"$MERGED\"
 [merge]
-	tool = vimdiff
+	tool = nvim
 [core]
 	editor = nvim
 	autocrlf = input
