@@ -45,7 +45,7 @@ then
 	if [[ -f ~/.shell_prompt.sh ]]
 	then
 		source ~/.shell_prompt.sh
-		fi
+	fi
 fi #}}}
 
 alias ls='ls --color=auto'

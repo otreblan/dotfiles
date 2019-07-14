@@ -15,6 +15,7 @@ set shiftwidth=4 "set cindent debería identar automáticame
 set foldenable
 set foldmethod=marker "For folding with  { { { (without spaces)
 "set encoding=utf-8
+set list lcs=tab:\┊\  "For fancy indent marks
 
 filetype on "detect filetypes
 filetype indent on
