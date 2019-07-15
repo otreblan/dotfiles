@@ -28,3 +28,8 @@
 * [ vim-startify ](https://github.com/mhinz/vim-startify )
 * [ markdown-preview.nvim ](https://github.com/iamcco/markdown-preview.nvim )
 * [ vim-surround ](https://github.com/tpope/vim-surround )
+
+### coc-nvim plugins:
+
+### Window manager:
+* `i3-gaps`
