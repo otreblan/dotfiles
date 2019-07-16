@@ -33,3 +33,5 @@
 
 ### Window manager:
 * `i3-gaps`
+
+Btw, I use Arch.
