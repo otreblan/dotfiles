@@ -49,7 +49,7 @@ call plug#begin('~/.config/nvim/plugs')
 	Plug 'mhinz/vim-startify'
 	Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
 	Plug 'tpope/vim-surround'
-
+	Plug 'junegunn/vim-easy-align'
 call plug#end()
 " Options {{{
 let g:airline_powerline_fonts = 1
