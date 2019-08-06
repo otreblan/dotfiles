@@ -112,6 +112,9 @@ let g:coc_global_extensions = [
 								\"coc-python",
 								\"coc-pairs",
 								\"coc-omnisharp",
+								\"coc-git",
+								\"coc-github",
+								\"coc-gitignore",
 								\"coc-json"
 								\]
 "let g:UltiSnipsExpandTrigger = '<C-j>'
