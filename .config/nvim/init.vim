@@ -101,7 +101,7 @@ function! StartifyEntryFormat()
 endfunction
 " }}}
 
-"Coc extensions
+"Coc extensions {{{
 let g:coc_global_extensions = [
 								\"coc-ultisnips",
 								\"coc-snippets",
@@ -115,8 +115,10 @@ let g:coc_global_extensions = [
 								\"coc-git",
 								\"coc-github",
 								\"coc-gitignore",
+								\"coc-rls",
 								\"coc-json"
 								\]
+"}}}
 "let g:UltiSnipsExpandTrigger = '<C-j>'
 "let g:ycm_key_invoke_completion = '<C-l>'
 
@@ -127,7 +129,7 @@ function! MyDocs(context)
 endfunction
 " }}}
 " }}}
-
+"Mappings{{{
 "Busca marcas
 nmap ña /<++><CR> :nohls <CR> ca<
 
@@ -147,6 +149,7 @@ function Latex()
 	nmap ñs :!zathura *.pdf & <CR><CR>
 	nmap ñq a<++><Esc>
 endfunction
+"}}}
 
 "Guardado para LaTeX
 autocmd FileType tex call Latex()
