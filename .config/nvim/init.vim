@@ -154,7 +154,9 @@ endfunction
 "Guardado para LaTeX
 autocmd FileType tex call Latex()
 autocmd FileType cpp set keywordprg=cppman
-autocmd FileType c set keywordprg=~/manvim.sh\ 3
+
+"For some reason 'K' doesn't works with this on neovim with coc-nvim
+"autocmd FileType c set keywordprg=~/manvim.sh\ 3
 
 " Syntax Highlighting {{{
 
