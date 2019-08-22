@@ -149,6 +149,12 @@ function Latex()
 	nmap ñs :!zathura *.pdf & <CR><CR>
 	nmap ñq a<++><Esc>
 endfunction
+
+" Copied from nvim github README
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
 "}}}
 
 "Guardado para LaTeX
