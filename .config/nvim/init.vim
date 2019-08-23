@@ -42,6 +42,7 @@ call plug#begin('~/.config/nvim/plugs')
 	Plug 'Xuyuanp/nerdtree-git-plugin'
 	Plug 'dag/vim-fish'
 	Plug 'tbastos/vim-lua'
+	Plug 'habamax/vim-asciidoctor'
 	Plug 'octol/vim-cpp-enhanced-highlight'
 	Plug 'kabbamine/vcoolor.vim'
 	Plug 'junegunn/fzf.vim'
