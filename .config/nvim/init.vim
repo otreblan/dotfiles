@@ -22,6 +22,7 @@ filetype indent on
 
 " Plugins {{{
 call plug#begin('~/.config/nvim/plugs')
+	Plug 'wellle/targets.vim'
 	Plug 'vim-airline/vim-airline'
 	Plug 'lervag/vimtex'
 	"Plug 'valloric/youcompleteme'
