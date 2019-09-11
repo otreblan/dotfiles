@@ -8,7 +8,14 @@ set incsearch "Incremental search
 set history=1000 "History of : commands remembered
 set hlsearch "Highlight search results
 set autoread "Automatically read file after it's been modified elsewhere
-set number "Esta cosa pone los números de las líneas
+set number relativenumber "Esta cosa pone los números de las líneas
+
+" This thing toggles the relative numbers https://jeffkreeftmeijer.com/vim-number/
+augroup numbertoggle
+	autocmd!
+	autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
+	autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
+augroup END
 
 set tabstop=4 "debería hacer que el tab tenga el tamaño de 4 espacios
 set shiftwidth=4 "set cindent debería identar automáticame
