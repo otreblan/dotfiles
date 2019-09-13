@@ -126,6 +126,7 @@ let g:coc_global_extensions = [
 								\"coc-gitignore",
 								\"coc-rls",
 								\"coc-syntax",
+								\"coc-docker",
 								\"coc-json"
 								\]
 "}}}
