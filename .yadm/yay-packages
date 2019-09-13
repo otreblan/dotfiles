@@ -11,4 +11,5 @@ flat-remix-git
 minecraft-launcher
 ccls
 nodejs-docker-langserver
+omnisharp-roslyn-stdio-bin
 bear

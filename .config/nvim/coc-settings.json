@@ -49,6 +49,10 @@
 			"command": "docker-langserver",
 			"filetypes": ["dockerfile"],
 			"args": ["--stdio"]
+		},
+		"omnisharp": {
+			"command": "/opt/omnisharp-roslyn-stdio/OmniSharp.exe",
+			"filetypes": ["cs"]
 		}
 	},
 	"diagnostic.virtualText": true,
