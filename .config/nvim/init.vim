@@ -34,6 +34,7 @@ call plug#begin('~/.config/nvim/plugs')
 	Plug 'lervag/vimtex'
 	"Plug 'valloric/youcompleteme'
 	Plug 'neoclide/coc.nvim', {'do': './install.sh nightly'}
+	Plug 'ekalinin/Dockerfile.vim'
 	Plug 'KabbAmine/zeavim.vim'
 	Plug 'deviantfero/wpgtk.vim'
 	Plug 'vim-airline/vim-airline-themes'
@@ -109,7 +110,6 @@ function! StartifyEntryFormat()
 	return '.WebDevIconsGetFileTypeSymbol(absolute_path) ."  ". entry_path'
 endfunction
 " }}}
-
 "Coc extensions {{{
 let g:coc_global_extensions = [
 								\"coc-ultisnips",
@@ -126,7 +126,6 @@ let g:coc_global_extensions = [
 								\"coc-gitignore",
 								\"coc-rls",
 								\"coc-syntax",
-								\"coc-docker",
 								\"coc-json"
 								\]
 "}}}

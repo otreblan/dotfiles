@@ -44,6 +44,11 @@
 					"directory": "/tmp/ccls"
 				}
 			}
+		},
+		"dockerfile": {
+			"command": "docker-langserver",
+			"filetypes": ["dockerfile"],
+			"args": ["--stdio"]
 		}
 	},
 	"diagnostic.virtualText": true,
