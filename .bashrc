@@ -45,4 +45,4 @@ neofetch
 source /usr/share/fzf/key-bindings.bash
 source /usr/share/fzf/completion.bash
 
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+export PATH="/home/otreblan/.gem/ruby/2.6.0/bin:$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
