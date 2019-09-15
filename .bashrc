@@ -46,3 +46,6 @@ source /usr/share/fzf/key-bindings.bash
 source /usr/share/fzf/completion.bash
 
 export PATH="/home/otreblan/.gem/ruby/2.6.0/bin:$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
+# added by travis gem
+[ -f /home/otreblan/.travis/travis.sh ] && source /home/otreblan/.travis/travis.sh

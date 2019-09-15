@@ -14,3 +14,4 @@ nodejs-docker-langserver
 omnisharp-roslyn-stdio-bin
 bear
 ruby-nokogiri
+texlive-localmanager-git
