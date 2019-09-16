@@ -6,7 +6,6 @@ xorg
 i3-gaps
 compton
 vim
-neovim
 ranger
 biber
 texlive-most
