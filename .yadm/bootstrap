@@ -42,7 +42,7 @@ fi
 
 if command -v yay >/dev/null 2>&1; then
 	AUR="yay"
-	AURINSTALL="-S --needed"
+	AURINSTALL="-S --needed --nocleanmenu --nodiffmenu --noeditmenu --noupgrademenu"
 else
 	echo "Couldn't install yay" >&2
 	exit 2
