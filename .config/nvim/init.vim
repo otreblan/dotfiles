@@ -116,7 +116,6 @@ let g:coc_global_extensions = [
 								\"coc-snippets",
 								\"coc-marketplace",
 								\"coc-vimtex",
-								\"coc-sh",
 								\"coc-vimlsp",
 								\"coc-python",
 								\"coc-pairs",

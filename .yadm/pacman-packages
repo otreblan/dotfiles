@@ -1,4 +1,5 @@
 base-devel
+nodejs-lts-dubnium
 pulseaudio
 luarocks
 bash-completion
