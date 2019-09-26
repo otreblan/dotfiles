@@ -138,26 +138,16 @@ function! MyDocs(context)
 endfunction
 " }}}
 " }}}
-"Mappings{{{
-"Busca marcas
+" Mappings{{{
+" Busca marcas
 nmap ña /<++><CR> :nohls <CR> ca<
 
-"Cambia buffers
+" Buffer change
 nmap ñl :bnext!<CR>
 nmap ñh :bprevious!<CR>
 
-"Pone fecha
+" Date putter
 nmap ñ<Space> a<C-r>=system('date +%Y-%m-%d\ %H:%M:%S \| tr -d "\n"')<CR>
-
-"LaTeX things
-function Latex()
-	"nmap ññ :w <CR> \| :!make <CR><CR>
-	set spell spelllang=es
-	nmap ñz :set spell!<CR>
-	nmap ññ :w<CR>
-	nmap ñs :!zathura *.pdf & <CR><CR>
-	nmap ñq a<++><Esc>
-endfunction
 
 " Copied from nvim github README
 nmap <silent> gd <Plug>(coc-definition)
@@ -166,10 +156,16 @@ nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 "}}}
 
-"Guardado para LaTeX
-autocmd FileType tex call Latex()
+" Fast save
+nmap ññ :w<CR>
 
-"For some reason 'K' doesn't works with this on neovim with coc-nvim
+" LaTeX things
+autocmd FileType tex set spell spelllang=es
+autocmd FileType tex nmap ñz :set spell!<CR>
+autocmd FileType tex nmap ñs :!zathura *.pdf & <CR><CR>
+autocmd FileType tex nmap ñq a<++><Esc>
+
+" For some reason 'K' doesn't works with this on neovim with coc-nvim
 "autocmd FileType cpp set keywordprg=cppman
 "autocmd FileType c set keywordprg=~/manvim.sh\ 3
 
@@ -185,10 +181,10 @@ highlight PmenuThumb ctermbg=7
 highlight Folded ctermbg=235 ctermfg=80
 " }}}
 
-"Pmenu for commands
+" Pmenu for commands
 set wildoptions=pum
 
-"Something for diagnostics
+" Something for diagnostics
 set updatetime=300
 
 " Documentation on hover
