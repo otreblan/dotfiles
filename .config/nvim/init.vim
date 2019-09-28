@@ -38,7 +38,7 @@ call plug#begin('~/.config/nvim/plugs')
 	Plug 'KabbAmine/zeavim.vim'
 	Plug 'deviantfero/wpgtk.vim'
 	Plug 'vim-airline/vim-airline-themes'
-	"Plug 'sirver/ultisnips'
+	Plug 'sirver/ultisnips'
 	Plug 'honza/vim-snippets'
 	Plug 'ryanoasis/vim-devicons'
 	Plug 'edkolev/promptline.vim'
@@ -113,7 +113,6 @@ endfunction
 "Coc extensions {{{
 let g:coc_global_extensions = [
 								\"coc-ultisnips",
-								\"coc-snippets",
 								\"coc-marketplace",
 								\"coc-vimtex",
 								\"coc-vimlsp",
@@ -124,7 +123,6 @@ let g:coc_global_extensions = [
 								\"coc-github",
 								\"coc-gitignore",
 								\"coc-rls",
-								\"coc-syntax",
 								\"coc-json"
 								\]
 "}}}
@@ -168,6 +166,10 @@ autocmd FileType tex nmap ñq a<++><Esc>
 " For some reason 'K' doesn't works with this on neovim with coc-nvim
 "autocmd FileType cpp set keywordprg=cppman
 "autocmd FileType c set keywordprg=~/manvim.sh\ 3
+
+" Easy align
+vmap <Enter> <Plug>(EasyAlign)
+nmap ga <Plug>(EasyAlign)
 
 " Syntax Highlighting {{{
 

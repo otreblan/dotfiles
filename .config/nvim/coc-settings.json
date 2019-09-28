@@ -27,10 +27,6 @@
 		"default": "\uf29c"
 	},
 	"languageserver": {
-		"digestif": {
-			"command": "digestif",
-			"filetypes": ["tex", "plaintex", "context"]
-		},
 		"lua": {
 			"command": "lua-lsp",
 			"filetypes": ["lua"]
