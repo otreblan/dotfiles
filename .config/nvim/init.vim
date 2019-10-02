@@ -60,7 +60,7 @@ call plug#begin('~/.config/nvim/plugs')
 	Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
 	Plug 'tpope/vim-surround'
 	Plug 'junegunn/vim-easy-align'
-	Plug 'chrisbra/csv.vim'
+	"Plug 'chrisbra/csv.vim'
 call plug#end()
 " Options {{{
 let g:airline_powerline_fonts = 1
