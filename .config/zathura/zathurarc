@@ -1,3 +1,5 @@
+# vim:filetype=conf
+
 map <C-s> toggle_statusbar
 
 map <C-i> zoom in
