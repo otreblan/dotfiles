@@ -60,6 +60,7 @@ call plug#begin('~/.config/nvim/plugs')
 	Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
 	Plug 'tpope/vim-surround'
 	Plug 'junegunn/vim-easy-align'
+	Plug 'sakhnik/nvim-gdb', { 'do': ':!./install.sh \| UpdateRemotePlugins' }
 	"Plug 'chrisbra/csv.vim'
 call plug#end()
 " Options {{{
