@@ -35,6 +35,7 @@ call plug#begin('~/.config/nvim/plugs')
 	"Plug 'valloric/youcompleteme'
 	Plug 'neoclide/coc.nvim', {'do': './install.sh nightly'}
 	Plug 'ekalinin/Dockerfile.vim'
+	Plug 'igankevich/mesonic'
 	Plug 'KabbAmine/zeavim.vim'
 	Plug 'deviantfero/wpgtk.vim'
 	Plug 'vim-airline/vim-airline-themes'
