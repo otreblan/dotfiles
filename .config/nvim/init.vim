@@ -69,6 +69,7 @@ let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#promptline#snapshot_file = "~/.shell_prompt.sh"
 let g:vimtex_view_method = 'zathura'
+let g:vimtex_compiler_progname = 'nvr'
 let g:tex_flavor = "latex"
 let g:vimtex_toc_config= {'layer_status': {'content': 1,'label': 0,'todo': 0,'include': 0}}
 let g:vimtex_doc_handlers = ['MyDocs']
