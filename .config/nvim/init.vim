@@ -45,7 +45,6 @@ call plug#begin('~/.config/nvim/plugs')
 	Plug 'edkolev/promptline.vim'
 	Plug 'tpope/vim-fugitive'
 	Plug 'tpope/vim-rhubarb'
-	Plug 'sophacles/vim-processing'
 	Plug 'tpope/vim-dispatch'
 	Plug 'mhinz/vim-rfc'
 	Plug 'scrooloose/nerdtree'
@@ -78,6 +77,13 @@ let g:markdown_fenced_languages = [
 	\ 'sh',
 	\ 'help'
 \]
+
+" c++ syntax highlighting
+let g:cpp_class_scope_highlight = 1
+let g:cpp_member_variable_highlight = 1
+let g:cpp_class_decl_highlight = 1
+let g:cpp_experimental_template_highlight = 1
+
 
 " Startify options {{{
 " Cowsay centering
