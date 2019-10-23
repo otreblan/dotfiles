@@ -34,7 +34,11 @@ fi #}}}
 alias ls='ls --color=auto'
 alias grep='grep --colour'
 #alias Syu='sudo powerpill -Syu'
-alias man="~/manvim.sh"
+
+# El script ya no es necesario. MANPAGER se encarga a partir a ahora.
+#alias man="~/manvim.sh"
+export MANPAGER="nvim -c 'set ft=man' -"
+
 #alias emacs="emacs --no-window-system"
 
 #vi mode
