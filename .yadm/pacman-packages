@@ -1,3 +1,4 @@
+#vim: set filetype=conf
 base-devel
 nodejs-lts-dubnium
 pulseaudio
@@ -24,7 +25,6 @@ zathura
 zathura-pdf-poppler
 inkscape
 pstoedit
-rofi
 ibus
 ibus-anthy
 git-lfs

@@ -1,3 +1,4 @@
+#vim: set filetype=conf
 polybar
 rxvt-unicode-cvs-patched-wideglyphs
 latex2e-help-texinfo
@@ -17,3 +18,4 @@ ruby-nokogiri
 texlive-localmanager-git
 pacman-src-git
 arch-wiki-man
+rofi-git

@@ -19,7 +19,9 @@ fi
 
 #Packages in the repositories
 echo "Installing packages"
-xargs -a ${HOME}/.yadm/${PACMAN}-packages sudo ${PACMAN} ${PACINSTALL}
+sed "s/#.*//g"
+	${HOME}/.yadm/${PACMAN}-packages | \
+	xargs sudo ${PACMAN} ${PACINSTALL}
 
 
 #Packages in the aur
@@ -42,13 +44,17 @@ fi
 
 if command -v yay >/dev/null 2>&1; then
 	AUR="yay"
-	AURINSTALL="-S --needed --nocleanmenu --nodiffmenu --noeditmenu --noupgrademenu"
+	AURARGS="-S --needed --nocleanmenu --nodiffmenu --noeditmenu --noupgrademenu"
 else
 	echo "Couldn't install yay" >&2
 	exit 2
 fi
 
-xargs -a ${HOME}/.yadm/${AUR}-packages ${AUR} ${AURINSTALL}
+#xargs -a ${HOME}/.yadm/${AUR}-packages ${AUR} ${AURINSTALL}
+
+sed "s/#.*//g"
+	${HOME}/.yadm/${AUR}-packages | \
+	xargs ${AUR} ${AURARGS}
 
 #Downloading wallpaper
 curl http://i.imgur.com/xOdmlgL.jpg -o ${HOME}/.bg.jpg
