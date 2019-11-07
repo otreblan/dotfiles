@@ -168,7 +168,7 @@ nmap <silent> gr <Plug>(coc-references)
 nmap ññ :w<CR>
 
 " LaTeX things
-autocmd FileType tex set spell spelllang=es
+autocmd FileType tex set spell spelllang=es spell!
 autocmd FileType tex nmap ñz :set spell!<CR>
 autocmd FileType tex nmap ñs :!zathura *.pdf & <CR><CR>
 autocmd FileType tex nmap ñq a<++><Esc>
