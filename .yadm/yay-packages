@@ -19,3 +19,4 @@ texlive-localmanager-git
 pacman-src-git
 arch-wiki-man
 rofi-git
+cmake-language-server
