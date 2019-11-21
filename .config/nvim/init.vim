@@ -214,3 +214,4 @@ set updatetime=300
 
 " Documentation on hover
 autocmd CursorHold * silent call CocActionAsync('doHover')
+autocmd CursorHoldI * sil call CocActionAsync('showSignatureHelp')
