@@ -157,7 +157,7 @@ nmap ñh :bprevious!<CR>
 " Date putter
 nmap ñ<Space> a<C-r>=system('date +%Y-%m-%d\ %H:%M:%S \| tr -d "\n"')<CR>
 
-" Copied from nvim github README {{{
+" Copied from coc.nvim github README {{{
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
@@ -173,6 +173,33 @@ nmap <leader>a  <Plug>(coc-codeaction-selected)
 nmap <leader>ac  <Plug>(coc-codeaction)
 " Fix autofix problem of current line
 nmap <leader>qf  <Plug>(coc-fix-current)
+" }}}
+" Copied from ccls github wiki {{{
+" bases
+nmap <silent> gxb :call CocLocations('ccls','$ccls/inheritance')<cr>
+" bases of up to 3 levels
+nmap <silent> gxB :call CocLocations('ccls','$ccls/inheritance',{'levels':3})<cr>
+" derived
+nmap <silent> gxd :call CocLocations('ccls','$ccls/inheritance',{'derived':v:true})<cr>
+" derived of up to 3 levels
+nmap <silent> gxD :call CocLocations('ccls','$ccls/inheritance',{'derived':v:true,'levels':3})<cr>
+
+" caller
+nmap <silent> gxc :call CocLocations('ccls','$ccls/call')<cr>
+" callee
+nmap <silent> gxC :call CocLocations('ccls','$ccls/call',{'callee':v:true})<cr>
+
+" $ccls/member
+" member variables / variables in a namespace
+nmap <silent> gxm :call CocLocations('ccls','$ccls/member')<cr>
+" member functions / functions in a namespace
+nmap <silent> gxf :call CocLocations('ccls','$ccls/member',{'kind':3})<cr>
+" nested classes / types in a namespace
+nmap <silent> gxs :call CocLocations('ccls','$ccls/member',{'kind':2})<cr>
+
+nmap <silent> gxt <Plug>(coc-type-definition)<cr>
+nmap <silent> gxv :call CocLocations('ccls','$ccls/vars')<cr>
+nmap <silent> gxV :call CocLocations('ccls','$ccls/vars',{'kind':1})<cr>
 " }}}
 
 "}}}
