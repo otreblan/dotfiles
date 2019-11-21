@@ -68,6 +68,7 @@
 		}
 	},
 	"diagnostic.virtualText": true,
+	"diagnostic.warningSign": " ",
 	"codeLens.enable": true,
 	"suggest.enablePreview": true,
 	"signature.target": "float",
