@@ -72,5 +72,6 @@
 	"codeLens.enable": true,
 	"suggest.enablePreview": true,
 	"signature.target": "float",
-	"codeLens.separator": ""
+	"codeLens.separator": "",
+	"git.addGBlameToVirtualText":true
 }
