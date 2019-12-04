@@ -63,7 +63,7 @@
 				"build/"
 			],
 			"initializationOptions": {
-			"buildDirectory": "build"
+				"buildDirectory": "build"
 			}
 		}
 	},
