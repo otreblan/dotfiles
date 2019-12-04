@@ -130,7 +130,6 @@ let g:coc_global_extensions = [
 								\"coc-pairs",
 								\"coc-omnisharp",
 								\"coc-git",
-								\"coc-github",
 								\"coc-gitignore",
 								\"coc-rls",
 								\"coc-json"
