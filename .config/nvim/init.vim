@@ -37,8 +37,6 @@ call plug#begin('~/.config/nvim/plugs')
 	Plug 'ekalinin/Dockerfile.vim'
 	Plug 'igankevich/mesonic'
 	Plug 'KabbAmine/zeavim.vim'
-	Plug 'deviantfero/wpgtk.vim'
-	Plug 'vim-airline/vim-airline-themes'
 	Plug 'sirver/ultisnips'
 	Plug 'honza/vim-snippets'
 	Plug 'ryanoasis/vim-devicons'
