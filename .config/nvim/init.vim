@@ -55,7 +55,6 @@ call plug#begin('~/.config/nvim/plugs')
 	Plug 'octol/vim-cpp-enhanced-highlight'
 	Plug 'rbong/vim-flog'
 	Plug 'reedes/vim-pencil'
-	Plug 'ryanoasis/vim-devicons'
 	Plug 'sakhnik/nvim-gdb', { 'do': ':!./install.sh \| UpdateRemotePlugins' }
 	Plug 'scrooloose/nerdtree'
 	Plug 'sirver/ultisnips'
@@ -67,6 +66,9 @@ call plug#begin('~/.config/nvim/plugs')
 	Plug 'vim-airline/vim-airline'
 	Plug 'wellle/targets.vim'
 	Plug 'tpope/vim-dispatch'
+
+	" This doesn't work if it's loaded before
+	Plug 'ryanoasis/vim-devicons'
 call plug#end()
 " Options {{{
 let g:airline_powerline_fonts                     = 1
