@@ -47,7 +47,7 @@
 			"args": ["--stdio"]
 		},
 		"omnisharp": {
-			"command": "/home/otreblan/.cache/omnisharp-vim/omnisharp-roslyn/run",
+			"command": "~/.cache/omnisharp-vim/omnisharp-roslyn/run",
 			"filetypes": ["cs"],
 			"args": ["-lsp"],
 			"rootPatterns": [".git/"]
