@@ -36,6 +36,7 @@ call plug#begin('~/.config/nvim/plugs')
 	Plug 'neoclide/coc.nvim', {'do': './install.sh nightly'}
 	Plug 'ekalinin/Dockerfile.vim'
 	Plug 'igankevich/mesonic'
+	Plug 'vhdirk/vim-cmake'
 	Plug 'KabbAmine/zeavim.vim'
 	Plug 'sirver/ultisnips'
 	Plug 'honza/vim-snippets'

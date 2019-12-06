@@ -10,6 +10,7 @@
 * [ coc.nvim ](https://github.com/neoclide/coc.nvim )
 * [ dockerfile.vim ](https://github.com/ekalinin/Dockerfile.vim )
 * [ mesonic ](https://github.com/igankevich/mesonic )
+* [ vim-cmake ](https://github.com/vhdirk/vim-cmake )
 * [ zeavim.vim ](https://github.com/KabbAmine/zeavim.vim )
 * [ vim-snippets ](https://github.com/honza/vim-snippets )
 * [ vim-devicons ](https://github.com/ryanoasis/vim-devicons )
