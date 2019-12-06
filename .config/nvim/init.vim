@@ -122,18 +122,19 @@ endfunction
 " }}}
 "Coc extensions {{{
 let g:coc_global_extensions = [
-								\"coc-ultisnips",
-								\"coc-marketplace",
-								\"coc-vimtex",
-								\"coc-vimlsp",
-								\"coc-python",
-								\"coc-pairs",
-								\"coc-omnisharp",
-								\"coc-git",
-								\"coc-gitignore",
-								\"coc-rls",
-								\"coc-json"
-								\]
+	\"coc-ultisnips",
+	\"coc-marketplace",
+	\"coc-vimtex",
+	\"coc-vimlsp",
+	\"coc-python",
+	\"coc-pairs",
+	\"coc-omnisharp",
+	\"coc-git",
+	\"coc-gitignore",
+	\"coc-rls",
+	\"coc-template",
+	\"coc-json"
+\]
 "}}}
 "let g:UltiSnipsExpandTrigger = '<C-j>'
 "let g:ycm_key_invoke_completion = '<C-l>'

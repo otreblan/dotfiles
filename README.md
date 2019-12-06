@@ -29,7 +29,20 @@
 * [ markdown-preview.nvim ](https://github.com/iamcco/markdown-preview.nvim )
 * [ vim-surround ](https://github.com/tpope/vim-surround )
 
-### coc-nvim plugins:
+### coc.nvim plugins:
+
+* [ coc-vimtex ](https://github.com/neoclide/coc-vimtex)
+* [ coc-git ](https://github.com/neoclide/coc-git)
+* [ coc-gitignore ](https://github.com/iamcco/coc-gitignore)
+* [ coc-ultisnips ](https://github.com/neoclide/coc-sources)
+* [ coc-marketplace ](https://github.com/fannheyward/coc-marketplace)
+* [ coc-pairs ](https://github.com/neoclide/coc-pairs)
+* [ coc-omnisharp ](https://github.com/coc-extensions/coc-omnisharp)
+* [ coc-python ](https://github.com/neoclide/coc-python)
+* [ coc-rls ](https://github.com/neoclide/coc-rls)
+* [ coc-json ](https://github.com/neoclide/coc-json)
+* [ coc-vimlsp ](https://github.com/iamcco/coc-vimlsp)
+* [ coc-template ](https://github.com/voldikss/coc-template)
 
 ### Window manager:
 * `i3-gaps`
