@@ -33,7 +33,9 @@ filetype indent on
 " Plugins {{{
 call plug#begin('~/.config/nvim/plugs')
 	Plug '/usr/bin/fzf'
+	"Plug 'OmniSharp/omnisharp-vim'
 	Plug 'KabbAmine/zeavim.vim'
+	Plug 'reedes/vim-pencil'
 	Plug 'Xuyuanp/nerdtree-git-plugin'
 	Plug 'dag/vim-fish'
 	Plug 'edkolev/promptline.vim'
@@ -64,6 +66,7 @@ call plug#begin('~/.config/nvim/plugs')
 	Plug 'vhdirk/vim-cmake'
 	Plug 'vim-airline/vim-airline'
 	Plug 'wellle/targets.vim'
+	Plug 'tpope/vim-dispatch'
 call plug#end()
 " Options {{{
 let g:airline_powerline_fonts                     = 1
@@ -97,6 +100,8 @@ let g:cpp_member_variable_highlight       = 1
 let g:cpp_class_decl_highlight            = 1
 let g:cpp_experimental_template_highlight = 1
 
+"let g:OmniSharp_server_stdio = 1
+"let g:OmniSharp_server_path = '/home/otreblan/.cache/omnisharp-vim/omnisharp-roslyn/run'
 
 " Startify options {{{
 " Cowsay centering
@@ -140,7 +145,6 @@ let g:coc_global_extensions = [
 	\"coc-vimlsp",
 	\"coc-python",
 	\"coc-pairs",
-	\"coc-omnisharp",
 	\"coc-git",
 	\"coc-gitignore",
 	\"coc-rls",

@@ -47,8 +47,10 @@
 			"args": ["--stdio"]
 		},
 		"omnisharp": {
-			"command": "/opt/omnisharp-roslyn-stdio/OmniSharp.exe",
-			"filetypes": ["cs"]
+			"command": "/home/otreblan/.cache/omnisharp-vim/omnisharp-roslyn/run",
+			"filetypes": ["cs"],
+			"args": ["-lsp"],
+			"rootPatterns": [".git/"]
 		},
 		"bash": {
 			"command": "bash-language-server",
