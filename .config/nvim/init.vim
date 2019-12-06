@@ -1,14 +1,15 @@
 set t_Co=256
 filetype plugin on
 syntax on " Syntax highlighting
-set background=dark " Vim colours for dark baVim colours for dark background
-set showcmd " Show (partial) command in status line.
-set showmatch "Show matching brackets
-set incsearch "Incremental search
-set history=1000 "History of : commands remembered
-set hlsearch "Highlight search results
-set autoread "Automatically read file after it's been modified elsewhere
-set number relativenumber "Esta cosa pone los números de las líneas
+
+set autoread       " Automatically read file after it's been modified elsewhere
+set foldenable
+set hlsearch       " Highlight search results
+set incsearch      " Incremental search
+set number         " Numbered lines
+set relativenumber " Relative numbered lines
+set showcmd        " Show (partial) command in status line.
+set showmatch      " Show matching brackets
 
 " This thing toggles the relative numbers https://jeffkreeftmeijer.com/vim-number/
 augroup numbertoggle
@@ -17,12 +18,14 @@ augroup numbertoggle
 	autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
 augroup END
 
-set tabstop=4 "debería hacer que el tab tenga el tamaño de 4 espacios
-set shiftwidth=4 "set cindent debería identar automáticame
-set foldenable
-set foldmethod=marker "For folding with  { { { (without spaces)
-"set encoding=utf-8
-set list lcs=tab:\┊\  "For fancy indent marks
+set background  =dark     " Vim colours for dark background
+set foldmethod  =marker   " For folding with  { { { (without spaces)
+set history     =1000     " History of : commands remembered
+set list lcs    =tab:\┊\  " For fancy indent marks
+set shiftwidth  =4        " Automatic indetation
+set tabstop     =4        " Makes tabs 4 spaces long
+set updatetime  =300      " Something for diagnostics
+set wildoptions =pum      " Pmenu for commands
 
 filetype on "detect filetypes
 filetype indent on
@@ -32,7 +35,6 @@ call plug#begin('~/.config/nvim/plugs')
 	Plug 'wellle/targets.vim'
 	Plug 'vim-airline/vim-airline'
 	Plug 'lervag/vimtex'
-	"Plug 'valloric/youcompleteme'
 	Plug 'neoclide/coc.nvim', {'do': './install.sh nightly'}
 	Plug 'ekalinin/Dockerfile.vim'
 	Plug 'igankevich/mesonic'
@@ -61,27 +63,37 @@ call plug#begin('~/.config/nvim/plugs')
 	Plug 'tpope/vim-surround'
 	Plug 'junegunn/vim-easy-align'
 	Plug 'sakhnik/nvim-gdb', { 'do': ':!./install.sh \| UpdateRemotePlugins' }
-	"Plug 'chrisbra/csv.vim'
 call plug#end()
 " Options {{{
-let g:airline_powerline_fonts = 1
-let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_fonts                     = 1
+let g:airline#extensions#tabline#enabled          = 1
 let g:airline#extensions#promptline#snapshot_file = "~/.shell_prompt.sh"
-let g:vimtex_view_method = 'zathura'
+
+" Some vimtex options
+let g:vimtex_view_method       = 'zathura'
 let g:vimtex_compiler_progname = 'nvr'
-let g:tex_flavor = "latex"
-let g:vimtex_toc_config= {'layer_status': {'content': 1,'label': 0,'todo': 0,'include': 0}}
-let g:vimtex_doc_handlers = ['MyDocs']
+let g:tex_flavor               = "latex"
+let g:vimtex_toc_config        = {'layer_status':
+	\{'content': 1,
+	\'label':    0,
+	\'todo':     0,
+	\'include':  0}
+	\}
+let g:vimtex_doc_handlers      = ['MyDocs']
+
 let g:markdown_fenced_languages = [
 	\ 'vim',
 	\ 'sh',
 	\ 'help'
 \]
+" This is for c/c++ autocompletion
+let g:cmake_export_compile_commands = 1
+let g:cmake_ycm_symlinks            = 1
 
 " c++ syntax highlighting
-let g:cpp_class_scope_highlight = 1
-let g:cpp_member_variable_highlight = 1
-let g:cpp_class_decl_highlight = 1
+let g:cpp_class_scope_highlight           = 1
+let g:cpp_member_variable_highlight       = 1
+let g:cpp_class_decl_highlight            = 1
 let g:cpp_experimental_template_highlight = 1
 
 
@@ -90,19 +102,19 @@ let g:cpp_experimental_template_highlight = 1
 function! s:center(lines) abort
 	let longest_line   = max(map(copy(a:lines), 'strwidth(v:val)'))
 	let centered_lines = map(copy(a:lines),
-				\ 'repeat(" ", (&columns / 2) - (longest_line / 2)) . v:val')
+		\ 'repeat(" ", (&columns / 2) - (longest_line / 2)) . v:val')
 	return centered_lines
 endfunction
 
 "Some options
 let g:startify_fortune_use_unicode = 1
-let g:startify_custom_header = s:center(startify#fortune#cowsay())
+let g:startify_custom_header       = s:center(startify#fortune#cowsay())
 
 " The git commits part of the start page
 function! s:list_commits()
-	let git = 'git -C ' . getcwd()
+	let git     = 'git -C ' . getcwd()
 	let commits = systemlist(git .' lg | head -n20')
-	let git = 'G'. git[1:]
+	let git     = 'G'. git[1:]
 	return map(commits, '{"line": matchstr(v:val, "\\s\\zs.*"), "cmd": "'. git .' show ". matchstr(v:val, "^\\x\\+") }')
 endfunction
 
@@ -232,11 +244,6 @@ highlight PmenuThumb ctermbg=7
 highlight Folded ctermbg=235 ctermfg=80
 " }}}
 
-" Pmenu for commands
-set wildoptions=pum
-
-" Something for diagnostics
-set updatetime=300
 
 " Documentation on hover
 autocmd CursorHold * silent call CocActionAsync('doHover')
