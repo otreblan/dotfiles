@@ -67,6 +67,11 @@
 			"initializationOptions": {
 				"buildDirectory": "build"
 			}
+		},
+		"typescript": {
+			"command": "javascript-typescript-stdio",
+			"filetypes": ["typescript", "javascript"],
+			"rootPatterns": ["tsconfig.json", "jsconfig.json"]
 		}
 	},
 	"diagnostic.virtualText": true,
