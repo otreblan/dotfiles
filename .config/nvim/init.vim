@@ -158,6 +158,7 @@ let g:coc_global_extensions = [
 "let g:ycm_key_invoke_completion = '<C-l>'
 
 imap <C-l> <Nul>
+" Zeal is the latex documentation provider
 function! MyDocs(context)
 	Zeavim
 	return 1
@@ -226,10 +227,13 @@ nmap <silent> gxV :call CocLocations('ccls','$ccls/vars',{'kind':1})<cr>
 nmap ññ :w<CR>
 
 " LaTeX things
-autocmd FileType tex set spell spelllang=es spell!
-autocmd FileType tex nmap ñz :set spell!<CR>
-autocmd FileType tex nmap ñs :!zathura *.pdf & <CR><CR>
-autocmd FileType tex nmap ñq a<++><Esc>
+augroup latex
+	autocmd!
+	autocmd FileType tex set spell spelllang=es spell!
+	autocmd FileType tex nmap ñz :set spell!<CR>
+	autocmd FileType tex nmap ñs :!zathura *.pdf & <CR><CR>
+	autocmd FileType tex nmap ñq a<++><Esc>
+augroup end
 
 " For some reason 'K' doesn't works with this on neovim with coc-nvim
 "autocmd FileType cpp set keywordprg=cppman
@@ -251,7 +255,12 @@ highlight PmenuThumb ctermbg=7
 highlight Folded ctermbg=235 ctermfg=80
 " }}}
 
-
 " Documentation on hover
-autocmd CursorHold * silent call CocActionAsync('doHover')
-autocmd CursorHoldI * sil call CocActionAsync('showSignatureHelp')
+augroup hover
+	autocmd!
+	autocmd CursorHold * silent call CocActionAsync('doHover')
+	autocmd CursorHoldI * sil call CocActionAsync('showSignatureHelp')
+augroup end
+
+" systemlist() is used to delete the ^@ at the end of the line
+let $MAKEFLAGS = "-j".systemlist("nproc")[0]
