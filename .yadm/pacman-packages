@@ -38,3 +38,16 @@ fzf
 hub
 ffmpegthumbnailer
 asciidoctor
+# Cosas para el lsp de python
+# python-jedi del repositorio no funciona
+#
+# pip install --user jedi==0.14.1
+python-language-server
+python-mccabe
+python-rope
+python-pyflakes
+flake8
+python-pycodestyle
+python-pylint
+yapf
+python-pydocstyle
