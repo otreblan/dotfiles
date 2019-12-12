@@ -11,13 +11,6 @@ set relativenumber " Relative numbered lines
 set showcmd        " Show (partial) command in status line.
 set showmatch      " Show matching brackets
 
-" This thing toggles the relative numbers https://jeffkreeftmeijer.com/vim-number/
-"augroup numbertoggle
-	"autocmd!
-	"autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
-	"autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
-"augroup END
-
 set background  =dark     " Vim colours for dark background
 set foldmethod  =marker   " For folding with  { { { (without spaces)
 set history     =1000     " History of : commands remembered
@@ -105,7 +98,11 @@ let g:cpp_class_decl_highlight            = 1
 let g:cpp_experimental_template_highlight = 1
 
 " Numbers exceptions
-let g:numbers_exclude = ['man']
+let g:numbers_exclude = [
+	\ 'man',
+	\ 'help',
+	\ 'startify',
+\]
 
 "let g:OmniSharp_server_stdio = 1
 "let g:OmniSharp_server_path = '/home/otreblan/.cache/omnisharp-vim/omnisharp-roslyn/run'
