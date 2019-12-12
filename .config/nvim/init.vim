@@ -6,8 +6,6 @@ set autoread       " Automatically read file after it's been modified elsewhere
 set foldenable
 set hlsearch       " Highlight search results
 set incsearch      " Incremental search
-set number         " Numbered lines
-set relativenumber " Relative numbered lines
 set showcmd        " Show (partial) command in status line.
 set showmatch      " Show matching brackets
 
@@ -98,10 +96,12 @@ let g:cpp_class_decl_highlight            = 1
 let g:cpp_experimental_template_highlight = 1
 
 " Numbers exceptions
+" '' is here until floating windows have their own filetype
 let g:numbers_exclude = [
 	\ 'man',
 	\ 'help',
 	\ 'startify',
+	\ ''
 \]
 
 "let g:OmniSharp_server_stdio = 1

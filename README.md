@@ -5,6 +5,7 @@
 ### (Neo)Vim plugins:
 
 * [ coc.nvim ](https://github.com/neoclide/coc.nvim )
+* [ numbers.vim ](https://github.com/myusuf3/numbers.vim)
 * [ dockerfile.vim ](https://github.com/ekalinin/Dockerfile.vim )
 * [ fzf.vim ](https://github.com/junegunn/fzf.vim )
 * [ markdown-preview.nvim ](https://github.com/iamcco/markdown-preview.nvim )
