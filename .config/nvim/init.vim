@@ -150,6 +150,8 @@ let g:coc_global_extensions = [
 	\"coc-gitignore",
 	\"coc-rls",
 	\"coc-template",
+	\"coc-tsserver",
+	\"coc-prettier",
 	\"coc-json"
 \]
 "}}}
@@ -258,7 +260,7 @@ highlight Folded ctermbg=235 ctermfg=80
 augroup hover
 	autocmd!
 	autocmd CursorHold * silent call CocActionAsync('doHover')
-	autocmd CursorHoldI * sil call CocActionAsync('showSignatureHelp')
+	autocmd CursorHoldI * silent call CocActionAsync('showSignatureHelp')
 augroup end
 
 " systemlist() is used to delete the ^@ at the end of the line

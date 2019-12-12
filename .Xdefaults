@@ -5,6 +5,7 @@ URxvt*buffered: true
 #URxvt*foreground: #eeeeee
 
 URxvt*scrollBar: false
+URxvt*perl-ext-common: vtwheel
 #URxvt*shading: 30
 #URxvt*blurRadius: 10
 

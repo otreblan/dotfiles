@@ -21,3 +21,4 @@ arch-wiki-man
 rofi-git
 cmake-language-server
 javascript-typescript-langserver
+urxvt-vtwheel
