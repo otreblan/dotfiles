@@ -12,11 +12,11 @@ set showcmd        " Show (partial) command in status line.
 set showmatch      " Show matching brackets
 
 " This thing toggles the relative numbers https://jeffkreeftmeijer.com/vim-number/
-augroup numbertoggle
-	autocmd!
-	autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
-	autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
-augroup END
+"augroup numbertoggle
+	"autocmd!
+	"autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
+	"autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
+"augroup END
 
 set background  =dark     " Vim colours for dark background
 set foldmethod  =marker   " For folding with  { { { (without spaces)
@@ -26,6 +26,7 @@ set shiftwidth  =4        " Automatic indetation
 set tabstop     =4        " Makes tabs 4 spaces long
 set updatetime  =300      " Something for diagnostics
 set wildoptions =pum      " Pmenu for commands
+set mouse       =a        " Mouse support
 
 filetype on "detect filetypes
 filetype indent on
@@ -34,6 +35,7 @@ filetype indent on
 call plug#begin('~/.config/nvim/plugs')
 	Plug '/usr/bin/fzf'
 	"Plug 'OmniSharp/omnisharp-vim'
+	Plug 'myusuf3/numbers.vim'
 	Plug 'KabbAmine/zeavim.vim'
 	Plug 'reedes/vim-pencil'
 	Plug 'Xuyuanp/nerdtree-git-plugin'
@@ -101,6 +103,9 @@ let g:cpp_class_scope_highlight           = 1
 let g:cpp_member_variable_highlight       = 1
 let g:cpp_class_decl_highlight            = 1
 let g:cpp_experimental_template_highlight = 1
+
+" Numbers exceptions
+let g:numbers_exclude = ['man']
 
 "let g:OmniSharp_server_stdio = 1
 "let g:OmniSharp_server_path = '/home/otreblan/.cache/omnisharp-vim/omnisharp-roslyn/run'
@@ -259,9 +264,12 @@ highlight Folded ctermbg=235 ctermfg=80
 " Documentation on hover
 augroup hover
 	autocmd!
-	autocmd CursorHold * silent call CocActionAsync('doHover')
+	autocmd CursorHold * silent if ! coc#util#has_float()
+		\| call CocActionAsync('doHover')
+	\| endif
 	autocmd CursorHoldI * silent call CocActionAsync('showSignatureHelp')
 augroup end
 
 " systemlist() is used to delete the ^@ at the end of the line
 let $MAKEFLAGS = "-j".systemlist("nproc")[0]
+
