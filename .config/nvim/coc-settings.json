@@ -142,5 +142,8 @@
 	"codeLens.separator":         "",
 	"git.addGBlameToVirtualText": true,
 	"tsserver.trace.server":      "verbose",
-	"json.trace.server":          "verbose"
+	"json.trace.server":          "verbose",
+	"markdownlint.config": {
+		"MD033": false
+	}
 }

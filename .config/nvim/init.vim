@@ -154,7 +154,8 @@ let g:coc_global_extensions = [
 	\"coc-template",
 	\"coc-tsserver",
 	\"coc-prettier",
-	\"coc-json"
+	\"coc-json",
+	\"coc-markdownlint"
 \]
 "}}}
 "let g:UltiSnipsExpandTrigger = '<C-j>'
