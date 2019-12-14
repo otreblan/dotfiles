@@ -41,7 +41,7 @@ call plug#begin('~/.config/nvim/plugs')
 	Plug 'junegunn/vim-easy-align'
 	Plug 'kabbamine/vcoolor.vim'
 	Plug 'lervag/vimtex'
-	Plug 'liuchengxu/vim-clap'
+	Plug 'liuchengxu/vim-clap' , { 'do': function('clap#helper#build_all') }
 	Plug 'mhinz/vim-rfc'
 	Plug 'mhinz/vim-startify'
 	Plug 'neoclide/coc.nvim', {'do': './install.sh nightly'}

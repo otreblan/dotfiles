@@ -6,18 +6,18 @@ export QT_QPA_PLATFORMTHEME='qt5ct'
 export PDFVIEWER=zathura
 export BROWSER=opera
 
-#vi mode
-set -o vi
-export EDITOR=vim
+export EDITOR=nvim
 
 # Settings for Japanese input
 export GTK_IM_MODULE='ibus'
 export QT_IM_MODULE='ibus'
 export XMODIFIERS=@im='ibus'
 
-#export PS1='\[\e[0;97;44m\]\u\[\e[0;34;45m\]\[\e[0;97;45m\]\W\[\e[0;35;41m\]\[\e[0;97;41m\]\$\[\e[0;31m\] \[\e[m\]'
-#export PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/otreblan/.gem/ruby/2.6.0/bin/
+# Neovim as manpager reader
+export MANPAGER="nvim +Man!"
 
+
+export PATH="/home/otreblan/.gem/ruby/2.6.0/bin:$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
 if [ "$TERM" = "linux" ]; then
 echo -en "\e]P0000000"

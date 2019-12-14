@@ -33,20 +33,14 @@ fi #}}}
 
 alias ls='ls --color=auto'
 alias grep='grep --colour'
-#alias Syu='sudo powerpill -Syu'
 
-# El script ya no es necesario. MANPAGER se encarga a partir a ahora.
-#alias man="~/manvim.sh"
-export MANPAGER="nvim -c 'set ft=man' -"
-
-#alias emacs="emacs --no-window-system"
-
-#vi mode
+# vi mode
 set -o vi
+
+# System information
 neofetch
 
 #Fuzzy search
 source /usr/share/fzf/key-bindings.bash
 source /usr/share/fzf/completion.bash
 
-export PATH="/home/otreblan/.gem/ruby/2.6.0/bin:$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
