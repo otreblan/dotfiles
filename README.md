@@ -51,7 +51,7 @@
 * [ coc-ultisnips ](https://github.com/neoclide/coc-sources)
 * [ coc-vimlsp ](https://github.com/iamcco/coc-vimlsp)
 * [ coc-vimtex ](https://github.com/neoclide/coc-vimtex)
-e [ coc-markdownlint ](https://github.com/fannheyward/coc-markdownlint)
+* [ coc-markdownlint ](https://github.com/fannheyward/coc-markdownlint)
 
 ### Window manager:
 * `i3-gaps`
