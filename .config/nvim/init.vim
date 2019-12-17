@@ -44,7 +44,7 @@ call plug#begin('~/.config/nvim/plugs')
 	Plug 'liuchengxu/vim-clap' , { 'do': function('clap#helper#build_all') }
 	Plug 'mhinz/vim-rfc'
 	Plug 'mhinz/vim-startify'
-	Plug 'neoclide/coc.nvim', {'do': './install.sh nightly'}
+	Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
 	Plug 'octol/vim-cpp-enhanced-highlight'
 	Plug 'rbong/vim-flog'
 	Plug 'reedes/vim-pencil'

@@ -145,5 +145,6 @@
 	"json.trace.server":          "verbose",
 	"markdownlint.config": {
 		"MD033": false
-	}
+	},
+	"coc.preferences.highlightTimeout": 1000
 }
