@@ -46,13 +46,12 @@ call plug#begin('~/.config/nvim/plugs')
 	Plug 'mhinz/vim-startify'
 	Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
 	Plug 'octol/vim-cpp-enhanced-highlight'
-	Plug 'rbong/vim-flog'
 	Plug 'reedes/vim-pencil'
-	Plug 'sakhnik/nvim-gdb', { 'do': ':!./install.sh \| UpdateRemotePlugins' }
+	Plug 'puremourning/vimspector'
 	Plug 'scrooloose/nerdtree'
 	Plug 'sirver/ultisnips'
 	Plug 'tbastos/vim-lua'
-	Plug 'tpope/vim-fugitive'
+	Plug 'lambdalisue/gina.vim'
 	Plug 'tpope/vim-rhubarb'
 	Plug 'tpope/vim-surround'
 	Plug 'vhdirk/vim-cmake'
@@ -103,6 +102,9 @@ let g:numbers_exclude = [
 	\ 'startify',
 	\ ''
 \]
+
+" Debugging
+let g:vimspector_enable_mappings = 'HUMAN'
 
 "let g:OmniSharp_server_stdio = 1
 "let g:OmniSharp_server_path = '/home/otreblan/.cache/omnisharp-vim/omnisharp-roslyn/run'
