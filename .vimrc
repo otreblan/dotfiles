@@ -36,6 +36,7 @@ call plug#begin('~/.vim/plugs')
 	Plug 'scrooloose/nerdtree'
 	Plug 'Xuyuanp/nerdtree-git-plugin'
 	Plug 'dag/vim-fish'
+	Plug 'vim/killersheep'
 
 	"Options
 	let g:airline_powerline_fonts = 1
