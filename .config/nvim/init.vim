@@ -59,6 +59,7 @@ call plug#begin('~/.config/nvim/plugs')
 	Plug 'wellle/targets.vim'
 	Plug 'tpope/vim-dispatch'
 	Plug 'Xuyuanp/nerdtree-git-plugin'
+	Plug 'liuchengxu/vista.vim'
 
 	" This doesn't work if it's loaded before
 	Plug 'ryanoasis/vim-devicons'
@@ -102,6 +103,7 @@ let g:numbers_exclude = [
 	\ 'help',
 	\ 'startify',
 	\ 'nerdtree',
+	\ 'vista',
 	\ ''
 \]
 
