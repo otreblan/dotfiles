@@ -27,6 +27,7 @@ call plug#begin('~/.config/nvim/plugs')
 	Plug '/usr/bin/fzf'
 	"Plug 'OmniSharp/omnisharp-vim'
 	Plug 'myusuf3/numbers.vim'
+	Plug 'jackguo380/vim-lsp-cxx-highlight'
 	Plug 'KabbAmine/zeavim.vim'
 	Plug 'reedes/vim-pencil'
 	Plug 'Xuyuanp/nerdtree-git-plugin'
