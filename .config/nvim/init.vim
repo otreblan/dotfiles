@@ -264,6 +264,10 @@ highlight PmenuThumb ctermbg=7
 
 " Folder text
 highlight Folded ctermbg=235 ctermfg=80
+
+" Sign colum
+highlight SignColumn ctermbg=0
+
 " }}}
 
 " Documentation on hover
