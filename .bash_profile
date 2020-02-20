@@ -4,7 +4,7 @@
 
 export QT_QPA_PLATFORMTHEME='qt5ct'
 export PDFVIEWER=zathura
-export BROWSER=opera
+export BROWSER=firefox
 
 export EDITOR=nvim
 

@@ -42,7 +42,7 @@ call plug#begin('~/.config/nvim/plugs')
 	Plug 'junegunn/vim-easy-align'
 	Plug 'kabbamine/vcoolor.vim'
 	Plug 'lervag/vimtex'
-	Plug 'liuchengxu/vim-clap' , { 'do': function('clap#helper#build_all') }
+	Plug 'liuchengxu/vim-clap' , { 'do': ':Clap install-binary' }
 	Plug 'mhinz/vim-rfc'
 	Plug 'mhinz/vim-startify'
 	Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
@@ -85,7 +85,8 @@ let g:vimtex_doc_handlers      = ['MyDocs']
 let g:markdown_fenced_languages = [
 	\ 'vim',
 	\ 'sh',
-	\ 'help'
+	\ 'help',
+	\ 'cmake'
 \]
 " This is for c/c++ autocompletion
 let g:cmake_export_compile_commands = 1
