@@ -114,7 +114,7 @@ let g:numbers_exclude = [
 \]
 
 " pandoc
-let g:pandoc#spell#default_langs = ["es", "en"]
+let g:pandoc#spell#enabled = 0
 
 " Debugging
 let g:vimspector_enable_mappings = 'HUMAN'
