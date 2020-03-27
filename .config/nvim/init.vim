@@ -62,6 +62,10 @@ call plug#begin('~/.config/nvim/plugs')
 	Plug 'Xuyuanp/nerdtree-git-plugin'
 	Plug 'liuchengxu/vista.vim'
 
+	Plug 'vim-pandoc/vim-pandoc'
+	Plug 'vim-pandoc/vim-pandoc-syntax'
+	Plug 'vim-pandoc/vim-rmarkdown'
+
 	" This doesn't work if it's loaded before
 	Plug 'ryanoasis/vim-devicons'
 call plug#end()
@@ -108,6 +112,9 @@ let g:numbers_exclude = [
 	\ 'vista',
 	\ ''
 \]
+
+" pandoc
+let g:pandoc#spell#default_langs = ["es", "en"]
 
 " Debugging
 let g:vimspector_enable_mappings = 'HUMAN'
@@ -163,6 +170,7 @@ let g:coc_global_extensions = [
 	\"coc-tsserver",
 	\"coc-prettier",
 	\"coc-json",
+	\"coc-r-lsp",
 	\"coc-markdownlint"
 \]
 "}}}
@@ -241,7 +249,7 @@ nmap ññ :w<CR>
 " LaTeX things
 augroup latex
 	autocmd!
-	autocmd FileType tex set spell spelllang=es spell!
+	autocmd FileType tex set spell spelllang=es,en spell!
 	autocmd FileType tex nmap ñz :set spell!<CR>
 	autocmd FileType tex nmap ñs :!zathura *.pdf & <CR><CR>
 	autocmd FileType tex nmap ñq a<++><Esc>
