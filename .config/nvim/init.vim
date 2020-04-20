@@ -171,6 +171,7 @@ let g:coc_global_extensions = [
 	\"coc-prettier",
 	\"coc-json",
 	\"coc-r-lsp",
+	\"coc-yaml",
 	\"coc-markdownlint"
 \]
 "}}}
