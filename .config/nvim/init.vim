@@ -61,6 +61,7 @@ call plug#begin('~/.config/nvim/plugs')
 	Plug 'tpope/vim-dispatch'
 	Plug 'Xuyuanp/nerdtree-git-plugin'
 	Plug 'liuchengxu/vista.vim'
+	Plug 'jvirtanen/vim-octave'
 
 	Plug 'vim-pandoc/vim-pandoc'
 	Plug 'vim-pandoc/vim-pandoc-syntax'
