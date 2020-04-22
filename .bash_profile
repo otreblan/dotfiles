@@ -17,7 +17,7 @@ export XMODIFIERS=@im='ibus'
 export MANPAGER="nvim +Man!"
 
 
-export PATH="/home/otreblan/.gem/ruby/2.6.0/bin:$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+export PATH="/home/otreblan/.gem/ruby/2.7.0/bin:$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
 if [ "$TERM" = "linux" ]; then
 echo -en "\e]P0000000"
