@@ -8,22 +8,6 @@
 #Checking if it's not a tty {{{
 if [[ "$TERM" != "linux" ]]
 then
-	#Terminal recorder
-
-	#Checking if this shell was called from asciinema
-	if ! [[ $(ps --format command= ${PPID}) =~ .*asciinema.* ]]
-	then
-		YEAR=$(date +%Y)
-		MONTH=$(date +%m)
-		DAY=$(date +%d)
-		HOUR=$(date +%H)
-		MINUTE=$(date +%M)
-		DIRPATH=${HOME}/log/${YEAR}/${MONTH}/${DAY}/${HOUR}
-
-		mkdir -p ${DIRPATH}
-		asciinema rec ${DIRPATH}/${MINUTE}.cast
-	fi
-
 	#Vim promptline on bash
 	if [[ -f ~/.shell_prompt.sh ]]
 	then
@@ -38,9 +22,11 @@ alias grep='grep --colour'
 set -o vi
 
 # System information
-neofetch
+paleofetch
 
 #Fuzzy search
 source /usr/share/fzf/key-bindings.bash
 source /usr/share/fzf/completion.bash
 
+# added by travis gem
+[ -f ~/.travis/travis.sh ] && source ~/.travis/travis.sh
