@@ -39,7 +39,10 @@
 				"cache": {
 					"directory": "/tmp/ccls"
 				},
-				"highlight": { "lsRanges" : true }
+				"highlight": { "lsRanges" : true },
+				"client": {
+					"snippetSupport": true
+				}
 			}
 		},
 		"dockerfile": {
