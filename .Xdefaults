@@ -25,7 +25,8 @@ URxvt*color0: rgba:0000/0000/0000/bbbb
 *color8: #616981
 #Rojo:
 *color1: #E14245
-*color9: #316F7E
+*color9: #EA7B7D
+#*color9: #316F7E
 #Verde:
 *color2: #5CA75B
 *color10: #ADD488
