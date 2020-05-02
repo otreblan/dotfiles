@@ -17,6 +17,7 @@ fi #}}}
 
 alias ls='ls --color=auto'
 alias grep='grep --colour'
+alias tree='tree -C'
 
 # vi mode
 set -o vi
