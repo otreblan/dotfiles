@@ -57,7 +57,7 @@
 			"rootPatterns": [".git/"]
 		},
 		"bash": {
-			"command":          "~/bashTee.sh",
+			"command":          "bash-language-server",
 			"args":             ["start"],
 			"filetypes":        ["sh"],
 			"ignoredRootPaths": ["~"],
