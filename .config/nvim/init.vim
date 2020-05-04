@@ -62,6 +62,7 @@ call plug#begin('~/.config/nvim/plugs')
 	Plug 'Xuyuanp/nerdtree-git-plugin'
 	Plug 'liuchengxu/vista.vim'
 	Plug 'jvirtanen/vim-octave'
+	Plug 'HiPhish/info.vim'
 
 	Plug 'vim-pandoc/vim-pandoc'
 	Plug 'vim-pandoc/vim-pandoc-syntax'
@@ -107,6 +108,7 @@ let g:cpp_experimental_template_highlight = 1
 " '' is here until floating windows have their own filetype
 let g:numbers_exclude = [
 	\ 'man',
+	\ 'info',
 	\ 'help',
 	\ 'startify',
 	\ 'nerdtree',
