@@ -15,7 +15,7 @@ set -x EDITOR nvim
 # Settings for Japanese input
 set -x GTK_IM_MODULE 'ibus'
 set -x QT_IM_MODULE 'ibus'
-set -x XMODIFIERS 'ibus'
+set -x XMODIFIERS '@im=ibus'
 
 # Neovim as manpager reader
 set -x MANPAGER "nvim +Man!"
