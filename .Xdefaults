@@ -20,7 +20,8 @@ URxvt*font: xft:Inconsolata for powerline:size=11, xft:InconsolataGo Nerd Font:s
 #Negro:
 #*color0: #4b5164
 #*color0: #000000
-URxvt*color0: rgba:0000/0000/0000/bbbb
+#URxvt*color0: rgba:0000/0000/0000/bbbb
+URxvt*color0: rgba:0000/0000/0000/dddd
 *color0: #000000
 *color8: #616981
 #Rojo:
