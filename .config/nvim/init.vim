@@ -8,16 +8,17 @@ set hlsearch       " Highlight search results
 set incsearch      " Incremental search
 set showcmd        " Show (partial) command in status line.
 set showmatch      " Show matching brackets
+set copyindent     " Keep same indent
 
-set background  =dark     " Vim colours for dark background
-set foldmethod  =marker   " For folding with  { { { (without spaces)
-set history     =1000     " History of : commands remembered
-set list lcs    =tab:\┊\  " For fancy indent marks
-set shiftwidth  =4        " Automatic indetation
-set tabstop     =4        " Makes tabs 4 spaces long
-set updatetime  =300      " Something for diagnostics
-set wildoptions =pum      " Pmenu for commands
-set mouse       =a        " Mouse support
+set background  =dark             " Vim colours for dark background
+set foldmethod  =marker           " For folding with  { { { (without spaces)
+set history     =1000             " History of : commands remembered
+set list lcs    =trail:·,tab:\┊\  " For fancy indent marks
+set shiftwidth  =4                " Automatic indetation
+set tabstop     =4                " Makes tabs 4 spaces long
+set updatetime  =300              " Something for diagnostics
+set wildoptions =pum              " Pmenu for commands
+set mouse       =a                " Mouse support
 
 filetype on "detect filetypes
 filetype indent on
