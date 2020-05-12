@@ -45,6 +45,12 @@
 				}
 			}
 		},
+		"js":
+		{
+			"command": "javascript-typescript-stdio",
+			"filetypes": ["javascript", "typescript"],
+			"rootPatterns": [".git/"]
+		},
 		"dockerfile": {
 			"command":   "docker-langserver",
 			"filetypes": ["dockerfile"],

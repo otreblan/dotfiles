@@ -165,19 +165,16 @@ let g:coc_global_extensions = [
 	\"coc-ultisnips",
 	\"coc-marketplace",
 	\"coc-vimtex",
-	\"coc-vimlsp",
-	\"coc-pairs",
 	\"coc-git",
 	\"coc-gitignore",
 	\"coc-rls",
 	\"coc-template",
-	\"coc-tsserver",
-	\"coc-prettier",
-	\"coc-json",
 	\"coc-r-lsp",
-	\"coc-yaml",
-	\"coc-markdownlint"
+	\"coc-yaml"
 \]
+	"\"coc-prettier",
+	"\"coc-json",
+	"\"coc-vimlsp",
 "}}}
 "let g:UltiSnipsExpandTrigger = '<C-j>'
 "let g:ycm_key_invoke_completion = '<C-l>'
