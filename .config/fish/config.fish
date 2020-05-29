@@ -20,7 +20,10 @@ set -x XMODIFIERS '@im=ibus'
 # Neovim as manpager reader
 set -x MANPAGER "nvim +Man!"
 
-set -x PATH "/home/otreblan/.gem/ruby/2.7.0/bin:$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+set -x PATH "/usr/lib/emscripten:/home/otreblan/.gem/ruby/2.7.0/bin:$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
+set -x BINARYEN "/usr"
+set -x BINARYEN_ROOT "/usr"
 
 
 if status --is-interactive

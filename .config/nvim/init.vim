@@ -167,11 +167,11 @@ let g:coc_global_extensions = [
 	\"coc-vimtex",
 	\"coc-git",
 	\"coc-gitignore",
-	\"coc-rls",
 	\"coc-template",
 	\"coc-r-lsp",
 	\"coc-yaml"
 \]
+	"\"coc-rls",
 	"\"coc-prettier",
 	"\"coc-json",
 	"\"coc-vimlsp",
