@@ -6,6 +6,13 @@ function fish_right_prompt
 	env FISH_VERSION=$FISH_VERSION PROMPTLINE_LAST_EXIT_CODE=$status bash ~/.shell_prompt.sh right
 end
 
+# Vi mode https://github.com/fish-shell/fish-shell/issues/3232
+fish_vi_key_bindings
+function fish_mode_prompt
+	# NOOP - Disable vim mode indicator
+end
+
+
 set -x QT_QPA_PLATFORMTHEME 'qt5ct'
 set -x PDFVIEWER zathura
 set -x BROWSER firefox
