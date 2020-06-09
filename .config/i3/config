@@ -205,7 +205,7 @@ exec "ibus-daemon -drx"
 exec "pasystray"
 
 #Compositor
-exec "compton &"
+exec "picom &"
 #Algo para usar vim donde sea
 bindsym $mod+m exec "urxvt -e vimclip"
 #Calculadora
