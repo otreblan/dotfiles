@@ -37,6 +37,10 @@ fzf
 hub
 ffmpegthumbnailer
 asciidoctor
+man-db
+man-pages
+texinfo
+notification-daemon
 # Cosas para el lsp de python
 # python-jedi del repositorio no funciona
 #
