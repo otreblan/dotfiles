@@ -51,7 +51,7 @@ PACMAN_PACKAGES=(
 	python-pydocstyle
 	ccls
 	# Batería
-	xfce4-power-manager-settings
+	xfce4-power-manager
 	ctags
 	cmake
 )
