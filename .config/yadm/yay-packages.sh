@@ -5,15 +5,13 @@ YAY_PACKAGES=(
 	rxvt-unicode-cvs-patched-wideglyphs
 	latex2e-help-texinfo
 	nerd-fonts-inconsolata-go
-	vim-plug
 	neovim-remote
 	ttf-unifont
 	ttf-roboto-mono
 	qogir-gtk-theme-git
 	flat-remix-git
 	minecraft-launcher
-	ccls
-	nodejs-docker-langserver
+	#nodejs-docker-langserver
 	omnisharp-roslyn-stdio-bin
 	bear
 	ruby-nokogiri
@@ -25,4 +23,5 @@ YAY_PACKAGES=(
 	javascript-typescript-langserver
 	urxvt-vtwheel
 	paleofetch-git
+	picom-rounded-corners
 )

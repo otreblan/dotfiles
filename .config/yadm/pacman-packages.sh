@@ -8,14 +8,13 @@ PACMAN_PACKAGES=(
 	bash-completion
 	xorg
 	i3-gaps
-	picom
 	vim
 	neovim
 	ranger
 	biber
 	texlive-most
 	speedcrunch
-	neofetch
+	#neofetch
 	feh
 	network-manager-applet
 	lxappearance
@@ -51,6 +50,7 @@ PACMAN_PACKAGES=(
 	python-pylint
 	yapf
 	python-pydocstyle
+	ccls
 	# Batería
 	xfce4-power-manager-settings
 )

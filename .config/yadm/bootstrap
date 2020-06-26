@@ -16,9 +16,18 @@ yadm submodule update --recursive --init
 
 #Installing packages
 
+
 if command -v yay >/dev/null 2>&1; then
 	AUR="yay"
-	AURARGS="-Syyu --needed --nocleanmenu --nodiffmenu --noeditmenu --noupgrademenu"
+	AURARGS=( \
+		-Syyu
+		--needed
+		--nocleanmenu
+		--nodiffmenu
+		--noeditmenu
+		--noupgrademenu
+		--noconfirm
+	)
 else
 	echo "Couldn't find yay" >&2
 	exit 2
@@ -29,7 +38,7 @@ echo "Installing packages"
 source "$YADM_PATH/pacman-packages.sh"
 source "$YADM_PATH/yay-packages.sh"
 
-$AUR $AURARGS ${PACMAN_PACKAGES[@]} ${YAY_PACKAGES[@]}
+$AUR ${AURARGS[@]} ${PACMAN_PACKAGES[@]} ${YAY_PACKAGES[@]}
 
 #Downloading wallpaper
 curl "$WALLPAPER_LINK" -o "$HOME/.bg.jpg"
