@@ -3,7 +3,7 @@
 WALLPAPER_LINK="https://wallpaperplay.com/walls/full/7/d/2/3508.jpg"
 
 #For less headaches
-cd ${HOME}
+cd "$HOME"
 
 #Submodules
 yadm submodule update --recursive --init
