@@ -53,4 +53,5 @@ PACMAN_PACKAGES=(
 	# Batería
 	xfce4-power-manager-settings
 	ctags
+	cmake
 )
