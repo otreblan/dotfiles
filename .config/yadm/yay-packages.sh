@@ -7,7 +7,6 @@ YAY_PACKAGES=(
 	nerd-fonts-inconsolata-go
 	neovim-remote
 	ttf-unifont
-	ttf-roboto-mono
 	qogir-gtk-theme-git
 	flat-remix-git
 	minecraft-launcher

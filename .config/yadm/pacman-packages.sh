@@ -54,4 +54,5 @@ PACMAN_PACKAGES=(
 	xfce4-power-manager
 	ctags
 	cmake
+	ttf-roboto-mono
 )
