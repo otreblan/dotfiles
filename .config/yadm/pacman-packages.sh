@@ -52,4 +52,5 @@ PACMAN_PACKAGES=(
 	ccls
 	# Batería
 	xfce4-power-manager-settings
+	ctags
 )
