@@ -19,7 +19,7 @@ PACMAN_PACKAGES=(
 	network-manager-applet
 	lxappearance
 	qt5ct
-	calibre
+	calibre-python3
 	zathura
 	zathura-pdf-poppler
 	inkscape
