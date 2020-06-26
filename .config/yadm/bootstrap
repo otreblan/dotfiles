@@ -3,6 +3,11 @@
 WALLPAPER_LINK="https://wallpaperplay.com/walls/full/7/d/2/3508.jpg"
 YADM_PATH="$HOME/.config/yadm"
 
+BEST_MIRROR='Server = https://appuals.com/archlinux/$repo/os/$arch'
+
+# Use the fastest mirror
+sudo sed -i "1s/^/$BEST_MIRROR /" /etc/pacman.d/mirrorlist
+
 #For less headaches
 cd "$HOME"
 
@@ -13,7 +18,7 @@ yadm submodule update --recursive --init
 
 if command -v yay >/dev/null 2>&1; then
 	AUR="yay"
-	AURARGS="-S --needed --nocleanmenu --nodiffmenu --noeditmenu --noupgrademenu"
+	AURARGS="-Syyu --needed --nocleanmenu --nodiffmenu --noeditmenu --noupgrademenu"
 else
 	echo "Couldn't find yay" >&2
 	exit 2
