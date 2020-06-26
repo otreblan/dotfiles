@@ -40,6 +40,9 @@ source "$YADM_PATH/yay-packages.sh"
 
 $AUR ${AURARGS[@]} ${PACMAN_PACKAGES[@]} ${YAY_PACKAGES[@]}
 
+# Set calibre version
+sudo calibre-alternatives set 3
+
 #Downloading wallpaper
 curl "$WALLPAPER_LINK" -o "$HOME/.bg.jpg"
 
