@@ -19,7 +19,6 @@ PACMAN_PACKAGES=(
 	network-manager-applet
 	lxappearance
 	qt5ct
-	opera
 	calibre
 	zathura
 	zathura-pdf-poppler
