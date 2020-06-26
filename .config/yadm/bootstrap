@@ -1,6 +1,7 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 WALLPAPER_LINK="https://wallpaperplay.com/walls/full/7/d/2/3508.jpg"
+YADM_PATH="$HOME/.config/yadm"
 
 #For less headaches
 cd "$HOME"
@@ -10,74 +11,29 @@ yadm submodule update --recursive --init
 
 #Installing packages
 
-#Arch Linux
-if command -v pacman >/dev/null 2>&1; then
-	PACMAN="pacman"
-	PACINSTALL="-Syu --needed"
-else
-	echo "Pacman not found" >&2
-	exit 1
-fi
-
-#Packages in the repositories
-echo "Installing packages"
-sed "s/#.*//g"
-	${HOME}/.yadm/${PACMAN}-packages | \
-	xargs sudo ${PACMAN} ${PACINSTALL}
-
-
-#Packages in the aur
-if command -v yay >/dev/null 2>&1; then
-	echo "Yay already installed"
-else
-	echo "Yay not found" >&2
-	echo "Installing yay"
-
-	#Yay installation
-	cd /tmp
-	git clone https://aur.archlinux.org/yay.git
-	cd yay
-	makepkg -s
-	sudo pacman -U *.pkg.tar.xz
-	cd ..
-	rm -rf yay
-	cd ${HOME}
-fi
-
 if command -v yay >/dev/null 2>&1; then
 	AUR="yay"
 	AURARGS="-S --needed --nocleanmenu --nodiffmenu --noeditmenu --noupgrademenu"
 else
-	echo "Couldn't install yay" >&2
+	echo "Couldn't find yay" >&2
 	exit 2
 fi
 
-#xargs -a ${HOME}/.yadm/${AUR}-packages ${AUR} ${AURINSTALL}
+echo "Installing packages"
 
-sed "s/#.*//g"
-	${HOME}/.yadm/${AUR}-packages | \
-	xargs ${AUR} ${AURARGS}
+source "$YADM_PATH/pacman-packages.sh"
+source "$YADM_PATH/yay-packages.sh"
+
+$AUR $AURARGS ${PACMAN_PACKAGES[@]} ${YAY_PACKAGES[@]}
 
 #Downloading wallpaper
-curl ${WALLPAPER_LINK} -o ${HOME}/.bg.jpg
-
-#Vim bootstraping
-
-#Cheking if vim is installed
-if command -v vim >/dev/null 2>&1; then
-	echo "Installing plugins"
-
-	vim '+source ~/.yadm/plugInstall.vim'\
-		'+PlugUpdate'\
-		'+PlugClean!'\
-		'+PlugUpdate'\
-		'+qall'
-fi
+curl "$WALLPAPER_LINK" -o "$HOME/.bg.jpg"
 
 #Installing ranger plugin
-cd ${HOME}/.config/ranger/plugins/ranger_devicons
+pushd "$HOME/.config/ranger/plugins/ranger_devicons"
 make
-cd ${HOME}
+popd
+
 #Installing lua packages
 sudo luarocks install --server=http://luarocks.org/dev digestif
 sudo luarocks install --server=http://luarocks.org/dev lua-lsp
@@ -87,9 +43,13 @@ yarn global add vim-language-server
 
 #Neovim bootstraping
 
-#Because a bug that inserts text on neovim, this doesn't work.
 #Cheking if neovim is installed
 if command -v nvim >/dev/null 2>&1; then
+	echo "Dowloading vimplug"
+	curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim \
+		--create-dirs \
+		https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
 	echo "Installing plugins"
 
 		nvim \
