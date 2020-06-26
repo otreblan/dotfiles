@@ -16,7 +16,6 @@ yadm submodule update --recursive --init
 
 #Installing packages
 
-
 if command -v yay >/dev/null 2>&1; then
 	AUR="yay"
 	AURARGS=( \
@@ -62,6 +61,7 @@ yarn global add vim-language-server
 
 #Cheking if neovim is installed
 if command -v nvim >/dev/null 2>&1; then
+
 	echo "Dowloading vimplug"
 	curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim \
 		--create-dirs \
@@ -69,9 +69,9 @@ if command -v nvim >/dev/null 2>&1; then
 
 	echo "Installing plugins"
 
-		nvim \
-			'+PlugUpdate'\
-			'+PlugClean!'\
-			'+PlugUpdate'\
-			'+qall'
+	nvim \
+		'+PlugUpdate'\
+		'+PlugClean!'\
+		'+PlugUpdate'\
+		'+qall'
 fi
