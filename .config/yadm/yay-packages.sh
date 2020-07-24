@@ -15,7 +15,6 @@ YAY_PACKAGES=(
 	bear
 	ruby-nokogiri
 	texlive-localmanager-git
-	pacman-src-git
 	arch-wiki-man
 	rofi-git
 	cmake-language-server
@@ -23,4 +22,5 @@ YAY_PACKAGES=(
 	urxvt-vtwheel
 	paleofetch-git
 	picom-rounded-corners
+	otf-inconsolata-powerline-git
 )
