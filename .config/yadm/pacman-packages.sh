@@ -55,4 +55,5 @@ PACMAN_PACKAGES=(
 	ctags
 	cmake
 	ttf-roboto-mono
+	xclip
 )

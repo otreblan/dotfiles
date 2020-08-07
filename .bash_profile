@@ -16,6 +16,9 @@ export XMODIFIERS=@im='ibus'
 # Neovim as manpager reader
 export MANPAGER="nvim +Man!"
 
+# Aco
+export RADV_PERFTEST=aco
+
 
 export PATH="/home/otreblan/.gem/ruby/2.7.0/bin:$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
@@ -42,3 +45,7 @@ fi
 
 
 [[ -f ~/.bashrc ]] && . ~/.bashrc
+
+if systemctl -q is-active graphical.target && [[ ! $DISPLAY && $XDG_VTNR -eq 1 ]]; then
+  exec startx
+fi
