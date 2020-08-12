@@ -211,7 +211,7 @@ bar-empty-foreground = ${colors.foreground-alt}
 [module/backlight-acpi]
 inherit = module/xbacklight
 type = internal/backlight
-card = intel_backlight
+card = amdgpu_bl0
 
 [module/cpu]
 type = internal/cpu
