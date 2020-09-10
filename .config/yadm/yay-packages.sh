@@ -24,4 +24,5 @@ YAY_PACKAGES=(
 	picom-rounded-corners
 	otf-inconsolata-powerline-git
 	svls
+	sql-language-server
 )

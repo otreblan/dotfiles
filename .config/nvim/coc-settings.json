@@ -144,8 +144,12 @@
 		},
 		"svls": {
 			"command": "svls",
-			"filetypes": ["systemverilog", "verilog"],
-			"trace.server": "verbose"
+			"filetypes": ["systemverilog", "verilog"]
+		},
+		"sql-language-server": {
+			"command": "sql-language-server",
+			"args": ["up", "--method", "stdio"],
+			"filetypes": ["sql"]
 		}
 	},
 	"diagnostic.virtualText":     true,
