@@ -56,4 +56,5 @@ PACMAN_PACKAGES=(
 	cmake
 	ttf-roboto-mono
 	xclip
+	python-unidecode
 )

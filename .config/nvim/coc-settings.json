@@ -57,7 +57,7 @@
 			"args":      ["--stdio"]
 		},
 		"omnisharp": {
-			"command":      "~/.cache/omnisharp-vim/omnisharp-roslyn/run",
+			"command":      "/opt/omnisharp-roslyn-stdio/OmniSharp.exe",
 			"filetypes":    ["cs"],
 			"args":         ["-lsp"],
 			"rootPatterns": [".git/"]
@@ -79,11 +79,10 @@
 			"trace.server":          "verbose"
 		},
 		"python": {
-			"command":      "python",
+			"command":      "pyls",
 			"trace.server": "verbose",
 			"filetypes":    ["python"],
 			"args": [
-				"-mpyls",
 				"-vv",
 				"--log-file",
 				"/tmp/lsp_python.log"
@@ -142,6 +141,11 @@
 					}
 				}
 			}
+		},
+		"svls": {
+			"command": "svls",
+			"filetypes": ["systemverilog", "verilog"],
+			"trace.server": "verbose"
 		}
 	},
 	"diagnostic.virtualText":     true,

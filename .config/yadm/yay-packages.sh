@@ -23,4 +23,5 @@ YAY_PACKAGES=(
 	paleofetch-git
 	picom-rounded-corners
 	otf-inconsolata-powerline-git
+	svls
 )

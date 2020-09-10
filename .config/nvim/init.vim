@@ -64,6 +64,7 @@ call plug#begin('~/.config/nvim/plugs')
 	Plug 'liuchengxu/vista.vim'
 	Plug 'jvirtanen/vim-octave'
 	Plug 'HiPhish/info.vim'
+	Plug 'tikhomirov/vim-glsl'
 
 	Plug 'vim-pandoc/vim-pandoc'
 	Plug 'vim-pandoc/vim-pandoc-syntax'
