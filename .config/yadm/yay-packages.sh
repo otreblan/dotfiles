@@ -24,4 +24,5 @@ YAY_PACKAGES=(
 	otf-inconsolata-powerline-git
 	svls
 	sql-language-server
+	ibus-clean
 )

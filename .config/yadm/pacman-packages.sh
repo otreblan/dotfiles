@@ -24,7 +24,6 @@ PACMAN_PACKAGES=(
 	zathura-pdf-poppler
 	inkscape
 	pstoedit
-	ibus
 	ibus-anthy
 	git-lfs
 	pasystray
