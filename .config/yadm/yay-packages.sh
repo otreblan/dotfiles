@@ -11,7 +11,6 @@ YAY_PACKAGES=(
 	flat-remix-git
 	minecraft-launcher
 	#nodejs-docker-langserver
-	omnisharp-roslyn-stdio-bin
 	bear
 	ruby-nokogiri
 	texlive-localmanager-git

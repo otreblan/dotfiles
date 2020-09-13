@@ -56,12 +56,6 @@
 			"filetypes": ["dockerfile"],
 			"args":      ["--stdio"]
 		},
-		"omnisharp": {
-			"command":      "/opt/omnisharp-roslyn-stdio/OmniSharp.exe",
-			"filetypes":    ["cs"],
-			"args":         ["-lsp"],
-			"rootPatterns": [".git/"]
-		},
 		"bash": {
 			"command":          "bash-language-server",
 			"args":             ["start"],
