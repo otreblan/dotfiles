@@ -59,7 +59,7 @@
 		"bash": {
 			"command":          "bash-language-server",
 			"args":             ["start"],
-			"filetypes":        ["sh"],
+			"filetypes":        ["sh", "PKGBUILD"],
 			"ignoredRootPaths": ["~"],
 			"trace.server":     "verbose"
 		},
