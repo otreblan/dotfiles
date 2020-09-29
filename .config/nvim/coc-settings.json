@@ -143,7 +143,8 @@
 		"sql-language-server": {
 			"command": "sql-language-server",
 			"args": ["up", "--method", "stdio"],
-			"filetypes": ["sql"]
+			"filetypes": ["sql"],
+			"trace.server":     "verbose"
 		}
 	},
 	"diagnostic.virtualText":     true,
