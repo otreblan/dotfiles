@@ -16,10 +16,6 @@ export XMODIFIERS=@im='ibus'
 # Neovim as manpager reader
 export MANPAGER="nvim +Man!"
 
-# Aco
-export RADV_PERFTEST=aco
-
-
 export PATH="/home/otreblan/.gem/ruby/2.7.0/bin:$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
 # Gtk theme on java
