@@ -1,59 +1,58 @@
 #/usr/bin/env bash
 
 PACMAN_PACKAGES=(
-	base-devel
-	nodejs-lts-dubnium
-	pulseaudio
-	luarocks
-	bash-completion
-	xorg
-	i3-gaps
-	vim
-	neovim
-	ranger
-	biber
-	texlive-most
-	speedcrunch
-	#neofetch
-	feh
-	network-manager-applet
-	lxappearance
-	qt5ct
-	calibre
-	zathura
-	zathura-pdf-poppler
-	inkscape
-	pstoedit
-	ibus-anthy
-	git-lfs
-	pasystray
-	pavucontrol
-	paprefs
-	yarn
-	npm
-	fzf
-	hub
-	ffmpegthumbnailer
 	asciidoctor
+	base-devel
+	bash-completion
+	biber
+	calibre
+	ccls
+	cmake
+	ctags
+	feh
+	ffmpegthumbnailer
+	flake8
+	fzf
+	git-lfs
+	hub
+	i3-gaps
+	ibus-anthy
+	inkscape
+	luarocks
+	lxappearance
 	man-db
 	man-pages
-	texinfo
+	neovim
+	network-manager-applet
+	nodejs-lts-dubnium
 	notification-daemon
+	npm
+	paprefs
+	pasystray
+	pavucontrol
+	pstoedit
+	pulseaudio
 	python-language-server
 	python-mccabe
-	python-rope
-	python-pyflakes
-	flake8
 	python-pycodestyle
-	python-pylint
-	yapf
 	python-pydocstyle
-	ccls
-	# Batería
-	xfce4-power-manager
-	ctags
-	cmake
-	ttf-roboto-mono
-	xclip
+	python-pyflakes
+	python-pylint
+	python-rope
 	python-unidecode
+	qt5ct
+	ranger
+	rofi
+	speedcrunch
+	texinfo
+	texlive-most
+	ttf-roboto-mono
+	vim
+	xclip
+	xfce4-power-manager
+	xorg
+	yapf
+	yarn
+	zathura
+	zathura-pdf-poppler
 )

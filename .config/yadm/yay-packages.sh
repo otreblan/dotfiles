@@ -1,28 +1,27 @@
 #/usr/bin/env bash
 YAY_PACKAGES=(
-	zeal
-	polybar
-	rxvt-unicode-cvs-patched-wideglyphs
-	latex2e-help-texinfo
-	nerd-fonts-inconsolata-go
-	neovim-remote
-	ttf-unifont
-	qogir-gtk-theme-git
-	flat-remix-git
-	minecraft-launcher
 	#nodejs-docker-langserver
-	bear
-	ruby-nokogiri
-	texlive-localmanager-git
 	arch-wiki-man
-	rofi-git
+	bear
 	cmake-language-server
+	flat-remix-git
+	ibus-clean
 	javascript-typescript-langserver
-	urxvt-vtwheel
+	latex2e-help-texinfo
+	minecraft-launcher
+	neovim-remote
+	nerd-fonts-inconsolata-go
+	otf-inconsolata-powerline-git
 	paleofetch-git
 	picom-rounded-corners
-	otf-inconsolata-powerline-git
-	svls
+	polybar
+	qogir-gtk-theme-git
+	ruby-nokogiri
+	rxvt-unicode-cvs-patched-wideglyphs
 	sql-language-server
-	ibus-clean
+	svls
+	texlive-localmanager-git
+	ttf-unifont
+	urxvt-vtwheel
+	zeal
 )
