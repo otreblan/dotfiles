@@ -1,5 +1,5 @@
 #/usr/bin/env bash
-YAY_PACKAGES=(
+AUR_PACKAGES=(
 	#nodejs-docker-langserver
 	arch-wiki-man
 	bear
