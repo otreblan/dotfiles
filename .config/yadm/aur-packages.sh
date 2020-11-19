@@ -5,7 +5,6 @@ AUR_PACKAGES=(
 	bear
 	cmake-language-server
 	flat-remix-git
-	ibus-clean
 	javascript-typescript-langserver
 	latex2e-help-texinfo
 	minecraft-launcher

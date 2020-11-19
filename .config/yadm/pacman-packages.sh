@@ -16,6 +16,7 @@ PACMAN_PACKAGES=(
 	git-lfs
 	hub
 	i3-gaps
+	ibus
 	ibus-anthy
 	inkscape
 	luarocks
