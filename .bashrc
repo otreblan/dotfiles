@@ -30,8 +30,5 @@ paleofetch
 source /usr/share/fzf/key-bindings.bash
 source /usr/share/fzf/completion.bash
 
-# added by travis gem
-[ -f ~/.travis/travis.sh ] && source ~/.travis/travis.sh
-
 # Tabsize
 tabs -4

@@ -140,11 +140,20 @@
 			"command": "svls",
 			"filetypes": ["systemverilog", "verilog"]
 		},
-		"sql-language-server": {
-			"command": "sql-language-server",
-			"args": ["up", "--method", "stdio"],
+		"sql": {
+			"command": "sqls",
+			"args": ["-config", "$HOME/.config/sqls/config.yml"],
 			"filetypes": ["sql"],
-			"trace.server":     "verbose"
+			"shell": true
+		},
+		"omnisharp": {
+			"command": "~/.cache/omnisharp-vim/omnisharp-roslyn/OmniSharp.exe",
+			"args": [
+				"-lsp"
+			],
+			"filetypes": ["cs"],
+			"rootPatterns": [".git/"],
+			"trace.server": "verbose"
 		}
 	},
 	"diagnostic.virtualText":     true,

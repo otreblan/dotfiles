@@ -51,3 +51,7 @@ URxvt*color0: rgba:0000/0000/0000/dddd
 *foreground: #FCFCFC
 URxvt*background: 0
 URxvt*foreground: 15
+
+URxvt.perl-ext-common: default,matcher
+URxvt.url-launcher: /usr/bin/xdg-open
+URxvt.matcher.button: 1

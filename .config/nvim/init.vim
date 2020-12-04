@@ -124,7 +124,8 @@ let g:pandoc#spell#enabled = 0
 " Debugging
 let g:vimspector_enable_mappings = 'HUMAN'
 
-"let g:OmniSharp_server_stdio = 1
+let g:OmniSharp_server_use_mono = 1
+let g:OmniSharp_server_stdio = 1
 "let g:OmniSharp_server_path = '/home/otreblan/.cache/omnisharp-vim/omnisharp-roslyn/run'
 
 " Startify options {{{
