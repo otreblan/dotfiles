@@ -1,0 +1,35 @@
+[Default Applications]
+text/html=firefox.desktop
+x-scheme-handler/discord-529029853471834113=discord-529029853471834113.desktop
+image/=feh.desktop
+x-scheme-handler/http=firefox.desktop
+x-scheme-handler/https=firefox.desktop
+x-scheme-handler/ftp=firefox.desktop
+x-scheme-handler/chrome=firefox.desktop
+application/x-extension-htm=firefox.desktop
+application/x-extension-html=firefox.desktop
+application/x-extension-shtml=firefox.desktop
+application/xhtml+xml=firefox.desktop
+application/x-extension-xhtml=firefox.desktop
+application/x-extension-xht=firefox.desktop
+x-scheme-handler/discord-663475820106350605=discord-663475820106350605.desktop
+application/pdf=org.pwmt.zathura-pdf-poppler.desktop;org.inkscape.Inkscape.desktop;
+
+[Added Associations]
+text/plain=nvim.desktop;emacs.desktop;
+text/x-csrc=nvim.desktop;vim.desktop;
+image/png=feh.desktop;
+text/x-csharp=code-oss.desktop;
+image/svg+xml=org.inkscape.Inkscape.desktop;
+image/jpeg=feh.desktop;
+x-scheme-handler/http=firefox.desktop;
+x-scheme-handler/https=firefox.desktop;
+x-scheme-handler/ftp=firefox.desktop;
+x-scheme-handler/chrome=firefox.desktop;
+application/x-extension-htm=firefox.desktop;
+application/x-extension-html=firefox.desktop;
+application/x-extension-shtml=firefox.desktop;
+application/xhtml+xml=firefox.desktop;
+application/x-extension-xhtml=firefox.desktop;
+application/x-extension-xht=firefox.desktop;
+application/json=nvim.desktop;
