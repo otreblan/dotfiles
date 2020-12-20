@@ -9,6 +9,7 @@ PACMAN_PACKAGES=(
 	ccls
 	cmake
 	ctags
+	diff-so-fancy
 	feh
 	ffmpegthumbnailer
 	flake8

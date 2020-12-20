@@ -21,7 +21,7 @@ alias grep='grep --colour'
 alias tree='tree -C'
 
 # vi mode
-set -o vi
+#set -o vi
 
 # System information
 paleofetch

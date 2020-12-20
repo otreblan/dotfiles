@@ -19,42 +19,42 @@ filetype on "detect filetypes
 filetype indent on
 
 " Plugins {{{
-call plug#begin('~/.vim/plugs')
-	Plug 'vim-airline/vim-airline'
-	Plug 'lervag/vimtex'
-	Plug 'valloric/youcompleteme'
-	Plug 'KabbAmine/zeavim.vim'
-	Plug 'deviantfero/wpgtk.vim'
-	Plug 'vim-airline/vim-airline-themes'
-	Plug 'sirver/ultisnips' | Plug 'honza/vim-snippets'
-	Plug 'ryanoasis/vim-devicons'
-	Plug 'edkolev/promptline.vim'
-	Plug 'tpope/vim-fugitive'
-	Plug 'sophacles/vim-processing'
-	Plug 'tpope/vim-dispatch'
-	Plug 'mhinz/vim-rfc'
-	Plug 'scrooloose/nerdtree'
-	Plug 'Xuyuanp/nerdtree-git-plugin'
-	Plug 'dag/vim-fish'
-	Plug 'vim/killersheep'
-
-	"Options
-	let g:airline_powerline_fonts = 1
-	let g:airline#extensions#tabline#enabled = 1
-	let g:airline#extensions#promptline#snapshot_file = "~/.shell_prompt.sh"
-	let g:vimtex_view_method = 'zathura'
-	let g:tex_flavor = "latex"
-	let g:vimtex_toc_config= {'layer_status': {'content': 1,'label': 0,'todo': 0,'include': 0}}
-	let g:vimtex_doc_handlers = ['MyDocs']
-	let g:UltiSnipsExpandTrigger = '<C-j>'
-	"let g:ycm_key_invoke_completion = '<C-l>'
-
-	imap <C-l> <Nul>
-	function! MyDocs(context)
-		Zeavim
-		return 1
-	endfunction
-call plug#end()
+"call plug#begin('~/.vim/plugs')
+"	Plug 'vim-airline/vim-airline'
+"	Plug 'lervag/vimtex'
+"	Plug 'valloric/youcompleteme'
+"	Plug 'KabbAmine/zeavim.vim'
+"	Plug 'deviantfero/wpgtk.vim'
+"	Plug 'vim-airline/vim-airline-themes'
+"	Plug 'sirver/ultisnips' | Plug 'honza/vim-snippets'
+"	Plug 'ryanoasis/vim-devicons'
+"	Plug 'edkolev/promptline.vim'
+"	Plug 'tpope/vim-fugitive'
+"	Plug 'sophacles/vim-processing'
+"	Plug 'tpope/vim-dispatch'
+"	Plug 'mhinz/vim-rfc'
+"	Plug 'scrooloose/nerdtree'
+"	Plug 'Xuyuanp/nerdtree-git-plugin'
+"	Plug 'dag/vim-fish'
+"	Plug 'vim/killersheep'
+"
+"	"Options
+"	let g:airline_powerline_fonts = 1
+"	let g:airline#extensions#tabline#enabled = 1
+"	let g:airline#extensions#promptline#snapshot_file = "~/.shell_prompt.sh"
+"	let g:vimtex_view_method = 'zathura'
+"	let g:tex_flavor = "latex"
+"	let g:vimtex_toc_config= {'layer_status': {'content': 1,'label': 0,'todo': 0,'include': 0}}
+"	let g:vimtex_doc_handlers = ['MyDocs']
+"	let g:UltiSnipsExpandTrigger = '<C-j>'
+"	"let g:ycm_key_invoke_completion = '<C-l>'
+"
+"	imap <C-l> <Nul>
+"	function! MyDocs(context)
+"		Zeavim
+"		return 1
+"	endfunction
+"call plug#end()
 " }}}
 
 "Busca marcas
