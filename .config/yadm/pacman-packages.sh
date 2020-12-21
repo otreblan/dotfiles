@@ -20,7 +20,6 @@ PACMAN_PACKAGES=(
 	ibus
 	ibus-anthy
 	inkscape
-	luarocks
 	lxappearance
 	man-db
 	man-pages

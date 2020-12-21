@@ -39,9 +39,6 @@ source "$YADM_PATH/aur-packages.sh"
 
 $AUR ${AURARGS[@]} ${PACMAN_PACKAGES[@]} ${AUR_PACKAGES[@]}
 
-# Set calibre version
-sudo calibre-alternatives set 3
-
 #Downloading wallpaper
 curl "$WALLPAPER_LINK" -o "$HOME/.bg.jpg"
 
@@ -49,13 +46,6 @@ curl "$WALLPAPER_LINK" -o "$HOME/.bg.jpg"
 pushd "$HOME/.config/ranger/plugins/ranger_devicons"
 make
 popd
-
-#Installing lua packages
-sudo luarocks install --server=http://luarocks.org/dev digestif
-sudo luarocks install --server=http://luarocks.org/dev lua-lsp
-
-#Installing yarn packages
-yarn global add vim-language-server
 
 #Neovim bootstraping
 

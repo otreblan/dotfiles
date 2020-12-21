@@ -4,6 +4,7 @@ AUR_PACKAGES=(
 	arch-wiki-man
 	bear
 	cmake-language-server
+	digestif
 	flat-remix-git
 	javascript-typescript-langserver
 	latex2e-help-texinfo
