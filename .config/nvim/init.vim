@@ -37,7 +37,7 @@ call plug#begin('~/.config/nvim/plugs')
 	Plug 'ekalinin/Dockerfile.vim'
 	Plug 'habamax/vim-asciidoctor'
 	Plug 'honza/vim-snippets'
-	Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
+	Plug 'iamcco/markdown-preview.nvim', { 'do': { -> clap#installer#force_download() } }
 	Plug 'igankevich/mesonic'
 	Plug 'junegunn/fzf.vim'
 	Plug 'junegunn/vim-easy-align'
@@ -198,7 +198,7 @@ nmap ñl :bnext!<CR>
 nmap ñh :bprevious!<CR>
 
 " Date putter
-nmap ñ<Space> a<C-r>=system('date +%Y-%m-%d\ %H:%M:%S \| tr -d "\n"')<CR>
+nmap ñ<Space> a<C-r>=system('date --iso-8601=seconds \| tr "\n" " "')<CR>
 
 " Copied from coc.nvim github README {{{
 nmap <silent> gd <Plug>(coc-definition)
@@ -208,6 +208,7 @@ nmap <silent> gr <Plug>(coc-references)
 
 " Remap for rename current word
 nmap <leader>rn <Plug>(coc-rename)
+nmap <leader>rf <Plug>(coc-refactor)
 " Remap for do codeAction of selected region, ex: `<leader>aap` for current paragraph
 xmap <leader>a  <Plug>(coc-codeaction-selected)
 nmap <leader>a  <Plug>(coc-codeaction-selected)
