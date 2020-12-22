@@ -154,6 +154,10 @@
 			"filetypes": ["cs"],
 			"rootPatterns": [".git/"],
 			"trace.server": "verbose"
+		},
+		"digestif": {
+			"command": "digestif",
+			"filetypes": ["tex", "plaintex", "context"]
 		}
 	},
 	"diagnostic.virtualText":     true,

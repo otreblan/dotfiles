@@ -37,29 +37,26 @@ call plug#begin('~/.config/nvim/plugs')
 	Plug 'ekalinin/Dockerfile.vim'
 	Plug 'habamax/vim-asciidoctor'
 	Plug 'honza/vim-snippets'
-	Plug 'iamcco/markdown-preview.nvim', { 'do': { -> clap#installer#force_download() } }
+	Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
 	Plug 'igankevich/mesonic'
 	Plug 'junegunn/fzf.vim'
 	Plug 'junegunn/vim-easy-align'
 	Plug 'kabbamine/vcoolor.vim'
 	Plug 'lervag/vimtex'
-	Plug 'liuchengxu/vim-clap' , { 'do': ':Clap install-binary' }
+	Plug 'liuchengxu/vim-clap' , { 'do': { -> clap#installer#force_download() } }
 	Plug 'mhinz/vim-rfc'
 	Plug 'mhinz/vim-startify'
 	Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
 	Plug 'octol/vim-cpp-enhanced-highlight'
-	Plug 'reedes/vim-pencil'
 	Plug 'puremourning/vimspector'
 	Plug 'scrooloose/nerdtree'
 	Plug 'sirver/ultisnips'
 	Plug 'tbastos/vim-lua'
 	Plug 'lambdalisue/gina.vim'
-	Plug 'tpope/vim-rhubarb'
 	Plug 'tpope/vim-surround'
 	Plug 'vhdirk/vim-cmake'
 	Plug 'vim-airline/vim-airline'
 	Plug 'wellle/targets.vim'
-	Plug 'tpope/vim-dispatch'
 	Plug 'Xuyuanp/nerdtree-git-plugin'
 	Plug 'liuchengxu/vista.vim'
 	Plug 'jvirtanen/vim-octave'
