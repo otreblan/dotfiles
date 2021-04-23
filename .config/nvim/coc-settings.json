@@ -167,7 +167,6 @@
 	"suggest.enablePreview":      true,
 	"signature.target":           "float",
 	"codeLens.separator":         "",
-	"git.addGBlameToVirtualText": true,
 	"json.trace.server":          "verbose",
 	"coc.preferences.highlightTimeout": 1000,
 	"coc.preferences.enableMessageDialog": true

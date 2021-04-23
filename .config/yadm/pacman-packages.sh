@@ -56,4 +56,5 @@ PACMAN_PACKAGES=(
 	yarn
 	zathura
 	zathura-pdf-poppler
+	dnsmasq
 )

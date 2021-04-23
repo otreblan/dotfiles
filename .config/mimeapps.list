@@ -14,6 +14,8 @@ application/x-extension-xhtml=firefox.desktop
 application/x-extension-xht=firefox.desktop
 x-scheme-handler/discord-663475820106350605=discord-663475820106350605.desktop
 application/pdf=org.pwmt.zathura-pdf-poppler.desktop;org.inkscape.Inkscape.desktop;
+x-scheme-handler/discord-610508934456934412=discord-610508934456934412.desktop
+x-scheme-handler/discord-418076578333851669=discord-418076578333851669.desktop
 
 [Added Associations]
 text/plain=nvim.desktop;emacs.desktop;
@@ -33,3 +35,4 @@ application/xhtml+xml=firefox.desktop;
 application/x-extension-xhtml=firefox.desktop;
 application/x-extension-xht=firefox.desktop;
 application/json=nvim.desktop;
+application/x-shellscript=emacs.desktop;
