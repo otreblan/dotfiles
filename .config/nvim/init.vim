@@ -63,6 +63,8 @@ call plug#begin('~/.config/nvim/plugs')
 	Plug 'jvirtanen/vim-octave'
 	Plug 'HiPhish/info.vim'
 	Plug 'tikhomirov/vim-glsl'
+	Plug 'weirongxu/plantuml-previewer.vim'
+	Plug 'tyru/open-browser.vim'
 
 	Plug 'vim-pandoc/vim-pandoc'
 	Plug 'vim-pandoc/vim-pandoc-syntax'
@@ -169,7 +171,8 @@ let g:coc_global_extensions = [
 	\"coc-gitignore",
 	\"coc-template",
 	\"coc-r-lsp",
-	\"coc-yaml"
+	\"coc-yaml",
+	\"coc-pyright"
 \]
 	"\"coc-rls",
 	"\"coc-prettier",

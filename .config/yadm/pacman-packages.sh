@@ -12,7 +12,6 @@ PACMAN_PACKAGES=(
 	diff-so-fancy
 	feh
 	ffmpegthumbnailer
-	flake8
 	fzf
 	git-lfs
 	hub
@@ -33,13 +32,6 @@ PACMAN_PACKAGES=(
 	pavucontrol
 	pstoedit
 	pulseaudio
-	python-language-server
-	python-mccabe
-	python-pycodestyle
-	python-pydocstyle
-	python-pyflakes
-	python-pylint
-	python-rope
 	python-unidecode
 	qt5ct
 	ranger
@@ -52,7 +44,6 @@ PACMAN_PACKAGES=(
 	xclip
 	xfce4-power-manager
 	xorg
-	yapf
 	yarn
 	zathura
 	zathura-pdf-poppler
