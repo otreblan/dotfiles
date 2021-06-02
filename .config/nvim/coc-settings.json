@@ -96,14 +96,14 @@
 			"filetypes": ["tex", "plaintex", "context"]
 		}
 	},
-	"diagnostic.virtualText":     true,
+	"diagnostic.virtualText":                true,
 	"diagnostic.virtualTextCurrentLineOnly": false,
-	"diagnostic.warningSign":     " ",
-	"codeLens.enable":            true,
-	"suggest.enablePreview":      true,
-	"signature.target":           "float",
-	"codeLens.separator":         "",
-	"json.trace.server":          "verbose",
-	"coc.preferences.highlightTimeout": 1000,
-	"coc.preferences.enableMessageDialog": true
+	"diagnostic.warningSign":                " ",
+	"codeLens.enable":                       true,
+	"suggest.enablePreview":                 true,
+	"signature.target":                      "float",
+	"codeLens.separator":                    "",
+	"json.trace.server":                     "verbose",
+	"coc.preferences.highlightTimeout":      1000,
+	"coc.preferences.enableMessageDialog":   true
 }

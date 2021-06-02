@@ -23,15 +23,13 @@ set mouse       =a                " Mouse support
 filetype on "detect filetypes
 filetype indent on
 
-" Plugins {{{
+" Plugins
 call plug#begin('~/.config/nvim/plugs')
 	Plug '/usr/bin/fzf'
-	"Plug 'OmniSharp/omnisharp-vim'
 	Plug 'myusuf3/numbers.vim'
 	Plug 'tpope/vim-dispatch'
 	Plug 'jackguo380/vim-lsp-cxx-highlight'
 	Plug 'KabbAmine/zeavim.vim'
-	Plug 'reedes/vim-pencil'
 	Plug 'Xuyuanp/nerdtree-git-plugin'
 	Plug 'dag/vim-fish'
 	Plug 'edkolev/promptline.vim'
@@ -42,10 +40,8 @@ call plug#begin('~/.config/nvim/plugs')
 	Plug 'igankevich/mesonic'
 	Plug 'junegunn/fzf.vim'
 	Plug 'junegunn/vim-easy-align'
-	Plug 'kabbamine/vcoolor.vim'
 	Plug 'lervag/vimtex'
 	Plug 'liuchengxu/vim-clap' , { 'do': { -> clap#installer#force_download() } }
-	Plug 'mhinz/vim-rfc'
 	Plug 'mhinz/vim-startify'
 	Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
 	Plug 'octol/vim-cpp-enhanced-highlight'
@@ -73,10 +69,58 @@ call plug#begin('~/.config/nvim/plugs')
 	" This doesn't work if it's loaded before
 	Plug 'ryanoasis/vim-devicons'
 call plug#end()
-" Options {{{
+" Options
 let g:airline_powerline_fonts                     = 1
 let g:airline#extensions#tabline#enabled          = 1
+let g:airline#extensions#tabline#buffer_nr_show   = 1
+let g:airline#extensions#tabline#formatter        = 'unique_tail_improved'
 let g:airline#extensions#promptline#snapshot_file = "~/.shell_prompt.sh"
+
+" Use coc provider
+let g:vista_default_executive = 'coc'
+let g:vista_update_on_text_changed = 1
+let g:vista_echo_cursor_strategy = 'scroll'
+let g:vista_cursor_delay = 0
+let g:vista#renderer#icons = {
+	\'subroutine':     '羚 ',
+	\'method':         ' ',
+	\'func':           ' ',
+	\'variables':      ' ',
+	\'constructor':    '略 ',
+	\'field':          ' ',
+	\'interface':      ' ',
+	\'type':           ' ',
+	\'packages':       ' ',
+	\'property':       '襁 ',
+	\'implementation': ' ',
+	\'default':        ' ',
+	\'augroup':        'פּ ',
+	\'macro':          ' ',
+	\'enumerator':     ' ',
+	\'const':          ' ',
+	\'macros':         ' ',
+	\'map':            'פּ ',
+	\'fields':         ' ',
+	\'functions':      ' ',
+	\'enum':           ' ',
+	\'function':       ' ',
+	\'target':         ' ',
+	\'typedef':        ' ',
+	\'namespace':      ' ',
+	\'enummember':     ' ',
+	\'variable':       ' ',
+	\'modules':        ' ',
+	\'constant':       ' ',
+	\'struct':         ' ',
+	\'types':          ' ',
+	\'module':         ' ',
+	\'typeParameter':  ' ',
+	\'package':        ' ',
+	\'class':          ' ',
+	\'member':         ' ',
+	\'var':            ' ',
+	\'union':          '鬒'
+\}
 
 " Some vimtex options
 let g:vimtex_view_method       = 'zathura'
@@ -128,7 +172,7 @@ let g:OmniSharp_server_use_mono = 1
 let g:OmniSharp_server_stdio = 1
 "let g:OmniSharp_server_path = '/home/otreblan/.cache/omnisharp-vim/omnisharp-roslyn/run'
 
-" Startify options {{{
+" Startify options
 " Cowsay centering
 function! s:center(lines) abort
 	let longest_line   = max(map(copy(a:lines), 'strwidth(v:val)'))
@@ -161,8 +205,7 @@ let g:startify_lists = [
 function! StartifyEntryFormat()
 	return '.WebDevIconsGetFileTypeSymbol(absolute_path) ."  ". entry_path'
 endfunction
-" }}}
-"Coc extensions {{{
+"Coc extensions
 let g:coc_global_extensions = [
 	\"coc-ultisnips",
 	\"coc-marketplace",
@@ -172,15 +215,12 @@ let g:coc_global_extensions = [
 	\"coc-template",
 	\"coc-r-lsp",
 	\"coc-yaml",
-	\"coc-pyright"
+	\"coc-pyright",
+	\"coc-vimlsp"
 \]
 	"\"coc-rls",
 	"\"coc-prettier",
 	"\"coc-json",
-	"\"coc-vimlsp",
-"}}}
-"let g:UltiSnipsExpandTrigger = '<C-j>'
-"let g:ycm_key_invoke_completion = '<C-l>'
 
 imap <C-l> <Nul>
 " Zeal is the latex documentation provider
@@ -188,9 +228,8 @@ function! MyDocs(context)
 	Zeavim
 	return 1
 endfunction
-" }}}
-" }}}
-" Mappings{{{
+
+" Mappings
 " Busca marcas
 nmap ña /<++><CR> :nohls <CR> ca<
 
@@ -201,7 +240,7 @@ nmap ñh :bprevious!<CR>
 " Date putter
 nmap ñ<Space> a<C-r>=system('date --iso-8601=seconds \| tr "\n" " "')<CR>
 
-" Copied from coc.nvim github README {{{
+" Copied from coc.nvim github README
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
@@ -218,8 +257,8 @@ nmap <leader>a  <Plug>(coc-codeaction-selected)
 nmap <leader>ac  <Plug>(coc-codeaction)
 " Fix autofix problem of current line
 nmap <leader>qf  <Plug>(coc-fix-current)
-" }}}
-" Copied from ccls github wiki {{{
+
+" Copied from ccls github wiki
 " bases
 nmap <silent> gxb :call CocLocations('ccls','$ccls/inheritance')<cr>
 " bases of up to 3 levels
@@ -245,9 +284,6 @@ nmap <silent> gxs :call CocLocations('ccls','$ccls/member',{'kind':2})<cr>
 nmap <silent> gxt <Plug>(coc-type-definition)<cr>
 nmap <silent> gxv :call CocLocations('ccls','$ccls/vars')<cr>
 nmap <silent> gxV :call CocLocations('ccls','$ccls/vars',{'kind':1})<cr>
-" }}}
-
-"}}}
 
 " Fast save
 nmap ññ :w<CR>
@@ -269,7 +305,7 @@ augroup end
 vmap <Enter> <Plug>(EasyAlign)
 nmap ga <Plug>(EasyAlign)
 
-" Syntax Highlighting {{{
+" Syntax Highlighting
 
 " Completion menu
 highlight Pmenu ctermbg=237 ctermfg=white
@@ -283,17 +319,22 @@ highlight Folded ctermbg=235 ctermfg=80
 " Sign colum
 highlight SignColumn ctermbg=0
 
-" }}}
-
 " Documentation on hover
 augroup hover
 	autocmd!
 	autocmd CursorHold * if ! coc#float#has_float()
 		\| silent call CocAction('doHover')
 	\| endif
-	autocmd CursorHoldI * silent call CocActionAsync('showSignatureHelp')
+	autocmd CursorHoldI * if CocAction('ensureDocument')
+		\|silent call CocAction('showSignatureHelp')
+	\| endif
+augroup end
+
+" Init vista after coc
+augroup vista
+	autocmd!
+	autocmd User CocNvimInit call vista#RunForNearestMethodOrFunction()
 augroup end
 
 " systemlist() is used to delete the ^@ at the end of the line
 let $MAKEFLAGS = "-j".systemlist("nproc")[0]
-
