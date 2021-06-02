@@ -51,7 +51,7 @@ call plug#begin('~/.config/nvim/plugs')
 	Plug 'tbastos/vim-lua'
 	Plug 'lambdalisue/gina.vim'
 	Plug 'tpope/vim-surround'
-	Plug 'vhdirk/vim-cmake'
+	Plug 'cdelledonne/vim-cmake'
 	Plug 'vim-airline/vim-airline'
 	Plug 'wellle/targets.vim'
 	Plug 'Xuyuanp/nerdtree-git-plugin'
@@ -141,8 +141,9 @@ let g:markdown_fenced_languages = [
 	\ 'cmake'
 \]
 " This is for c/c++ autocompletion
-let g:cmake_export_compile_commands = 1
-let g:cmake_ycm_symlinks            = 1
+let g:cmake_default_config        = 'build'
+let g:cmake_link_compile_commands = 1
+let g:cmake_root_makers           = ['.git', 'build']
 
 " c++ syntax highlighting
 let g:cpp_class_scope_highlight           = 1
@@ -230,6 +231,11 @@ function! MyDocs(context)
 endfunction
 
 " Mappings
+
+" CMake generate and build
+nmap <leader>cg <Plug>(CMakeGenerate)
+nmap <leader>cb <Plug>(CMakeBuild)
+
 " Busca marcas
 nmap ña /<++><CR> :nohls <CR> ca<
 
@@ -334,6 +340,11 @@ augroup end
 augroup vista
 	autocmd!
 	autocmd User CocNvimInit call vista#RunForNearestMethodOrFunction()
+augroup end
+
+" Close CMake window after build
+augroup vim-cmake-group
+	autocmd! User CMakeBuildSucceeded CMakeClose
 augroup end
 
 " systemlist() is used to delete the ^@ at the end of the line
