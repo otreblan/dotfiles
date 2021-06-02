@@ -323,7 +323,7 @@ highlight SignColumn ctermbg=0
 augroup hover
 	autocmd!
 	autocmd CursorHold * if ! coc#float#has_float()
-		\| silent call CocAction('doHover')
+		\| silent call CocAction('doHover') | call CocActionAsync('highlight')
 	\| endif
 	autocmd CursorHoldI * if CocAction('ensureDocument')
 		\|silent call CocAction('showSignatureHelp')
