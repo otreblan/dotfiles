@@ -15,6 +15,7 @@ export XMODIFIERS=@im='ibus'
 
 # Neovim as manpager reader
 export MANPAGER="nvim +Man!"
+export MANWIDTH=80
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 

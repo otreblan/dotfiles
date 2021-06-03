@@ -223,6 +223,8 @@ let g:coc_global_extensions = [
 	"\"coc-prettier",
 	"\"coc-json",
 
+let g:man_hardwrap = 1
+
 imap <C-l> <Nul>
 " Zeal is the latex documentation provider
 function! MyDocs(context)
