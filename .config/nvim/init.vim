@@ -173,6 +173,9 @@ let g:OmniSharp_server_use_mono = 1
 let g:OmniSharp_server_stdio = 1
 "let g:OmniSharp_server_path = '/home/otreblan/.cache/omnisharp-vim/omnisharp-roslyn/run'
 
+" Git hunks
+let g:airline#extensions#hunks#coc_git = 1
+
 " Startify options
 " Cowsay centering
 function! s:center(lines) abort

@@ -105,5 +105,6 @@
 	"codeLens.separator":                    "",
 	"json.trace.server":                     "verbose",
 	"coc.preferences.highlightTimeout":      1000,
-	"coc.preferences.enableMessageDialog":   true
+	"coc.preferences.enableMessageDialog":   true,
+	"git.showCommitInFloating": true
 }
