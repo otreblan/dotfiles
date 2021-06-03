@@ -133,6 +133,7 @@ let g:vimtex_toc_config        = {'layer_status':
 	\'include':  0}
 	\}
 let g:vimtex_doc_handlers      = ['MyDocs']
+let g:vimtex_quickfix_method   = 'pplatex'
 
 let g:markdown_fenced_languages = [
 	\ 'vim',

@@ -24,4 +24,5 @@ AUR_PACKAGES=(
 	ttf-unifont
 	urxvt-vtwheel
 	zeal
+	pplatex
 )
