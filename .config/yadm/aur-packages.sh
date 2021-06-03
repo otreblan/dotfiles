@@ -11,18 +11,15 @@ AUR_PACKAGES=(
 	minecraft-launcher
 	neovim-remote
 	nerd-fonts-inconsolata-go
-	otf-inconsolata-powerline-git
 	paleofetch-git
 	picom-rounded-corners
 	polybar
 	qogir-gtk-theme-git
 	ruby-nokogiri
-	rxvt-unicode-cvs-patched-wideglyphs
 	sql-language-server
 	svls
 	texlive-localmanager-git
 	ttf-unifont
-	urxvt-vtwheel
 	zeal
 	pplatex
 )

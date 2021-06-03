@@ -9,7 +9,8 @@ URxvt*perl-ext-common: vtwheel
 #URxvt*shading: 30
 #URxvt*blurRadius: 10
 
-URxvt*font: xft:Inconsolata for powerline:size=11, xft:InconsolataGo Nerd Font:style=Regular:size=11
+URxvt*font: xft:InconsolataGo Nerd Font:style=Regular:size=11
+#URxvt*font: xft:Inconsolata for powerline:size=11, xft:InconsolataGo Nerd Font:style=Regular:size=11
 #URxvt*font: xft:TerminessTTF Nerd Font:size=15
 #URxvt*font: xft:Inconsolata:size=15
 #URxvt*copyCommand:  xclip -i -selection clipboard

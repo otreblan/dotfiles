@@ -24,7 +24,6 @@ PACMAN_PACKAGES=(
 	man-pages
 	neovim
 	network-manager-applet
-	nodejs-lts-dubnium
 	notification-daemon
 	npm
 	paprefs
@@ -48,4 +47,5 @@ PACMAN_PACKAGES=(
 	zathura
 	zathura-pdf-poppler
 	dnsmasq
+	alacritty
 )

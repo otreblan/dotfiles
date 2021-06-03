@@ -19,6 +19,7 @@ set tabstop     =4                " Makes tabs 4 spaces long
 set updatetime  =300              " Something for diagnostics
 set wildoptions =pum              " Pmenu for commands
 set mouse       =a                " Mouse support
+set conceallevel=2
 
 filetype on "detect filetypes
 filetype indent on
@@ -330,6 +331,9 @@ highlight Folded ctermbg=235 ctermfg=80
 
 " Sign colum
 highlight SignColumn ctermbg=0
+
+" Conceal
+highlight clear Conceal
 
 " Documentation on hover
 augroup hover

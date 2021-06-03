@@ -36,8 +36,7 @@ bindsym Print exec "spectacle"
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec "urxvt"
-bindsym $mod+Shift+Return exec "cool-retro-term"
+bindsym $mod+Return exec "alacritty"
 
 #Toggle polybar
 bindsym $mod+Tab exec "polybar-msg cmd toggle"
