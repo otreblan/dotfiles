@@ -330,7 +330,7 @@ highlight PmenuThumb ctermbg=7
 highlight Folded ctermbg=235 ctermfg=80
 
 " Sign colum
-highlight SignColumn ctermbg=0
+highlight SignColumn ctermbg=None
 
 " Conceal
 highlight clear Conceal
