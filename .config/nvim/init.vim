@@ -162,6 +162,7 @@ let g:numbers_exclude = [
 	\ 'startify',
 	\ 'nerdtree',
 	\ 'vista',
+	\ 'vimcmake',
 	\ ''
 \]
 
