@@ -9,6 +9,7 @@ set incsearch      " Incremental search
 set showcmd        " Show (partial) command in status line.
 set showmatch      " Show matching brackets
 set copyindent     " Keep same indent
+set termguicolors  " More colors
 
 set background  =dark             " Vim colours for dark background
 set foldmethod  =marker           " For folding with  { { { (without spaces)
@@ -31,7 +32,6 @@ call plug#begin('~/.config/nvim/plugs')
 	Plug 'tpope/vim-dispatch'
 	Plug 'jackguo380/vim-lsp-cxx-highlight'
 	Plug 'KabbAmine/zeavim.vim'
-	Plug 'Xuyuanp/nerdtree-git-plugin'
 	Plug 'dag/vim-fish'
 	Plug 'edkolev/promptline.vim'
 	Plug 'ekalinin/Dockerfile.vim'
@@ -47,7 +47,6 @@ call plug#begin('~/.config/nvim/plugs')
 	Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
 	Plug 'octol/vim-cpp-enhanced-highlight'
 	Plug 'puremourning/vimspector'
-	Plug 'scrooloose/nerdtree'
 	Plug 'sirver/ultisnips'
 	Plug 'tbastos/vim-lua'
 	Plug 'lambdalisue/gina.vim'
@@ -55,13 +54,14 @@ call plug#begin('~/.config/nvim/plugs')
 	Plug 'cdelledonne/vim-cmake'
 	Plug 'vim-airline/vim-airline'
 	Plug 'wellle/targets.vim'
-	Plug 'Xuyuanp/nerdtree-git-plugin'
 	Plug 'liuchengxu/vista.vim'
 	Plug 'jvirtanen/vim-octave'
 	Plug 'HiPhish/info.vim'
 	Plug 'tikhomirov/vim-glsl'
 	Plug 'weirongxu/plantuml-previewer.vim'
 	Plug 'tyru/open-browser.vim'
+	Plug 'ms-jpq/chadtree', {'branch': 'chad', 'do': 'python3 -m chadtree deps'}
+	Plug 'jacoborus/tender.vim'
 
 	Plug 'vim-pandoc/vim-pandoc'
 	Plug 'vim-pandoc/vim-pandoc-syntax'
@@ -160,7 +160,7 @@ let g:numbers_exclude = [
 	\ 'info',
 	\ 'help',
 	\ 'startify',
-	\ 'nerdtree',
+	\ 'CHADTree',
 	\ 'vista',
 	\ 'vimcmake',
 	\ ''
@@ -230,6 +230,10 @@ let g:coc_global_extensions = [
 	"\"coc-json",
 
 let g:man_hardwrap = 1
+
+let g:chadtree_settings = {
+	\"theme.text_colour_set": "nerdtree_syntax_dark"
+\}
 
 imap <C-l> <Nul>
 " Zeal is the latex documentation provider
@@ -302,6 +306,9 @@ nmap <silent> gxV :call CocLocations('ccls','$ccls/vars',{'kind':1})<cr>
 " Fast save
 nmap ññ :w<CR>
 
+" Chadtree
+nnoremap <leader>v <cmd>CHADopen<cr>
+
 " LaTeX things
 augroup latex
 	autocmd!
@@ -311,27 +318,12 @@ augroup latex
 	autocmd FileType tex nmap ñq a<++><Esc>
 augroup end
 
-" For some reason 'K' doesn't works with this on neovim with coc-nvim
-"autocmd FileType cpp set keywordprg=cppman
-"autocmd FileType c set keywordprg=~/manvim.sh\ 3
-
 " Easy align
 vmap <Enter> <Plug>(EasyAlign)
 nmap ga <Plug>(EasyAlign)
 
 " Syntax Highlighting
-
-" Completion menu
-highlight Pmenu ctermbg=237 ctermfg=white
-highlight PmenuSel ctermbg=220 ctermfg=black
-highlight PmenuSbar ctermbg=233
-highlight PmenuThumb ctermbg=7
-
-" Folder text
-highlight Folded ctermbg=235 ctermfg=80
-
-" Sign colum
-highlight SignColumn ctermbg=None
+colorscheme tender
 
 " Conceal
 highlight clear Conceal
