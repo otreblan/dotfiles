@@ -3,24 +3,25 @@ filetype plugin on
 syntax on " Syntax highlighting
 
 set autoread       " Automatically read file after it's been modified elsewhere
-set foldenable
+set copyindent     " Keep same indent
+set foldenable     " Fold
+set hidden         " TextEdit might fail if hidden is not set.
 set hlsearch       " Highlight search results
 set incsearch      " Incremental search
 set showcmd        " Show (partial) command in status line.
 set showmatch      " Show matching brackets
-set copyindent     " Keep same indent
 set termguicolors  " More colors
 
 set background  =dark             " Vim colours for dark background
+set conceallevel=2                " Conceal certain LaTeX symbols
 set foldmethod  =marker           " For folding with  { { { (without spaces)
 set history     =1000             " History of : commands remembered
 set list lcs    =trail:·,tab:\┊\  " For fancy indent marks
+set mouse       =a                " Mouse support
 set shiftwidth  =4                " Automatic indetation
 set tabstop     =4                " Makes tabs 4 spaces long
 set updatetime  =300              " Something for diagnostics
 set wildoptions =pum              " Pmenu for commands
-set mouse       =a                " Mouse support
-set conceallevel=2
 
 filetype on "detect filetypes
 filetype indent on
@@ -36,7 +37,6 @@ call plug#begin('~/.config/nvim/plugs')
 	Plug 'edkolev/promptline.vim'
 	Plug 'ekalinin/Dockerfile.vim'
 	Plug 'habamax/vim-asciidoctor'
-	Plug 'honza/vim-snippets'
 	Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
 	Plug 'igankevich/mesonic'
 	Plug 'junegunn/fzf.vim'
@@ -47,7 +47,6 @@ call plug#begin('~/.config/nvim/plugs')
 	Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
 	Plug 'octol/vim-cpp-enhanced-highlight'
 	Plug 'puremourning/vimspector'
-	Plug 'sirver/ultisnips'
 	Plug 'tbastos/vim-lua'
 	Plug 'lambdalisue/gina.vim'
 	Plug 'tpope/vim-surround'
@@ -62,6 +61,8 @@ call plug#begin('~/.config/nvim/plugs')
 	Plug 'tyru/open-browser.vim'
 	Plug 'ms-jpq/chadtree', {'branch': 'chad', 'do': 'python3 -m chadtree deps'}
 	Plug 'jacoborus/tender.vim'
+	Plug 'honza/vim-snippets'
+	Plug 'sirver/ultisnips'
 
 	Plug 'vim-pandoc/vim-pandoc'
 	Plug 'vim-pandoc/vim-pandoc-syntax'
@@ -214,20 +215,17 @@ function! StartifyEntryFormat()
 endfunction
 "Coc extensions
 let g:coc_global_extensions = [
-	\"coc-ultisnips",
-	\"coc-marketplace",
-	\"coc-vimtex",
 	\"coc-git",
 	\"coc-gitignore",
-	\"coc-template",
-	\"coc-r-lsp",
-	\"coc-yaml",
+	\"coc-json",
+	\"coc-marketplace",
 	\"coc-pyright",
-	\"coc-vimlsp"
+	\"coc-r-lsp",
+	\"coc-ultisnips",
+	\"coc-vimlsp",
+	\"coc-vimtex",
+	\"coc-yaml",
 \]
-	"\"coc-rls",
-	"\"coc-prettier",
-	"\"coc-json",
 
 let g:man_hardwrap = 1
 
@@ -243,6 +241,32 @@ function! MyDocs(context)
 endfunction
 
 " Mappings
+
+let g:UltiSnipsExpandTrigger="<NUL>"
+
+"" Use tab for trigger completion with characters ahead and navigate.
+" NOTE: Use command ':verbose imap <tab>' to make sure tab is not mapped by
+" other plugin before putting this into your config.
+inoremap <silent><expr> <TAB>
+	\ pumvisible() ? "\<C-n>" :
+	\ <SID>check_back_space() ? "\<TAB>" :
+	\ coc#refresh()
+inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+
+function! s:check_back_space() abort
+	let col = col('.') - 1
+	return !col || getline('.')[col - 1]  =~# '\s'
+endfunction
+
+" Make <CR> auto-select the first completion item and notify coc.nvim to
+" format on enter, <cr> could be remapped by other vim plugin
+inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
+	\: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+
+" Use `[g` and `]g` to navigate diagnostics
+" Use `:CocDiagnostics` to get all diagnostics of current buffer in location list.
+nmap <silent> [g <Plug>(coc-diagnostic-prev)
+nmap <silent> ]g <Plug>(coc-diagnostic-next)
 
 " CMake generate and build
 nmap <leader>cg <Plug>(CMakeGenerate)
