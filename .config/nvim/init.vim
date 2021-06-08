@@ -2,15 +2,16 @@ set t_Co=256
 filetype plugin on
 syntax on " Syntax highlighting
 
-set autoread       " Automatically read file after it's been modified elsewhere
-set copyindent     " Keep same indent
-set foldenable     " Fold
-set hidden         " TextEdit might fail if hidden is not set.
-set hlsearch       " Highlight search results
-set incsearch      " Incremental search
-set showcmd        " Show (partial) command in status line.
-set showmatch      " Show matching brackets
-set termguicolors  " More colors
+set autoread      " Automatically read file after it's been modified elsewhere
+set copyindent    " Keep same indent
+set foldenable    " Fold
+set hidden        " TextEdit might fail if hidden is not set.
+set hlsearch      " Highlight search results
+set incsearch     " Incremental search
+set noshowmode    " Use airline mode indicator
+set showcmd       " Show (partial) command in status line.
+set showmatch     " Show matching brackets
+set termguicolors " More colors
 
 set background  =dark             " Vim colours for dark background
 set conceallevel=2                " Conceal certain LaTeX symbols
@@ -373,6 +374,9 @@ augroup end
 augroup vim-cmake-group
 	autocmd! User CMakeBuildSucceeded CMakeClose
 augroup end
+
+" --option is a single word
+autocmd FileType sh set iskeyword+=45
 
 " systemlist() is used to delete the ^@ at the end of the line
 let $MAKEFLAGS = "-j".systemlist("nproc")[0]
