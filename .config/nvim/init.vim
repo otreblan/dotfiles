@@ -30,40 +30,40 @@ filetype indent on
 " Plugins
 call plug#begin('~/.config/nvim/plugs')
 	Plug '/usr/bin/fzf'
-	Plug 'myusuf3/numbers.vim'
-	Plug 'tpope/vim-dispatch'
-	Plug 'jackguo380/vim-lsp-cxx-highlight'
+	Plug 'HiPhish/info.vim'
 	Plug 'KabbAmine/zeavim.vim'
+	Plug 'cdelledonne/vim-cmake'
 	Plug 'dag/vim-fish'
 	Plug 'edkolev/promptline.vim'
 	Plug 'ekalinin/Dockerfile.vim'
 	Plug 'habamax/vim-asciidoctor'
+	Plug 'honza/vim-snippets'
 	Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
 	Plug 'igankevich/mesonic'
+	Plug 'jackguo380/vim-lsp-cxx-highlight'
+	Plug 'jacoborus/tender.vim'
 	Plug 'junegunn/fzf.vim'
 	Plug 'junegunn/vim-easy-align'
+	Plug 'jvirtanen/vim-octave'
+	Plug 'lambdalisue/gina.vim'
 	Plug 'lervag/vimtex'
 	Plug 'liuchengxu/vim-clap' , { 'do': { -> clap#installer#force_download() } }
+	Plug 'liuchengxu/vista.vim'
 	Plug 'mhinz/vim-startify'
+	Plug 'ms-jpq/chadtree', {'branch': 'chad', 'do': 'python3 -m chadtree deps'}
+	Plug 'myusuf3/numbers.vim'
 	Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
 	Plug 'octol/vim-cpp-enhanced-highlight'
-	Plug 'puremourning/vimspector'
-	Plug 'tbastos/vim-lua'
-	Plug 'lambdalisue/gina.vim'
-	Plug 'tpope/vim-surround'
-	Plug 'cdelledonne/vim-cmake'
-	Plug 'vim-airline/vim-airline'
-	Plug 'wellle/targets.vim'
-	Plug 'liuchengxu/vista.vim'
-	Plug 'jvirtanen/vim-octave'
-	Plug 'HiPhish/info.vim'
-	Plug 'tikhomirov/vim-glsl'
-	Plug 'weirongxu/plantuml-previewer.vim'
-	Plug 'tyru/open-browser.vim'
-	Plug 'ms-jpq/chadtree', {'branch': 'chad', 'do': 'python3 -m chadtree deps'}
-	Plug 'jacoborus/tender.vim'
-	Plug 'honza/vim-snippets'
+	Plug 'sakhnik/nvim-gdb'
 	Plug 'sirver/ultisnips'
+	Plug 'tbastos/vim-lua'
+	Plug 'tikhomirov/vim-glsl'
+	Plug 'tpope/vim-dispatch'
+	Plug 'tpope/vim-surround'
+	Plug 'tyru/open-browser.vim'
+	Plug 'vim-airline/vim-airline'
+	Plug 'weirongxu/plantuml-previewer.vim'
+	Plug 'wellle/targets.vim'
 
 	Plug 'vim-pandoc/vim-pandoc'
 	Plug 'vim-pandoc/vim-pandoc-syntax'
@@ -165,6 +165,7 @@ let g:numbers_exclude = [
 	\ 'CHADTree',
 	\ 'vista',
 	\ 'vimcmake',
+	\ 'nvimgdb',
 	\ ''
 \]
 
@@ -172,7 +173,8 @@ let g:numbers_exclude = [
 let g:pandoc#spell#enabled = 0
 
 " Debugging
-let g:vimspector_enable_mappings = 'HUMAN'
+let w:nvimgdb_termwin_command = 'belowright vnew'
+let w:nvimgdb_codewin_command = 'vnew'
 
 let g:OmniSharp_server_use_mono = 1
 let g:OmniSharp_server_stdio = 1
@@ -220,6 +222,8 @@ let g:coc_global_extensions = [
 	\"coc-gitignore",
 	\"coc-json",
 	\"coc-marketplace",
+	\"coc-prettier",
+	\"coc-eslint",
 	\"coc-pyright",
 	\"coc-r-lsp",
 	\"coc-ultisnips",

@@ -206,6 +206,6 @@ exec "pasystray"
 #Compositor
 exec "picom &"
 #Algo para usar vim donde sea
-bindsym $mod+m exec "urxvt -e vimclip"
+bindsym $mod+m exec "alacritty -e vimclip"
 #Calculadora
 bindsym $mod+n exec "speedcrunch"
