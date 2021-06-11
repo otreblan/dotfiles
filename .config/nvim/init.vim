@@ -64,6 +64,7 @@ call plug#begin('~/.config/nvim/plugs')
 	Plug 'vim-airline/vim-airline'
 	Plug 'weirongxu/plantuml-previewer.vim'
 	Plug 'wellle/targets.vim'
+	Plug 'antoinemadec/coc-fzf'
 
 	Plug 'vim-pandoc/vim-pandoc'
 	Plug 'vim-pandoc/vim-pandoc-syntax'
