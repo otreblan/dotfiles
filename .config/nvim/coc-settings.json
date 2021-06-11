@@ -96,16 +96,18 @@
 			"filetypes": ["tex", "plaintex", "context"]
 		}
 	},
+	"coc.preferences.enableMessageDialog":   true,
+	"coc.preferences.formatOnSaveFiletypes": ["typescript"],
+	"coc.preferences.highlightTimeout":      1000,
+	"codeLens.enable":                       true,
+	"codeLens.separator":                    "⇒",
 	"diagnostic.virtualText":                true,
 	"diagnostic.virtualTextCurrentLineOnly": false,
 	"diagnostic.warningSign":                " ",
-	"codeLens.enable":                       true,
-	"suggest.enablePreview":                 true,
-	"signature.target":                      "float",
-	"codeLens.separator":                    "⇒",
+	"git.showCommitInFloating":              true,
 	"json.trace.server":                     "verbose",
-	"coc.preferences.highlightTimeout":      1000,
-	"coc.preferences.enableMessageDialog":   true,
-	"git.showCommitInFloating": true,
-	"coc.preferences.formatOnSaveFiletypes": ["typescript"]
+	"signature.target":                      "float",
+	"suggest.enablePreview":                 true,
+	"suggest.maxCompleteItemCount":          1000,
+	"suggest.labelMaxLength":                40
 }
