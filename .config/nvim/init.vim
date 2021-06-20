@@ -219,14 +219,15 @@ function! StartifyEntryFormat()
 endfunction
 "Coc extensions
 let g:coc_global_extensions = [
+	\"coc-eslint",
 	\"coc-git",
 	\"coc-gitignore",
 	\"coc-json",
 	\"coc-marketplace",
 	\"coc-prettier",
-	\"coc-eslint",
 	\"coc-pyright",
 	\"coc-r-lsp",
+	\"coc-sql",
 	\"coc-ultisnips",
 	\"coc-vimlsp",
 	\"coc-vimtex",

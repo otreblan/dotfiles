@@ -76,12 +76,6 @@
 			"command": "svls",
 			"filetypes": ["systemverilog", "verilog"]
 		},
-		"sql": {
-			"command": "sqls",
-			"args": ["-config", "$HOME/.config/sqls/config.yml"],
-			"filetypes": ["sql"],
-			"shell": true
-		},
 		"omnisharp": {
 			"command": "~/.cache/omnisharp-vim/omnisharp-roslyn/OmniSharp.exe",
 			"args": [
@@ -109,5 +103,6 @@
 	"signature.target":                      "float",
 	"suggest.enablePreview":                 true,
 	"suggest.maxCompleteItemCount":          1000,
-	"suggest.labelMaxLength":                40
+	"suggest.labelMaxLength":                40,
+	"sql.database":                          "postgresql"
 }
