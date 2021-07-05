@@ -11,7 +11,7 @@ AUR_PACKAGES=(
 	minecraft-launcher
 	neovim-remote
 	nerd-fonts-inconsolata-go
-	paleofetch-git
+	fastfetch-git
 	picom-rounded-corners
 	polybar
 	qogir-gtk-theme-git

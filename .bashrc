@@ -24,7 +24,7 @@ alias tree='tree -C'
 #set -o vi
 
 # System information
-paleofetch
+fastfetch
 
 #Fuzzy search
 source /usr/share/fzf/key-bindings.bash
