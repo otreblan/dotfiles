@@ -1,6 +1,7 @@
 #/usr/bin/env bash
 
 PACMAN_PACKAGES=(
+	alacritty
 	asciidoctor
 	base-devel
 	bash-completion
@@ -10,6 +11,7 @@ PACMAN_PACKAGES=(
 	cmake
 	ctags
 	diff-so-fancy
+	dnsmasq
 	feh
 	ffmpegthumbnailer
 	fzf
@@ -37,6 +39,7 @@ PACMAN_PACKAGES=(
 	rofi
 	speedcrunch
 	texinfo
+	texlab
 	texlive-most
 	ttf-roboto-mono
 	vim
@@ -46,6 +49,4 @@ PACMAN_PACKAGES=(
 	yarn
 	zathura
 	zathura-pdf-poppler
-	dnsmasq
-	alacritty
 )

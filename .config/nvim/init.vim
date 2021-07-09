@@ -29,13 +29,17 @@ filetype indent on
 
 " Plugins
 call plug#begin('~/.config/nvim/plugs')
+
 	Plug '/usr/bin/fzf'
 	Plug 'HiPhish/info.vim'
 	Plug 'KabbAmine/zeavim.vim'
+	Plug 'andymass/vim-matchup'
+	Plug 'antoinemadec/coc-fzf'
 	Plug 'cdelledonne/vim-cmake'
 	Plug 'dag/vim-fish'
 	Plug 'edkolev/promptline.vim'
 	Plug 'ekalinin/Dockerfile.vim'
+	Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }
 	Plug 'habamax/vim-asciidoctor'
 	Plug 'honza/vim-snippets'
 	Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
@@ -53,7 +57,9 @@ call plug#begin('~/.config/nvim/plugs')
 	Plug 'ms-jpq/chadtree', {'branch': 'chad', 'do': 'python3 -m chadtree deps'}
 	Plug 'myusuf3/numbers.vim'
 	Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
+	Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 	Plug 'octol/vim-cpp-enhanced-highlight'
+	Plug 'romgrk/nvim-treesitter-context'
 	Plug 'sakhnik/nvim-gdb'
 	Plug 'sirver/ultisnips'
 	Plug 'tbastos/vim-lua'
@@ -62,13 +68,11 @@ call plug#begin('~/.config/nvim/plugs')
 	Plug 'tpope/vim-surround'
 	Plug 'tyru/open-browser.vim'
 	Plug 'vim-airline/vim-airline'
-	Plug 'weirongxu/plantuml-previewer.vim'
-	Plug 'wellle/targets.vim'
-	Plug 'antoinemadec/coc-fzf'
-
 	Plug 'vim-pandoc/vim-pandoc'
 	Plug 'vim-pandoc/vim-pandoc-syntax'
 	Plug 'vim-pandoc/vim-rmarkdown'
+	Plug 'weirongxu/plantuml-previewer.vim'
+	Plug 'wellle/targets.vim'
 
 	" This doesn't work if it's loaded before
 	Plug 'ryanoasis/vim-devicons'
@@ -138,6 +142,7 @@ let g:vimtex_toc_config        = {'layer_status':
 	\}
 let g:vimtex_doc_handlers      = ['MyDocs']
 let g:vimtex_quickfix_method   = 'pplatex'
+let g:matchup_override_vimtex  = 1
 
 let g:markdown_fenced_languages = [
 	\ 'vim',
@@ -240,6 +245,10 @@ let g:chadtree_settings = {
 	\"theme.text_colour_set": "nerdtree_syntax_dark"
 \}
 
+let g:UltiSnipsExpandTrigger="<NUL>"
+
+let g:matchup_matchparen_offscreen = {}
+
 imap <C-l> <Nul>
 " Zeal is the latex documentation provider
 function! MyDocs(context)
@@ -248,8 +257,6 @@ function! MyDocs(context)
 endfunction
 
 " Mappings
-
-let g:UltiSnipsExpandTrigger="<NUL>"
 
 "" Use tab for trigger completion with characters ahead and navigate.
 " NOTE: Use command ':verbose imap <tab>' to make sure tab is not mapped by
@@ -386,3 +393,19 @@ autocmd FileType sh set iskeyword+=45
 
 " systemlist() is used to delete the ^@ at the end of the line
 let $MAKEFLAGS = "-j".systemlist("nproc")[0]
+
+lua <<EOF
+require'nvim-treesitter.configs'.setup {
+	matchup = {
+		enable = true, -- mandatory, false will disable the whole extension
+	},
+	highlight = {
+		enable  = true,
+		disable = { "latex", "c", "cpp" },
+	},
+}
+
+require'treesitter-context.config'.setup{
+	enable = true, -- Enable this plugin (Can be enabled/disabled later via commands)
+}
+EOF

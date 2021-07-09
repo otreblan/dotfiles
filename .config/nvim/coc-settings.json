@@ -85,9 +85,9 @@
 			"rootPatterns": [".git/"],
 			"trace.server": "verbose"
 		},
-		"digestif": {
-			"command": "digestif",
-			"filetypes": ["tex", "plaintex", "context"]
+		"texlab": {
+			"command": "texlab",
+			"filetypes": ["tex", "bib", "plaintex", "context"]
 		}
 	},
 	"coc.preferences.enableMessageDialog":   true,
