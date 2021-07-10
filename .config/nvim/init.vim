@@ -354,6 +354,7 @@ augroup latex
 	autocmd FileType tex nmap ñz :set spell!<CR>
 	autocmd FileType tex nmap ñs :!zathura *.pdf & <CR><CR>
 	autocmd FileType tex nmap ñq a<++><Esc>
+	autocmd FileType tex TSContextDisable
 augroup end
 
 " Easy align
