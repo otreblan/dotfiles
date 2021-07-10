@@ -34,17 +34,16 @@ call plug#begin('~/.config/nvim/plugs')
 	Plug 'HiPhish/info.vim'
 	Plug 'KabbAmine/zeavim.vim'
 	Plug 'andymass/vim-matchup'
-	Plug 'antoinemadec/coc-fzf'
 	Plug 'cdelledonne/vim-cmake'
 	Plug 'dag/vim-fish'
 	Plug 'edkolev/promptline.vim'
 	Plug 'ekalinin/Dockerfile.vim'
+	Plug 'fannheyward/telescope-coc.nvim'
 	Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }
 	Plug 'habamax/vim-asciidoctor'
 	Plug 'honza/vim-snippets'
 	Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
 	Plug 'igankevich/mesonic'
-	Plug 'jackguo380/vim-lsp-cxx-highlight'
 	Plug 'jacoborus/tender.vim'
 	Plug 'junegunn/fzf.vim'
 	Plug 'junegunn/vim-easy-align'
@@ -57,6 +56,10 @@ call plug#begin('~/.config/nvim/plugs')
 	Plug 'ms-jpq/chadtree', {'branch': 'chad', 'do': 'python3 -m chadtree deps'}
 	Plug 'myusuf3/numbers.vim'
 	Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
+	Plug 'nvim-lua/plenary.nvim'
+	Plug 'nvim-lua/popup.nvim'
+	Plug 'nvim-lua/popup.nvim'
+	Plug 'nvim-telescope/telescope.nvim'
 	Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 	Plug 'octol/vim-cpp-enhanced-highlight'
 	Plug 'romgrk/nvim-treesitter-context'
@@ -296,21 +299,23 @@ nmap ñh :bprevious!<CR>
 " Date putter
 nmap ñ<Space> a<C-r>=system('date --iso-8601=seconds \| tr "\n" " "')<CR>
 
-" Copied from coc.nvim github README
-nmap <silent> gd <Plug>(coc-definition)
-nmap <silent> gy <Plug>(coc-type-definition)
-nmap <silent> gi <Plug>(coc-implementation)
-nmap <silent> gr <Plug>(coc-references)
+" Coc mappings
+nmap <silent> gd :Telescope coc definitions<CR>
+nmap <silent> gi :Telescope coc implementations<CR>
+nmap <silent> gr :Telescope coc references<CR>
+nmap <silent> gy :Telescope coc type_definitions<CR>
 
 " Remap for rename current word
 nmap <leader>rn <Plug>(coc-rename)
 nmap <leader>rf <Plug>(coc-refactor)
+
 " Remap for do codeAction of selected region, ex: `<leader>aap` for current paragraph
 xmap <leader>a  <Plug>(coc-codeaction-selected)
 nmap <leader>a  <Plug>(coc-codeaction-selected)
 
 " Remap for do codeAction of current line
 nmap <leader>ac  <Plug>(coc-codeaction)
+
 " Fix autofix problem of current line
 nmap <leader>qf  <Plug>(coc-fix-current)
 
@@ -354,7 +359,12 @@ augroup latex
 	autocmd FileType tex nmap ñz :set spell!<CR>
 	autocmd FileType tex nmap ñs :!zathura *.pdf & <CR><CR>
 	autocmd FileType tex nmap ñq a<++><Esc>
+augroup end
+
+augroup context
 	autocmd FileType tex TSContextDisable
+	autocmd FileType cpp TSContextDisable
+	autocmd FileType c TSContextDisable
 augroup end
 
 " Easy align
@@ -402,11 +412,22 @@ require'nvim-treesitter.configs'.setup {
 	},
 	highlight = {
 		enable  = true,
-		disable = { "latex", "c", "cpp" },
+		disable = { "latex" },
 	},
 }
 
 require'treesitter-context.config'.setup{
 	enable = true, -- Enable this plugin (Can be enabled/disabled later via commands)
+}
+
+require('telescope').load_extension('coc')
+
+require('telescope').setup{
+	defaults = {
+		layout_strategy = "vertical",
+		layout_config = {
+			preview_cutoff = 0,
+		},
+	}
 }
 EOF
