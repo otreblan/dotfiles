@@ -40,6 +40,7 @@ call plug#begin('~/.config/nvim/plugs')
 	Plug 'ekalinin/Dockerfile.vim'
 	Plug 'fannheyward/telescope-coc.nvim'
 	Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }
+	Plug 'glepnir/dashboard-nvim'
 	Plug 'habamax/vim-asciidoctor'
 	Plug 'honza/vim-snippets'
 	Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
@@ -52,7 +53,6 @@ call plug#begin('~/.config/nvim/plugs')
 	Plug 'lervag/vimtex'
 	Plug 'liuchengxu/vim-clap' , { 'do': { -> clap#installer#force_download() } }
 	Plug 'liuchengxu/vista.vim'
-	Plug 'mhinz/vim-startify'
 	Plug 'ms-jpq/chadtree', {'branch': 'chad', 'do': 'python3 -m chadtree deps'}
 	Plug 'myusuf3/numbers.vim'
 	Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
@@ -167,16 +167,19 @@ let g:cpp_experimental_template_highlight = 1
 " Numbers exceptions
 " '' is here until floating windows have their own filetype
 let g:numbers_exclude = [
-	\ 'man',
-	\ 'info',
-	\ 'help',
-	\ 'startify',
 	\ 'CHADTree',
-	\ 'vista',
-	\ 'vimcmake',
+	\ 'dashboard',
+	\ 'help',
+	\ 'info',
+	\ 'man',
 	\ 'nvimgdb',
+	\ 'vimcmake',
+	\ 'vista',
 	\ ''
 \]
+
+" Dashboard
+let g:dashboard_default_executive = 'telescope'
 
 " pandoc
 let g:pandoc#spell#enabled = 0
@@ -192,39 +195,6 @@ let g:OmniSharp_server_stdio = 1
 " Git hunks
 let g:airline#extensions#hunks#coc_git = 1
 
-" Startify options
-" Cowsay centering
-function! s:center(lines) abort
-	let longest_line   = max(map(copy(a:lines), 'strwidth(v:val)'))
-	let centered_lines = map(copy(a:lines),
-		\ 'repeat(" ", (&columns / 2) - (longest_line / 2)) . v:val')
-	return centered_lines
-endfunction
-
-"Some options
-let g:startify_fortune_use_unicode = 1
-let g:startify_custom_header       = s:center(startify#fortune#cowsay())
-
-" The git commits part of the start page
-function! s:list_commits()
-	let git     = 'git -C ' . getcwd()
-	let commits = systemlist(git .' lg | head -n20')
-	let git     = 'G'. git[1:]
-	return map(commits, '{"line": matchstr(v:val, "\\s\\zs.*"), "cmd": "'. git .' show ". matchstr(v:val, "^\\x\\+") }')
-endfunction
-
-" This is the center of the start page
-let g:startify_lists = [
-	\ { 'header': ['   MRU'],            'type': 'files' },
-	\ { 'header': ['   MRU '. getcwd()], 'type': 'dir' },
-	\ { 'header': ['   Sessions'],       'type': 'sessions' },
-	\ { 'header': ['   Commits'],        'type': function('s:list_commits') },
-	\ ]
-
-" This is for the file type icons on the start page
-function! StartifyEntryFormat()
-	return '.WebDevIconsGetFileTypeSymbol(absolute_path) ."  ". entry_path'
-endfunction
 "Coc extensions
 let g:coc_global_extensions = [
 	\"coc-eslint",
@@ -251,6 +221,17 @@ let g:chadtree_settings = {
 let g:UltiSnipsExpandTrigger="<NUL>"
 
 let g:matchup_matchparen_offscreen = {}
+
+let g:dashboard_custom_header = [
+\ '',
+\ '',
+\ ' ███╗   ██╗ ███████╗ ██████╗  ██╗   ██╗ ██╗ ███╗   ███╗',
+\ ' ████╗  ██║ ██╔════╝██╔═══██╗ ██║   ██║ ██║ ████╗ ████║',
+\ ' ██╔██╗ ██║ █████╗  ██║   ██║ ██║   ██║ ██║ ██╔████╔██║',
+\ ' ██║╚██╗██║ ██╔══╝  ██║   ██║ ╚██╗ ██╔╝ ██║ ██║╚██╔╝██║',
+\ ' ██║ ╚████║ ███████╗╚██████╔╝  ╚████╔╝  ██║ ██║ ╚═╝ ██║',
+\ ' ╚═╝  ╚═══╝ ╚══════╝ ╚═════╝    ╚═══╝   ╚═╝ ╚═╝     ╚═╝',
+\]
 
 imap <C-l> <Nul>
 " Zeal is the latex documentation provider
@@ -424,7 +405,6 @@ require('telescope').load_extension('coc')
 
 require('telescope').setup{
 	defaults = {
-		layout_strategy = "vertical",
 		layout_config = {
 			preview_cutoff = 0,
 		},
