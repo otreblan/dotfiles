@@ -30,7 +30,6 @@ filetype indent on
 " Plugins
 call plug#begin('~/.config/nvim/plugs')
 
-	Plug '/usr/bin/fzf'
 	Plug 'HiPhish/info.vim'
 	Plug 'KabbAmine/zeavim.vim'
 	Plug 'andymass/vim-matchup'
@@ -46,30 +45,24 @@ call plug#begin('~/.config/nvim/plugs')
 	Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
 	Plug 'igankevich/mesonic'
 	Plug 'jacoborus/tender.vim'
-	Plug 'junegunn/fzf.vim'
 	Plug 'junegunn/vim-easy-align'
 	Plug 'jvirtanen/vim-octave'
 	Plug 'lambdalisue/gina.vim'
 	Plug 'lervag/vimtex'
-	Plug 'liuchengxu/vim-clap' , { 'do': { -> clap#installer#force_download() } }
 	Plug 'liuchengxu/vista.vim'
 	Plug 'ms-jpq/chadtree', {'branch': 'chad', 'do': 'python3 -m chadtree deps'}
 	Plug 'myusuf3/numbers.vim'
 	Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
 	Plug 'nvim-lua/plenary.nvim'
 	Plug 'nvim-lua/popup.nvim'
-	Plug 'nvim-lua/popup.nvim'
 	Plug 'nvim-telescope/telescope.nvim'
 	Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-	Plug 'octol/vim-cpp-enhanced-highlight'
 	Plug 'romgrk/nvim-treesitter-context'
 	Plug 'sakhnik/nvim-gdb'
 	Plug 'sirver/ultisnips'
-	Plug 'tbastos/vim-lua'
 	Plug 'tikhomirov/vim-glsl'
 	Plug 'tpope/vim-dispatch'
 	Plug 'tpope/vim-surround'
-	Plug 'tyru/open-browser.vim'
 	Plug 'vim-airline/vim-airline'
 	Plug 'vim-pandoc/vim-pandoc'
 	Plug 'vim-pandoc/vim-pandoc-syntax'
