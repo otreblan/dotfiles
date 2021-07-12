@@ -57,6 +57,7 @@ call plug#begin('~/.config/nvim/plugs')
 	Plug 'nvim-lua/popup.nvim'
 	Plug 'nvim-telescope/telescope.nvim'
 	Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+	Plug 'nvim-treesitter/playground'
 	Plug 'romgrk/nvim-treesitter-context'
 	Plug 'sakhnik/nvim-gdb'
 	Plug 'sirver/ultisnips'
@@ -67,7 +68,6 @@ call plug#begin('~/.config/nvim/plugs')
 	Plug 'vim-pandoc/vim-pandoc'
 	Plug 'vim-pandoc/vim-pandoc-syntax'
 	Plug 'vim-pandoc/vim-rmarkdown'
-	Plug 'weirongxu/plantuml-previewer.vim'
 	Plug 'wellle/targets.vim'
 
 	" This doesn't work if it's loaded before
@@ -336,6 +336,7 @@ augroup latex
 augroup end
 
 augroup context
+	autocmd!
 	autocmd FileType tex TSContextDisable
 	autocmd FileType cpp TSContextDisable
 	autocmd FileType c TSContextDisable
