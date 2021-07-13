@@ -38,6 +38,7 @@ call plug#begin('~/.config/nvim/plugs')
 	Plug 'edkolev/promptline.vim'
 	Plug 'ekalinin/Dockerfile.vim'
 	Plug 'fannheyward/telescope-coc.nvim'
+	Plug 'folke/twilight.nvim'
 	Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }
 	Plug 'glepnir/dashboard-nvim'
 	Plug 'habamax/vim-asciidoctor'
@@ -81,49 +82,49 @@ let g:airline#extensions#tabline#formatter        = 'unique_tail_improved'
 let g:airline#extensions#promptline#snapshot_file = "~/.shell_prompt.sh"
 
 " Use coc provider
-let g:vista_default_executive = 'coc'
+let g:vista_default_executive      = 'coc'
 let g:vista_update_on_text_changed = 1
-let g:vista_echo_cursor_strategy = 'scroll'
-let g:vista_cursor_delay = 0
-let g:vista#renderer#icons = {
-	\'subroutine':     '羚 ',
-	\'method':         ' ',
-	\'func':           ' ',
-	\'variables':      ' ',
-	\'constructor':    '略 ',
-	\'field':          ' ',
-	\'interface':      ' ',
-	\'type':           ' ',
-	\'packages':       ' ',
-	\'property':       '襁 ',
-	\'implementation': ' ',
-	\'default':        ' ',
+let g:vista_echo_cursor_strategy   = 'scroll'
+let g:vista_cursor_delay           = 0
+let g:vista#renderer#icons         = {
 	\'augroup':        'פּ ',
-	\'macro':          ' ',
-	\'enumerator':     ' ',
+	\'class':          ' ',
 	\'const':          ' ',
+	\'constant':       ' ',
+	\'constructor':    '略 ',
+	\'default':        ' ',
+	\'enum':           ' ',
+	\'enumerator':     ' ',
+	\'enummember':     ' ',
+	\'field':          ' ',
+	\'fields':         ' ',
+	\'func':           ' ',
+	\'function':       ' ',
+	\'functions':      ' ',
+	\'implementation': ' ',
+	\'interface':      ' ',
+	\'macro':          ' ',
 	\'macros':         ' ',
 	\'map':            'פּ ',
-	\'fields':         ' ',
-	\'functions':      ' ',
-	\'enum':           ' ',
-	\'function':       ' ',
-	\'target':         ' ',
-	\'typedef':        ' ',
-	\'namespace':      ' ',
-	\'enummember':     ' ',
-	\'variable':       ' ',
-	\'modules':        ' ',
-	\'constant':       ' ',
-	\'struct':         ' ',
-	\'types':          ' ',
-	\'module':         ' ',
-	\'typeParameter':  ' ',
-	\'package':        ' ',
-	\'class':          ' ',
 	\'member':         ' ',
+	\'method':         ' ',
+	\'module':         ' ',
+	\'modules':        ' ',
+	\'namespace':      ' ',
+	\'package':        ' ',
+	\'packages':       ' ',
+	\'property':       '襁 ',
+	\'struct':         ' ',
+	\'subroutine':     '羚 ',
+	\'target':         ' ',
+	\'type':           ' ',
+	\'typeParameter':  ' ',
+	\'typedef':        ' ',
+	\'types':          ' ',
+	\'union':          '鬒',
 	\'var':            ' ',
-	\'union':          '鬒'
+	\'variable':       ' ',
+	\'variables':      ' ',
 \}
 
 " Some vimtex options
