@@ -4,15 +4,17 @@ AUR_PACKAGES=(
 	arch-wiki-man
 	bear
 	cmake-language-server
+	fastfetch-git
 	flat-remix-git
 	javascript-typescript-langserver
 	latex2e-help-texinfo
+	lua-language-server-git
 	minecraft-launcher
 	neovim-remote
 	nerd-fonts-inconsolata-go
-	fastfetch-git
 	picom-rounded-corners
 	polybar
+	pplatex
 	qogir-gtk-theme-git
 	ruby-nokogiri
 	sql-language-server
@@ -20,5 +22,4 @@ AUR_PACKAGES=(
 	texlive-localmanager-git
 	ttf-unifont
 	zeal
-	pplatex
 )
