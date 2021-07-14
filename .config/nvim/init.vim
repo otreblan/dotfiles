@@ -1,6 +1,7 @@
 set t_Co=256
-filetype plugin on
-syntax on " Syntax highlighting
+
+filetype plugin indent on " Detect filetypes
+syntax on                 " Syntax highlighting
 
 set autoread      " Automatically read file after it's been modified elsewhere
 set copyindent    " Keep same indent
@@ -24,9 +25,6 @@ set shiftwidth  =4                " Automatic indetation
 set tabstop     =4                " Makes tabs 4 spaces long
 set updatetime  =300              " Something for diagnostics
 set wildoptions =pum              " Pmenu for commands
-
-filetype on "detect filetypes
-filetype indent on
 
 " Plugins
 call plug#begin('~/.config/nvim/plugs')
@@ -354,11 +352,16 @@ colorscheme tender
 " Conceal
 highlight clear Conceal
 
+" Ignore errors
+function Null(error, response) abort
+endfunction
+
 " Documentation on hover
 augroup hover
 	autocmd!
-	autocmd CursorHold * if ! coc#float#has_float()
-		\| silent call CocAction('doHover') | call CocActionAsync('highlight')
+	autocmd CursorHold * if !coc#float#has_float()
+		\| call CocActionAsync('doHover', 'float', function('Null'))
+		\| call CocActionAsync('highlight', function('Null'))
 	\| endif
 	autocmd CursorHoldI * if CocAction('ensureDocument')
 		\|silent call CocAction('showSignatureHelp')
