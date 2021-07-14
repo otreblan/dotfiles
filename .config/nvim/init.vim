@@ -17,6 +17,7 @@ set background  =dark             " Vim colours for dark background
 set conceallevel=2                " Conceal certain LaTeX symbols
 set foldmethod  =marker           " For folding with  { { { (without spaces)
 set history     =1000             " History of : commands remembered
+set inccommand  =nosplit          " Real time seach and replace
 set list lcs    =trail:·,tab:\┊\  " For fancy indent marks
 set mouse       =a                " Mouse support
 set shiftwidth  =4                " Automatic indetation
