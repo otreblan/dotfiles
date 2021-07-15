@@ -21,15 +21,15 @@ o.shiftwidth   = 4    -- Automatic indetation
 o.tabstop      = 4    -- Makes tabs 4 spaces long
 o.updatetime   = 300  -- Something for diagnostics
 
-o.background   = "dark"    -- Vim colours for dark background
-o.foldmethod   = "marker"  -- For folding with  { { {
-o.inccommand   = "nosplit" -- Real time seach and replace
-o.mouse        = "a"       -- Mouse support
-o.wildoptions  = "pum"     -- Pmenu for commands
+o.background  = "dark"    -- Vim colours for dark background
+o.foldmethod  = "marker"  -- For folding with  { { {
+o.inccommand  = "nosplit" -- Real time seach and replace
+o.mouse       = "a"       -- Mouse support
+o.wildoptions = "pum"     -- Pmenu for commands
 
 opt.listchars = {
 	trail = "·",
-	tab = "┊ "
+	tab   = "┊ "
 }
 
 -- Options
@@ -56,10 +56,10 @@ g.vimtex_quickfix_method   = "pplatex"
 g.vimtex_view_method       = "zathura"
 g.vimtex_toc_config        = {
 	layer_status = {
-		content = 1,
-		include = 0,
-		label   = 0,
-		todo    = 0,
+		content = true,
+		include = false,
+		label   = false,
+		todo    = false,
 	}
 }
 
