@@ -324,9 +324,6 @@ nmap ga <Plug>(EasyAlign)
 " Syntax Highlighting
 colorscheme tender
 
-" Conceal
-highlight clear Conceal
-
 " Ignore errors
 function Null(error, response) abort
 endfunction
@@ -362,3 +359,6 @@ let $MAKEFLAGS = "-j".systemlist("nproc")[0]
 
 " Lua config
 lua require('config')
+
+" Conceal
+highlight Conceal ctermbg=NONE guibg=NONE
