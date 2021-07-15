@@ -31,6 +31,7 @@ call plug#begin('~/.config/nvim/plugs')
 
 	Plug 'HiPhish/info.vim'
 	Plug 'KabbAmine/zeavim.vim'
+	Plug 'ThePrimeagen/vim-be-good'
 	Plug 'andymass/vim-matchup'
 	Plug 'cdelledonne/vim-cmake'
 	Plug 'dag/vim-fish'
