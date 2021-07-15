@@ -171,7 +171,6 @@ let g:coc_global_extensions = [
 	\"coc-gitignore",
 	\"coc-json",
 	\"coc-marketplace",
-	\"coc-prettier",
 	\"coc-pyright",
 	\"coc-r-lsp",
 	\"coc-sql",
