@@ -1,58 +1,7 @@
 filetype plugin indent on " Detect filetypes
 syntax on                 " Syntax highlighting
 
-" Plugins
-call plug#begin('~/.config/nvim/plugs')
-
-	Plug 'HiPhish/info.vim'
-	Plug 'KabbAmine/zeavim.vim'
-	Plug 'ThePrimeagen/vim-be-good'
-	Plug 'andymass/vim-matchup'
-	Plug 'cdelledonne/vim-cmake'
-	Plug 'dag/vim-fish'
-	Plug 'edkolev/promptline.vim'
-	Plug 'ekalinin/Dockerfile.vim'
-	Plug 'fannheyward/telescope-coc.nvim'
-	Plug 'folke/twilight.nvim'
-	Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }
-	Plug 'glepnir/dashboard-nvim'
-	Plug 'habamax/vim-asciidoctor'
-	Plug 'honza/vim-snippets'
-	Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
-	Plug 'igankevich/mesonic'
-	Plug 'jacoborus/tender.vim'
-	Plug 'junegunn/vim-easy-align'
-	Plug 'jvirtanen/vim-octave'
-	Plug 'lambdalisue/gina.vim'
-	Plug 'lervag/vimtex'
-	Plug 'liuchengxu/vista.vim'
-	Plug 'ms-jpq/chadtree', {'branch': 'chad', 'do': 'python3 -m chadtree deps'}
-	Plug 'myusuf3/numbers.vim'
-	Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
-	Plug 'nvim-lua/plenary.nvim'
-	Plug 'nvim-lua/popup.nvim'
-	Plug 'nvim-telescope/telescope.nvim'
-	Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-	Plug 'nvim-treesitter/playground'
-	Plug 'romgrk/nvim-treesitter-context'
-	Plug 'sakhnik/nvim-gdb'
-	Plug 'sirver/ultisnips'
-	Plug 'tikhomirov/vim-glsl'
-	Plug 'tpope/vim-dispatch'
-	Plug 'tpope/vim-surround'
-	Plug 'vim-airline/vim-airline'
-	Plug 'vim-pandoc/vim-pandoc'
-	Plug 'vim-pandoc/vim-pandoc-syntax'
-	Plug 'vim-pandoc/vim-rmarkdown'
-	Plug 'wellle/targets.vim'
-
-	" This doesn't work if it's loaded before
-	Plug 'ryanoasis/vim-devicons'
-call plug#end()
-
-
 " Mappings
-
 imap <C-l> <Nul>
 
 "" Use tab for trigger completion with characters ahead and navigate.

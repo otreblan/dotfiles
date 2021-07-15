@@ -142,6 +142,8 @@ g.UltiSnipsExpandTrigger = "<NUL>"
 -- Matching
 g.matchup_matchparen_offscreen = {}
 
+-- Packer.nvim
+require("plugins")
 
 require("nvim-treesitter.configs").setup {
 	matchup = {
