@@ -9,6 +9,7 @@ o.foldenable    = true  -- Fold
 o.hidden        = true  -- TextEdit might fail if hidden is not set.
 o.hlsearch      = true  -- Highlight search results
 o.incsearch     = true  -- Incremental search
+o.lazyredraw    = true  -- Lazy redrawing
 o.list          = true  -- For fancy indent marks
 o.showcmd       = true  -- Show (partial) command in status line.
 o.showmatch     = true  -- Show matching brackets
