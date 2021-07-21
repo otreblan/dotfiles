@@ -89,6 +89,9 @@ nmap <silent> gxt <Plug>(coc-type-definition)<cr>
 nmap <silent> gxv :call CocLocations('ccls','$ccls/vars')<cr>
 nmap <silent> gxV :call CocLocations('ccls','$ccls/vars',{'kind':1})<cr>
 
+" Hop.nvim
+nmap <silent> gw :HopWord<cr>
+
 " Fast save
 nmap ññ :w<CR>
 

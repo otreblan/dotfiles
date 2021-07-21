@@ -169,3 +169,5 @@ require("telescope").setup{
 		},
 	}
 }
+
+require("hop").setup()

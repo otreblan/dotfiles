@@ -16,6 +16,7 @@ return require("packer").startup(function(use)
 	use "nvim-lua/popup.nvim"
 	use "nvim-telescope/telescope.nvim"
 	use "nvim-treesitter/playground"
+	use "phaazon/hop.nvim"
 	use "romgrk/nvim-treesitter-context"
 	use "sakhnik/nvim-gdb"
 	use "sirver/ultisnips"
