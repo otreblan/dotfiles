@@ -109,8 +109,6 @@ augroup end
 
 augroup context
 	autocmd!
-	autocmd FileType tex TSContextDisable
-	autocmd FileType cpp TSContextDisable
 	autocmd FileType c TSContextDisable
 augroup end
 

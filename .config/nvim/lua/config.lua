@@ -156,10 +156,6 @@ require("nvim-treesitter.configs").setup {
 	},
 }
 
-require("treesitter-context.config").setup{
-	enable = true, -- Enable this plugin (Can be enabled/disabled later via commands)
-}
-
 require("telescope").load_extension("coc")
 
 require("telescope").setup{
