@@ -107,11 +107,6 @@ augroup latex
 	autocmd FileType tex nmap ñq a<++><Esc>
 augroup end
 
-augroup context
-	autocmd!
-	autocmd FileType c TSContextDisable
-augroup end
-
 " Easy align
 vmap <Enter> <Plug>(EasyAlign)
 nmap ga <Plug>(EasyAlign)
