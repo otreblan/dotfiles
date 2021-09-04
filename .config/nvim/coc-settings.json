@@ -65,6 +65,12 @@
 			"filetypes": ["javascript", "typescript"],
 			"rootPatterns": [".git/"]
 		},
+		"rust":
+		{
+			"command": "rls",
+			"filetypes": ["rust"],
+			"rootPatterns": [".git/", "Cargo.toml"]
+		},
 		"dockerfile": {
 			"command":   "docker-langserver",
 			"filetypes": ["dockerfile"],
