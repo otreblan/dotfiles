@@ -32,7 +32,7 @@ PACMAN_PACKAGES=(
 	pasystray
 	pavucontrol
 	pstoedit
-	pulseaudio
+	pipewire-pulse
 	python-unidecode
 	qt5ct
 	ranger
