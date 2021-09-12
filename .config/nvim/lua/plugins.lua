@@ -37,8 +37,6 @@ return require("packer").startup(function(use)
 	use {"lervag/vimtex", ft = "tex"}
 	use {"tikhomirov/vim-glsl", ft = "glsl"}
 
-	use {"glacambre/firenvim", run = function() vim.fn["firenvim#install"](0) end}
-
 	use {"neoclide/coc.nvim",               run = "yarn install --frozen-lockfile"}
 	use {"iamcco/markdown-preview.nvim",    run = "cd app & yarn install"}
 	use {"nvim-treesitter/nvim-treesitter", run = ":TSUpdate"}
