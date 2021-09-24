@@ -95,9 +95,6 @@ nmap <silent> gw :HopWord<cr>
 " Fast save
 nmap ññ :w<CR>
 
-" Chadtree
-nnoremap <leader>v <cmd>CHADopen<cr>
-
 " LaTeX things
 augroup latex
 	autocmd!

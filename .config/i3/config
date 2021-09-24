@@ -205,7 +205,12 @@ exec "pasystray"
 
 #Compositor
 exec "picom &"
+
+#Authenticator
+exec "lxsession"
+
 #Algo para usar vim donde sea
 bindsym $mod+m exec "alacritty -e vimclip"
+
 #Calculadora
 bindsym $mod+n exec "speedcrunch"

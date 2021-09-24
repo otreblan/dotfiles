@@ -6,6 +6,7 @@ PACMAN_PACKAGES=(
 	base-devel
 	bash-completion
 	biber
+	blueman
 	calibre
 	ccls
 	cmake
@@ -22,6 +23,7 @@ PACMAN_PACKAGES=(
 	ibus-anthy
 	inkscape
 	lxappearance
+	lxsession-gtk3
 	man-db
 	man-pages
 	neovim
@@ -31,8 +33,8 @@ PACMAN_PACKAGES=(
 	paprefs
 	pasystray
 	pavucontrol
-	pstoedit
 	pipewire-pulse
+	pstoedit
 	python-unidecode
 	qt5ct
 	ranger
