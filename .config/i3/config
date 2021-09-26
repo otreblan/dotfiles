@@ -201,7 +201,6 @@ exec "polybar example"
 exec "nm-applet"
 exec "blueman-applet"
 exec "ibus-daemon -drx"
-exec "pasystray"
 
 #Compositor
 exec "picom &"
