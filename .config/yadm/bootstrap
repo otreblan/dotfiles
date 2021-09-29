@@ -15,22 +15,30 @@ cd "$HOME"
 yadm submodule update --recursive --init
 
 #Installing packages
+AUR="paru"
 
 if command -v paru >/dev/null 2>&1; then
-	AUR="paru"
-	AURARGS=( \
-		-Syyu
-		--needed
-		--nocleanmenu
-		--nodiffmenu
-		--noeditmenu
-		--noupgrademenu
-		--noconfirm
-	)
+	echo "Paru already installed"
 else
-	echo "Couldn't find paru" >&2
-	exit 2
+	#Paru installation
+	pushd /tmp
+	git clone https://aur.archlinux.org/$AUR.git
+	pushd $AUR
+	makepkg -si --noconfirm
+	popd
+	rm -rf $AUR
+	popd
 fi
+
+AURARGS=( \
+	-Syyu
+	--needed
+	--nocleanmenu
+	--nodiffmenu
+	--noeditmenu
+	--noupgrademenu
+	--noconfirm
+)
 
 echo "Installing packages"
 
