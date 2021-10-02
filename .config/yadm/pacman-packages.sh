@@ -17,6 +17,8 @@ PACMAN_PACKAGES=(
 	ffmpegthumbnailer
 	fzf
 	git-lfs
+	gnome-control-center
+	gvfs-google
 	hub
 	i3-gaps
 	ibus
