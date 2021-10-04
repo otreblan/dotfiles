@@ -19,6 +19,7 @@ alias diff='diff --color=auto'
 alias grep='grep --colour'
 alias ip='ip -c'
 alias ls='ls --color=auto'
+alias mpv='mpv --hwdec=auto'
 alias tree='tree -C'
 
 # vi mode
