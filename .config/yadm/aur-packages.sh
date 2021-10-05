@@ -8,7 +8,6 @@ AUR_PACKAGES=(
 	flat-remix-git
 	javascript-typescript-langserver
 	latex2e-help-texinfo
-	lua-language-server-git
 	minecraft-launcher
 	neovim-remote
 	nerd-fonts-inconsolata-go

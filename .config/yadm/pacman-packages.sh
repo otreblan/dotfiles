@@ -24,6 +24,7 @@ PACMAN_PACKAGES=(
 	ibus
 	ibus-anthy
 	inkscape
+	lua-language-server
 	lxappearance
 	lxsession-gtk3
 	man-db
