@@ -6,6 +6,7 @@ AUR_PACKAGES=(
 	cmake-language-server
 	fastfetch-git
 	flat-remix-git
+	gnome-shell-pomodoro
 	javascript-typescript-langserver
 	latex2e-help-texinfo
 	minecraft-launcher
