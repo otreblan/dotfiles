@@ -157,6 +157,7 @@ require("nvim-treesitter.configs").setup {
 }
 
 require("telescope").load_extension("coc")
+require("telescope").load_extension("notify")
 
 require("telescope").setup{
 	defaults = {
@@ -167,3 +168,4 @@ require("telescope").setup{
 }
 
 require("hop").setup()
+require("notify").setup()

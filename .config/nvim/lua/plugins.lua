@@ -17,7 +17,7 @@ return require("packer").startup(function(use)
 	use "nvim-telescope/telescope.nvim"
 	use "nvim-treesitter/playground"
 	use "phaazon/hop.nvim"
-	use "sakhnik/nvim-gdb"
+	use "rcarriga/nvim-notify"
 	use "sirver/ultisnips"
 	use "tpope/vim-surround"
 	use "vim-airline/vim-airline"
@@ -26,8 +26,9 @@ return require("packer").startup(function(use)
 	use "vim-pandoc/vim-rmarkdown"
 	use "wellle/targets.vim"
 
-	use {"tpope/vim-dispatch", cmd = {"Dispatch", "Make", "Focus", "Start"}}
 	use {"HiPhish/info.vim", cmd = {"Info"}}
+	use {"sakhnik/nvim-gdb", cmd = {"GdbStart"} }
+	use {"tpope/vim-dispatch", cmd = {"Dispatch", "Make", "Focus", "Start"}}
 
 	use {"andymass/vim-matchup", event = "VimEnter"}
 	use {"dag/vim-fish", ft = "fish"}
