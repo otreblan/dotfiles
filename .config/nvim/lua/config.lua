@@ -161,6 +161,7 @@ require("telescope").load_extension("notify")
 
 require("telescope").setup{
 	defaults = {
+		layout_strategy = "vertical",
 		layout_config = {
 			preview_cutoff = 0,
 		},
