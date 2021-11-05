@@ -10,6 +10,7 @@ return require("packer").startup(function(use)
 	use "jacoborus/tender.vim"
 	use "junegunn/vim-easy-align"
 	use "lambdalisue/gina.vim"
+	use "lewis6991/impatient.nvim"
 	use "liuchengxu/vista.vim"
 	use "myusuf3/numbers.vim"
 	use "nvim-lua/plenary.nvim"

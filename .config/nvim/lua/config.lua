@@ -143,6 +143,8 @@ g.UltiSnipsExpandTrigger = "<NUL>"
 -- Matching
 g.matchup_matchparen_offscreen = {}
 
+require('impatient')
+
 -- Packer.nvim
 require("plugins")
 
