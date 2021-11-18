@@ -38,7 +38,6 @@ opt.listchars = {
 -- Airline
 g["airline#extensions#hunks#coc_git"]            = true
 g["airline#extensions#promptline#snapshot_file"] = "~/.shell_prompt.sh"
-g["airline#extensions#tabline#buffer_nr_show"]   = true
 g["airline#extensions#tabline#enabled"]          = true
 g["airline#extensions#tabline#formatter"]        = "unique_tail_improved"
 g.airline_powerline_fonts                        = true
