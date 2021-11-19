@@ -169,5 +169,6 @@ require("telescope").setup{
 	}
 }
 
+require("godbolt").setup()
 require("hop").setup()
 require("notify").setup()
