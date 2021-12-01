@@ -32,6 +32,7 @@ PACMAN_PACKAGES=(
 	neovim
 	network-manager-applet
 	notification-daemon
+	noto-fonts-cjk
 	npm
 	paprefs
 	pasystray
