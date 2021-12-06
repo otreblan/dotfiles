@@ -186,6 +186,10 @@ bindsym XF86MonBrightnessUp exec xbacklight -inc 5 # increase screen brightness
 bindsym XF86MonBrightnessDown exec xbacklight -dec 5 # decrease screen brightness
 # Idioma
 exec "setxkbmap -layout latam"
+
+# Floating zoom notifications
+for_window [title="^zoom$" class="[zoom]*"] floating enable
+
 # Cosas para que i3 gaps funcione
 for_window [class="^.*"] border pixel 0
 
