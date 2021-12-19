@@ -9,7 +9,6 @@ AUR_PACKAGES=(
 	gnome-shell-pomodoro
 	javascript-typescript-langserver
 	latex2e-help-texinfo
-	minecraft-launcher
 	neovim-remote
 	nerd-fonts-inconsolata-go
 	picom-rounded-corners
