@@ -5,7 +5,7 @@ AUR_PACKAGES=(
 	bear
 	cmake-language-server
 	fastfetch-git
-	flat-remix-git
+	flat-remix
 	gnome-shell-pomodoro
 	javascript-typescript-langserver
 	latex2e-help-texinfo
