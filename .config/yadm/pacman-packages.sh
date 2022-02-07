@@ -29,6 +29,7 @@ PACMAN_PACKAGES=(
 	lxsession-gtk3
 	man-db
 	man-pages
+	mutter
 	neovim
 	network-manager-applet
 	notification-daemon
