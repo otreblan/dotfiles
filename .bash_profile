@@ -6,6 +6,9 @@ export QT_QPA_PLATFORMTHEME='qt5ct'
 export PDFVIEWER=zathura
 export BROWSER=firefox
 
+# Hardware acceleration
+export MOZ_DISABLE_RDD_SANDBOX=1
+
 export EDITOR=nvim
 
 # Settings for Japanese input
