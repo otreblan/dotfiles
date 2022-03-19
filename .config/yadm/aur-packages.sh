@@ -12,7 +12,6 @@ AUR_PACKAGES=(
 	latex2e-help-texinfo
 	neovim-remote
 	nerd-fonts-inconsolata-go
-	picom-rounded-corners
 	polybar
 	pplatex
 	qogir-gtk-theme-git

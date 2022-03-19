@@ -38,6 +38,7 @@ PACMAN_PACKAGES=(
 	paprefs
 	pasystray
 	pavucontrol
+	picom
 	pipewire-pulse
 	pstoedit
 	python-unidecode
