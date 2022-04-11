@@ -112,7 +112,6 @@
 	},
 	"coc.preferences.enableMessageDialog":   true,
 	"coc.preferences.formatOnSaveFiletypes": ["typescript"],
-	"coc.preferences.highlightTimeout":      1000,
 	"codeLens.enable":                       true,
 	"codeLens.separator":                    "⇒",
 	"diagnostic.virtualText":                true,
