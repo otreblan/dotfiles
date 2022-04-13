@@ -1,6 +1,5 @@
 #/usr/bin/env bash
 AUR_PACKAGES=(
-	#nodejs-docker-langserver
 	arch-wiki-man
 	bear
 	cmake-language-server
@@ -12,6 +11,7 @@ AUR_PACKAGES=(
 	latex2e-help-texinfo
 	neovim-remote
 	nerd-fonts-inconsolata-go
+	nodejs-docker-langserver-bin
 	polybar
 	pplatex
 	qogir-gtk-theme-git
