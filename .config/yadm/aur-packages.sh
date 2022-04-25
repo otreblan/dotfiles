@@ -17,7 +17,6 @@ AUR_PACKAGES=(
 	qogir-gtk-theme-git
 	ruby-nokogiri
 	sql-language-server
-	svls
 	texlive-localmanager-git
 	ttf-unifont
 	zeal
