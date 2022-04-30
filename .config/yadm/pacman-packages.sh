@@ -18,6 +18,7 @@ PACMAN_PACKAGES=(
 	fzf
 	git-lfs
 	gnome-control-center
+	gnome-shell-pomodoro
 	gvfs-google
 	hub
 	i3-gaps
