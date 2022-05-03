@@ -25,6 +25,7 @@ PACMAN_PACKAGES=(
 	ibus
 	ibus-anthy
 	inkscape
+	krita
 	lua-language-server
 	lxappearance
 	lxsession-gtk3
