@@ -42,6 +42,7 @@ PACMAN_PACKAGES=(
 	pavucontrol
 	picom
 	pipewire-pulse
+	polybar
 	pstoedit
 	python-unidecode
 	qt5ct
