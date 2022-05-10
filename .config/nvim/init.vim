@@ -136,7 +136,7 @@ augroup hover
 		\| call CocActionAsync('highlight', function('Null'))
 	\| endif
 	autocmd CursorHoldI * if CocAction('ensureDocument')
-		\|silent call CocAction('showSignatureHelp')
+		\|silent call CocActionAsync('showSignatureHelp')
 	\| endif
 augroup end
 
