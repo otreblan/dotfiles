@@ -15,7 +15,6 @@ AUR_PACKAGES=(
 	pplatex
 	qogir-gtk-theme-git
 	ruby-nokogiri
-	sql-language-server
 	texlive-localmanager-git
 	ttf-unifont
 	zeal
