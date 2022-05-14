@@ -59,5 +59,5 @@ PACMAN_PACKAGES=(
 	xorg
 	yarn
 	zathura
-	zathura-pdf-poppler
+	zathura-pdf-mupdf
 )
