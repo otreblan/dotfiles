@@ -1,4 +1,4 @@
-#/usr/bin/env bash
+#!/usr/bin/env bash
 AUR_PACKAGES=(
 	arch-wiki-man
 	bear
