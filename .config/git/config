@@ -9,6 +9,8 @@
 [core]
 	editor = nvim
 	autocrlf = input
+	fsmonitor = true
+	untrackedcache = true
 [commit]
 	gpgsign = true
 [color]
