@@ -113,7 +113,7 @@
 	"coc.preferences.enableMessageDialog":   true,
 	"coc.preferences.formatOnSaveFiletypes": ["typescript"],
 	"codeLens.enable":                       true,
-	"codeLens.separator":                    "⇒",
+	"codeLens.position":                   "eol",
 	"diagnostic.virtualText":                true,
 	"diagnostic.virtualTextCurrentLineOnly": false,
 	"diagnostic.warningSign":                " ",
