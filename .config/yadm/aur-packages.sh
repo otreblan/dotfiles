@@ -12,6 +12,7 @@ AUR_PACKAGES=(
 	neovim-remote
 	nerd-fonts-inconsolata-go
 	nodejs-docker-langserver-bin
+	polymc
 	pplatex
 	qogir-gtk-theme-git
 	ruby-nokogiri
