@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
-AUR_PACKAGES=(
+
+export AUR_PACKAGES=(
 	arch-wiki-man
 	bear
 	cmake-language-server

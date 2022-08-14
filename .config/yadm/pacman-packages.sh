@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-PACMAN_PACKAGES=(
+export PACMAN_PACKAGES=(
 	alacritty
 	asciidoctor
 	base-devel
