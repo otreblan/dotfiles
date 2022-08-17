@@ -17,6 +17,7 @@ application/pdf=org.pwmt.zathura-pdf-poppler.desktop;org.inkscape.Inkscape.deskt
 x-scheme-handler/discord-610508934456934412=discord-610508934456934412.desktop
 x-scheme-handler/discord-418076578333851669=discord-418076578333851669.desktop
 x-scheme-handler/eclipse+command=_usr_lib_dbeaver_.desktop
+x-scheme-handler/discord-654437126737231903=discord-654437126737231903.desktop
 
 [Added Associations]
 text/plain=nvim.desktop;emacs.desktop;
@@ -24,7 +25,7 @@ text/x-csrc=nvim.desktop;vim.desktop;
 image/png=feh.desktop;
 text/x-csharp=code-oss.desktop;
 image/svg+xml=org.inkscape.Inkscape.desktop;
-image/jpeg=feh.desktop;
+image/jpeg=org.gnome.eog.desktop;feh.desktop;
 x-scheme-handler/http=firefox.desktop;
 x-scheme-handler/https=firefox.desktop;
 x-scheme-handler/ftp=firefox.desktop;
@@ -37,3 +38,4 @@ application/x-extension-xhtml=firefox.desktop;
 application/x-extension-xht=firefox.desktop;
 application/json=nvim.desktop;
 application/x-shellscript=emacs.desktop;
+video/mp4=mpv.desktop;
