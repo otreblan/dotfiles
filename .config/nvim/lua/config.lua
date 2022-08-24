@@ -1,6 +1,5 @@
 local g   = vim.g
 local o   = vim.o
-local opt = vim.opt
 local w   = vim.w
 
 o.autoread      = true  -- Automatically read file after it's been modified elsewhere
@@ -27,11 +26,6 @@ o.foldmethod  = "marker"  -- For folding with  { { {
 o.inccommand  = "nosplit" -- Real time seach and replace
 o.mouse       = "a"       -- Mouse support
 o.wildoptions = "pum"     -- Pmenu for commands
-
-opt.listchars = {
-	trail = "·",
-	tab   = "┊ "
-}
 
 -- Options
 
