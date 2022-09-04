@@ -39,3 +39,4 @@ application/x-extension-xht=firefox.desktop;
 application/json=nvim.desktop;
 application/x-shellscript=emacs.desktop;
 video/mp4=mpv.desktop;
+image/bmp=org.gnome.eog.desktop;
