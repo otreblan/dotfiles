@@ -48,7 +48,6 @@ export PACMAN_PACKAGES=(
 	qt5ct
 	ranger
 	rofi
-	speedcrunch
 	texinfo
 	texlab
 	texlive-most
