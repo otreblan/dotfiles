@@ -141,15 +141,15 @@ require('impatient')
 -- Packer.nvim
 require("plugins")
 
-require("nvim-treesitter.configs").setup {
-	matchup = {
-		enable = true, -- mandatory, false will disable the whole extension
-	},
-	highlight = {
-		enable  = true,
-		disable = { "latex" },
-	},
-}
+-- require("nvim-treesitter.configs").setup {
+-- 	matchup = {
+-- 		enable = true, -- mandatory, false will disable the whole extension
+-- 	},
+-- 	highlight = {
+-- 		enable  = true,
+-- 		disable = { "latex" },
+-- 	},
+-- }
 
 require("telescope").load_extension("coc")
 require("telescope").load_extension("notify")
