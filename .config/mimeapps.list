@@ -18,6 +18,7 @@ x-scheme-handler/discord-610508934456934412=discord-610508934456934412.desktop
 x-scheme-handler/discord-418076578333851669=discord-418076578333851669.desktop
 x-scheme-handler/eclipse+command=_usr_lib_dbeaver_.desktop
 x-scheme-handler/discord-654437126737231903=discord-654437126737231903.desktop
+x-scheme-handler/msteams=teams.desktop
 
 [Added Associations]
 text/plain=nvim.desktop;emacs.desktop;
