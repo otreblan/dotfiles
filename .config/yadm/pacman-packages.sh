@@ -2,6 +2,7 @@
 
 export PACMAN_PACKAGES=(
 	alacritty
+	android-file-transfer
 	asciidoctor
 	base-devel
 	bash-completion
