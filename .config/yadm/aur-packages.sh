@@ -7,6 +7,7 @@ export AUR_PACKAGES=(
 	cpupower-gui
 	fastfetch-git
 	flat-remix
+	giara
 	gnome-shell-pomodoro
 	javascript-typescript-langserver
 	latex2e-help-texinfo
