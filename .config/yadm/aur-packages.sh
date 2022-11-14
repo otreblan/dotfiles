@@ -20,4 +20,6 @@ export AUR_PACKAGES=(
 	texlive-localmanager-git
 	ttf-unifont
 	zeal
+	multimc5
+	multimc-curseforge
 )
