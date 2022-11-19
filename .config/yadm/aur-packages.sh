@@ -15,11 +15,10 @@ export AUR_PACKAGES=(
 	nerd-fonts-inconsolata-go
 	nodejs-docker-langserver-bin
 	pplatex
+	prismlauncher
 	qogir-gtk-theme-git
 	ruby-nokogiri
 	texlive-localmanager-git
 	ttf-unifont
 	zeal
-	multimc5
-	multimc-curseforge
 )
