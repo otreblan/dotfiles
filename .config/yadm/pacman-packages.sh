@@ -58,6 +58,7 @@ export PACMAN_PACKAGES=(
 	xfce4-power-manager
 	xorg
 	yarn
+	yt-dlp
 	zathura
 	zathura-pdf-mupdf
 )
