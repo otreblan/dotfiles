@@ -18,6 +18,7 @@ export AUR_PACKAGES=(
 	prismlauncher
 	qogir-gtk-theme-git
 	ruby-nokogiri
+	spotify
 	texlive-localmanager-git
 	ttf-unifont
 	zeal
