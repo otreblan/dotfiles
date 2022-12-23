@@ -21,6 +21,7 @@ export PACMAN_PACKAGES=(
 	gnome-control-center
 	gnome-shell-pomodoro
 	gvfs-google
+	gvfs-mtp
 	hub
 	i3-gaps
 	ibus
