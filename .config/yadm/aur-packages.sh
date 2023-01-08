@@ -10,6 +10,8 @@ export AUR_PACKAGES=(
 	giara
 	gnome-shell-pomodoro
 	javascript-typescript-langserver
+	kcc
+	kindlegen
 	latex2e-help-texinfo
 	neovim-remote
 	nerd-fonts-inconsolata-go
