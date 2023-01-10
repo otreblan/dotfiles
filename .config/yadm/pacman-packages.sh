@@ -23,7 +23,7 @@ export PACMAN_PACKAGES=(
 	gvfs-google
 	gvfs-mtp
 	hub
-	i3-gaps
+	i3-wm
 	ibus
 	ibus-anthy
 	inkscape
