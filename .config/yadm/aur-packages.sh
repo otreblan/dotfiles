@@ -14,7 +14,6 @@ export AUR_PACKAGES=(
 	kindlegen
 	latex2e-help-texinfo
 	neovim-remote
-	nerd-fonts-inconsolata-go
 	nodejs-docker-langserver-bin
 	pplatex
 	prismlauncher

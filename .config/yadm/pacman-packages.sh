@@ -53,6 +53,7 @@ export PACMAN_PACKAGES=(
 	texinfo
 	texlab
 	texlive-most
+	ttf-inconsolata-go-nerd
 	ttf-roboto-mono
 	vim
 	xclip
