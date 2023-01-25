@@ -2,7 +2,6 @@
 
 export AUR_PACKAGES=(
 	arch-wiki-man
-	bear
 	cmake-language-server
 	cpupower-gui
 	fastfetch-git

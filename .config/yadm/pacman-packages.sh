@@ -6,6 +6,7 @@ export PACMAN_PACKAGES=(
 	asciidoctor
 	base-devel
 	bash-completion
+	bear
 	biber
 	blueman
 	calibre
