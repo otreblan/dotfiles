@@ -96,13 +96,13 @@
 			"command": "svls",
 			"filetypes": ["systemverilog", "verilog"]
 		},
-		"omnisharp": {
-			"command": "~/.cache/omnisharp-vim/omnisharp-roslyn/OmniSharp.exe",
+		"csharp-ls": {
+			"command": "dotnet",
 			"args": [
-				"-lsp"
+				"csharp-ls"
 			],
-			"filetypes": ["cs"],
-			"rootPatterns": [".git/"],
+			"filetypes": ["cs", "html"],
+			"rootPatterns": [".git/", "*.csproj"],
 			"trace.server": "verbose"
 		},
 		"texlab": {
