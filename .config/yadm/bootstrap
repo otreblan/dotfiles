@@ -59,17 +59,14 @@ popd
 
 #Cheking if neovim is installed
 if command -v nvim >/dev/null 2>&1; then
-
-	echo "Dowloading vimplug"
-	curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim \
-		--create-dirs \
-		https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-
 	echo "Installing plugins"
 
 	nvim \
-		'+PlugUpdate'\
-		'+PlugClean!'\
-		'+PlugUpdate'\
+		'+PackerSync'\
 		'+qall'
 fi
+
+# Coc.nvim
+pushd ~/.local/share/nvim/site/pack/packer/start/coc.nvim
+yarn install
+popd

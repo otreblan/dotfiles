@@ -159,6 +159,7 @@ let $MAKEFLAGS = "-j".systemlist("nproc")[0]
 
 " Lua config
 lua require('config')
+lua require('plugins')
 
 " Conceal
 highlight Conceal ctermbg=NONE guibg=NONE

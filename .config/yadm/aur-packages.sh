@@ -14,6 +14,7 @@ export AUR_PACKAGES=(
 	latex2e-help-texinfo
 	neovim-remote
 	nodejs-docker-langserver-bin
+	nvim-packer-git
 	pplatex
 	prismlauncher
 	qogir-gtk-theme-git

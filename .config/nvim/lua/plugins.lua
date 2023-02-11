@@ -41,8 +41,9 @@ return require("packer").startup(function(use)
 	use {"lervag/vimtex", ft = "tex"}
 	use {"tikhomirov/vim-glsl", ft = "glsl"}
 
-	use {"neoclide/coc.nvim",               run = "yarn install --frozen-lockfile"}
 	use {"iamcco/markdown-preview.nvim",    run = "cd app & yarn install"}
+	use {"ms-jpq/chadtree", run = "python3 -m chadtree deps"}
+	use {"neoclide/coc.nvim",               run = "yarn install --frozen-lockfile"}
 	use {"nvim-treesitter/nvim-treesitter", run = ":TSUpdate"}
 
 	-- This doesn't work if it's loaded before

@@ -3,9 +3,11 @@
 export PACMAN_PACKAGES=(
 	alacritty
 	android-file-transfer
+	arandr
 	asciidoctor
 	base-devel
 	bash-completion
+	bash-language-server
 	bear
 	biber
 	blueman
@@ -30,7 +32,7 @@ export PACMAN_PACKAGES=(
 	inkscape
 	krita
 	lua-language-server
-	lxappearance
+	lxappearance-gtk3
 	lxsession-gtk3
 	man-db
 	man-pages
@@ -47,6 +49,7 @@ export PACMAN_PACKAGES=(
 	pipewire-pulse
 	polybar
 	pstoedit
+	python-pynvim
 	python-unidecode
 	qt5ct
 	ranger
@@ -60,6 +63,7 @@ export PACMAN_PACKAGES=(
 	xclip
 	xfce4-power-manager
 	xorg
+	xorg-twm
 	yarn
 	yt-dlp
 	zathura
