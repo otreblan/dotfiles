@@ -22,5 +22,4 @@ export AUR_PACKAGES=(
 	spotify
 	texlive-localmanager-git
 	ttf-unifont
-	zeal
 )
