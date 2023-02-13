@@ -20,6 +20,7 @@ AUR="paru"
 if command -v paru >/dev/null 2>&1; then
 	echo "Paru already installed"
 else
+	sudo pacman -Syu base-devel
 	#Paru installation
 	pushd /tmp
 	git clone https://aur.archlinux.org/$AUR.git
