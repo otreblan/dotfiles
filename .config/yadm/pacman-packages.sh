@@ -39,6 +39,7 @@ export PACMAN_PACKAGES=(
 	mutter
 	neovim
 	network-manager-applet
+	networkmanager-fortisslvpn
 	notification-daemon
 	noto-fonts-cjk
 	npm
