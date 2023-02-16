@@ -20,6 +20,8 @@ export XMODIFIERS=@im='ibus'
 export MANPAGER="nvim +Man!"
 export MANWIDTH=80
 
+export CLR_OPENSSL_VERSION_OVERRIDE=1.1
+
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
 # Gtk theme on java

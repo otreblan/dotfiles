@@ -43,6 +43,7 @@ export PACMAN_PACKAGES=(
 	notification-daemon
 	noto-fonts-cjk
 	npm
+	openssl-1.1
 	paprefs
 	pasystray
 	pavucontrol
