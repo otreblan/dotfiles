@@ -63,6 +63,7 @@ export PACMAN_PACKAGES=(
 	ttf-roboto-mono
 	vim
 	xclip
+	xdg-user-dirs
 	xfce4-power-manager
 	xorg
 	xorg-twm
