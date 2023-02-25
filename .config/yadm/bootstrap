@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 
-WALLPAPER_LINK="https://wallpaperplay.com/walls/full/7/d/2/3508.jpg"
 YADM_PATH="$HOME/.config/yadm"
 
 BEST_MIRROR='Server = https://appuals.com/archlinux/$repo/os/$arch'
@@ -47,9 +46,6 @@ source "$YADM_PATH/pacman-packages.sh"
 source "$YADM_PATH/aur-packages.sh"
 
 $AUR ${AURARGS[@]} ${PACMAN_PACKAGES[@]} ${AUR_PACKAGES[@]}
-
-#Downloading wallpaper
-curl "$WALLPAPER_LINK" -o "$HOME/.bg.jpg"
 
 #Installing ranger plugin
 pushd "$HOME/.config/ranger/plugins/ranger_devicons"
