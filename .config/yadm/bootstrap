@@ -45,7 +45,7 @@ echo "Installing packages"
 source "$YADM_PATH/pacman-packages.sh"
 source "$YADM_PATH/aur-packages.sh"
 
-$AUR ${AURARGS[@]} ${PACMAN_PACKAGES[@]} ${AUR_PACKAGES[@]}
+"$AUR" "${AURARGS[@]}" "${PACMAN_PACKAGES[@]}" "${AUR_PACKAGES[@]}"
 
 #Installing ranger plugin
 pushd "$HOME/.config/ranger/plugins/ranger_devicons"
