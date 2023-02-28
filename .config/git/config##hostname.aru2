@@ -1,0 +1,35 @@
+[user]
+	email = alberto.oporto@heinz-glas.com
+	name = aoporto
+	signingkey = 78D21B35C8B223E3
+[mergetool "nvim"]
+	cmd = nvim -f -c \"Gdiff\" \"$MERGED\"
+[merge]
+	tool = nvim
+[core]
+	editor = nvim
+	autocrlf = input
+	fsmonitor = true
+	untrackedcache = true
+[commit]
+	gpgsign = true
+[color]
+	ui = auto
+[alias]
+	lg = "log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - \
+%C(normal)%s%C(reset) %C(green)- %an %C(blink yellow)%GK%C(reset)%n'\
+'%w(0,12,12)%C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n'\
+'%w(0,8,8)%+b' --all"
+
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[push]
+	followTags = true
+[pull]
+	rebase = false
+[pager]
+	diff = diff-so-fancy | less --tabs=1,5 -RFX
+	show = diff-so-fancy | less --tabs=1,5 -RFX
