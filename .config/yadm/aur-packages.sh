@@ -12,6 +12,7 @@ export AUR_PACKAGES=(
 	kcc
 	kindlegen
 	latex2e-help-texinfo
+	monophony
 	neovim-remote
 	nodejs-docker-langserver-bin
 	nvim-packer-git
