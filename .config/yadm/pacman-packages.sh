@@ -15,6 +15,7 @@ export PACMAN_PACKAGES=(
 	ccls
 	cmake
 	ctags
+	deno
 	diff-so-fancy
 	dnsmasq
 	feh
