@@ -18,6 +18,7 @@ export AUR_PACKAGES=(
 	nvim-packer-git
 	pplatex
 	prismlauncher
+	python-re2
 	qogir-gtk-theme-git
 	ruby-nokogiri
 	spotify

@@ -91,6 +91,9 @@ omap ac <Plug>(coc-classobj-a)
 nmap <silent> gw :HopWord<cr>
 omap <silent> gw :HopWord<cr>
 
+" CHADTree
+nnoremap <leader>v <cmd>CHADopen<cr>
+
 " Fast save
 nmap ññ :w<CR>
 

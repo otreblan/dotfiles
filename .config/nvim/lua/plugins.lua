@@ -34,9 +34,10 @@ return require("packer").startup(function(use)
 	use {"tpope/vim-dispatch", cmd = {"Dispatch", "Make", "Focus", "Start"}}
 
 	use {"andymass/vim-matchup", event = "VimEnter"}
-	use {"glepnir/dashboard-nvim", event = "VimEnter", requires = {"nvim-tree/nvim-web-devicons"}}
 	use {"dag/vim-fish", ft = "fish"}
 	use {"ekalinin/Dockerfile.vim", ft = "Dockerfile"}
+	use {"gelguy/wilder.nvim", requires = {"romgrk/fzy-lua-native"}}
+	use {"glepnir/dashboard-nvim", event = "VimEnter", requires = {"nvim-tree/nvim-web-devicons"}}
 	use {"habamax/vim-asciidoctor", ft = "asciidoctor"}
 	use {"jvirtanen/vim-octave", ft = "octave"}
 	use {"lervag/vimtex", ft = "tex"}

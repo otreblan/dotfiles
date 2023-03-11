@@ -162,7 +162,7 @@ require("nvim-treesitter.configs").setup {
 require("telescope").load_extension("coc")
 require("telescope").load_extension("notify")
 
-require("telescope").setup{
+require("telescope").setup {
 	defaults = {
 		layout_strategy = "vertical",
 		layout_config = {
@@ -171,8 +171,7 @@ require("telescope").setup{
 	}
 }
 
-require("dashboard").setup
-{
+require("dashboard").setup {
 	theme = 'hyper',
 	config = {
 		week_header = {
@@ -197,12 +196,80 @@ require("dashboard").setup
 			{
 				desc = ' dotfiles',
 				group = 'Number',
-				action = 'Telescope dotfiles',
+				action = 'Telescope find_files cwd=~/.config/nvim/',
 				key = 'd',
 			},
 		},
 	},
 }
+
+require("wilder").setup {
+	modes = { ":", "/", "?" }
+}
+
+local wilder = require("wilder")
+
+wilder.set_option("pipeline", {
+	wilder.branch(
+		wilder.cmdline_pipeline({
+			-- sets the language to use, "vim" and "python" are supported
+			fuzzy_filter = wilder.lua_fzy_filter(),
+			-- 0 turns off fuzzy matching
+			-- 1 turns on fuzzy matching
+			-- 2 partial fuzzy matching (match does not have to begin with the same first letter)
+			fuzzy = 1,
+		}),
+		wilder.python_search_pipeline({
+			-- can be set to wilder#python_fuzzy_delimiter_pattern() for stricter fuzzy matching
+			pattern = wilder.python_fuzzy_pattern(),
+			-- omit to get results in the order they appear in the buffer
+			sorter = wilder.python_difflib_sorter(),
+			-- can be set to "re2" for performance, requires pyre2 to be installed
+			-- see :h wilder#python_search() for more details
+			engine = "re",
+		}),
+		{
+			wilder.check(function(_, x) return x == '' end),
+			wilder.history(),
+		}
+	),
+})
+
+local highlighters = {
+	wilder.pcre2_highlighter(),
+	wilder.lua_fzy_highlighter(),
+}
+
+
+local popupmenu_renderer = wilder.popupmenu_renderer(
+	wilder.popupmenu_border_theme({
+		left = {" ", wilder.popupmenu_devicons(), " "},
+		right = {" ", wilder.popupmenu_scrollbar()},
+		-- "single", "double", "rounded" or "solid"
+		-- can also be a list of 8 characters, see :h wilder#popupmenu_border_theme() for more details
+		border = "rounded",
+		empty_message = wilder.popupmenu_empty_message_with_spinner(),
+		highlighter = highlighters,
+		highlights = {
+			accent = wilder.make_hl("WilderAccent", "Pmenu", {{a = 1}, {a = 1}, {foreground = "#f4468f", bold = 1}}),
+		},
+	})
+)
+
+local wildmenu_renderer = wilder.wildmenu_renderer(
+	wilder.wildmenu_airline_theme({
+		-- highlights can be overriden, see :h wilder#wildmenu_renderer()
+		highlights = {default = "StatusLine"},
+		highlighter = highlighters,
+		separator = " · ",
+	})
+)
+
+wilder.set_option("renderer", wilder.renderer_mux({
+	[":"] = popupmenu_renderer,
+	["/"] = wildmenu_renderer,
+	substitute = wildmenu_renderer,
+}))
 
 require("godbolt").setup()
 require("hop").setup()
