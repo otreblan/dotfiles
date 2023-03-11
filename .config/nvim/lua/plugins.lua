@@ -5,7 +5,6 @@ return require("packer").startup(function(use)
 	use "cdelledonne/vim-cmake"
 	use "edkolev/promptline.vim"
 	use "fannheyward/telescope-coc.nvim"
-	use "glepnir/dashboard-nvim"
 	use "honza/vim-snippets"
 	use "igankevich/mesonic"
 	use "jacoborus/tender.vim"
@@ -35,6 +34,7 @@ return require("packer").startup(function(use)
 	use {"tpope/vim-dispatch", cmd = {"Dispatch", "Make", "Focus", "Start"}}
 
 	use {"andymass/vim-matchup", event = "VimEnter"}
+	use {"glepnir/dashboard-nvim", event = "VimEnter", requires = {"nvim-tree/nvim-web-devicons"}}
 	use {"dag/vim-fish", ft = "fish"}
 	use {"ekalinin/Dockerfile.vim", ft = "Dockerfile"}
 	use {"habamax/vim-asciidoctor", ft = "asciidoctor"}
