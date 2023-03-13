@@ -157,6 +157,9 @@ require("nvim-treesitter.configs").setup {
 		enable  = true,
 		disable = { "latex", "lua"},
 	},
+	indent = {
+		enable = true,
+	}
 }
 
 require("telescope").load_extension("coc")
