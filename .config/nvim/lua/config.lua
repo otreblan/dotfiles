@@ -277,4 +277,5 @@ wilder.set_option("renderer", wilder.renderer_mux({
 require("godbolt").setup()
 require("hop").setup()
 require("notify").setup()
+require("nvim-surround").setup()
 require("nvim-web-devicons").setup()
