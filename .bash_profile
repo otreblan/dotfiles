@@ -25,6 +25,8 @@ export CLR_OPENSSL_VERSION_OVERRIDE=1.1
 # Force Minecraft to use pulseaudio
 export ALSOFT_DRIVERS=pulse
 
+export TERMINAL=/usr/bin/alacritty
+
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
 # Gtk theme on java
