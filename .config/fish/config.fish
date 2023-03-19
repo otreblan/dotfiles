@@ -27,12 +27,23 @@ set -x XMODIFIERS '@im=ibus'
 # Neovim as manpager reader
 set -x MANPAGER "nvim +Man!"
 
-set -x PATH "/usr/lib/emscripten:/home/otreblan/.gem/ruby/2.7.0/bin:$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+set -x MANWIDTH 80
+
+set -x CLR_OPENSSL_VERSION_OVERRIDE 1.1
+
+# Force Minecraft to use pulseaudio
+set -x ALSOFT_DRIVERS pulse
+
+set -x TERMINAL /usr/bin/alacritty
+
+set -x PATH "$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
+set -x _JAVA_OPTIONS "-Djdk.gtk.version=3 -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true -Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel -Dswing.crossplatformlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel"
 
 set -x BINARYEN "/usr"
 set -x BINARYEN_ROOT "/usr"
 
 
 if status --is-interactive
-	paleofetch
+	fastfetch --load-config neofetch
 end
