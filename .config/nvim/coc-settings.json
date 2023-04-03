@@ -99,6 +99,20 @@
 		"texlab": {
 			"command": "texlab",
 			"filetypes": ["tex", "bib", "plaintex", "context"]
+		},
+		"sql": {
+			"command": "sql-language-server",
+			"args": ["up", "--method", "stdio"],
+			"filetypes": ["sql"],
+			"settings": {
+				"sqlLanguageServer": {
+					"lint": {
+						"rules": {
+							"linebreak-after-clause-keyword": "off"
+						}
+					}
+				}
+			}
 		}
 	},
 	"html-css-support.styleSheets": [
@@ -120,6 +134,5 @@
 	"signature.target":                      "float",
 	"suggest.enablePreview":                 true,
 	"suggest.maxCompleteItemCount":          1000,
-	"suggest.labelMaxLength":                40,
-	"sql.database":                          "postgresql"
+	"suggest.labelMaxLength":                40
 }
