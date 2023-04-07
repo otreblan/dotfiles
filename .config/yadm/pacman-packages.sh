@@ -32,6 +32,7 @@ export PACMAN_PACKAGES=(
 	ibus-anthy
 	inkscape
 	krita
+	libxcrypt-compat
 	lua-language-server
 	lxappearance-gtk3
 	lxsession-gtk3
