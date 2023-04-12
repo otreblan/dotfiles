@@ -23,9 +23,6 @@ alias ls='ls --color=auto'
 alias mpv='mpv --hwdec=auto'
 alias tree='tree -C'
 
-# vi mode
-#set -o vi
-
 # System information
 fastfetch --load-config neofetch
 
