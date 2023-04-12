@@ -23,6 +23,7 @@ export PACMAN_PACKAGES=(
 	fzf
 	git-lfs
 	gnome-control-center
+	gnome-screenshot
 	gnome-shell-pomodoro
 	gvfs-google
 	gvfs-mtp
