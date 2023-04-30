@@ -21,6 +21,7 @@ export PACMAN_PACKAGES=(
 	feh
 	ffmpegthumbnailer
 	fzf
+	gamescope
 	git-lfs
 	gnome-control-center
 	gnome-screenshot
