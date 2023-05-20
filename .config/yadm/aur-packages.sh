@@ -14,7 +14,6 @@ export AUR_PACKAGES=(
 	latex2e-help-texinfo
 	monophony
 	neovim-remote
-	nodejs-docker-langserver-bin
 	nvim-packer-git
 	pplatex
 	prismlauncher
@@ -22,6 +21,5 @@ export AUR_PACKAGES=(
 	qogir-gtk-theme-git
 	ruby-nokogiri
 	spotify
-	texlive-localmanager-git
 	ttf-unifont
 )

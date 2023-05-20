@@ -34,6 +34,7 @@ export PACMAN_PACKAGES=(
 	ibus-anthy
 	inkscape
 	krita
+	kvantum
 	libxcrypt-compat
 	lua-language-server
 	lxappearance-gtk3
@@ -41,6 +42,7 @@ export PACMAN_PACKAGES=(
 	man-db
 	man-pages
 	mutter
+	nautilus
 	neovim
 	network-manager-applet
 	networkmanager-fortisslvpn
@@ -59,6 +61,7 @@ export PACMAN_PACKAGES=(
 	python-unidecode
 	qt5ct
 	ranger
+	redshift
 	rofi
 	texinfo
 	texlab
@@ -71,6 +74,7 @@ export PACMAN_PACKAGES=(
 	xfce4-power-manager
 	xorg
 	xorg-twm
+	xorg-xinit
 	yarn
 	yt-dlp
 	zathura
