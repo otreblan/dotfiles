@@ -22,6 +22,7 @@ alias less='less -R'
 alias ls='ls --color=auto'
 alias mpv='mpv --hwdec=auto'
 alias tree='tree -C'
+alias rsync='rsync --compress-choice=zstd --compress-level=3 --checksum-choice=xxh3'
 
 # System information
 fastfetch --load-config neofetch
