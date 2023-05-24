@@ -35,12 +35,15 @@ export PACMAN_PACKAGES=(
 	inkscape
 	krita
 	kvantum
+	libva-mesa-driver
 	libxcrypt-compat
 	lua-language-server
 	lxappearance-gtk3
 	lxsession-gtk3
 	man-db
 	man-pages
+	mesa-vdpau
+	mpv
 	mutter
 	nautilus
 	neovim
