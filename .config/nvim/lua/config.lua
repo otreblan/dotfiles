@@ -95,6 +95,7 @@ w.nvimgdb_termwin_command = "belowright vnew"
 
 -- Coc extensions
 g.coc_global_extensions = {
+	"coc-angular",
 	"coc-eslint",
 	"coc-git",
 	"coc-gitignore",
