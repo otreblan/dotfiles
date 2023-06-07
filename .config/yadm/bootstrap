@@ -2,11 +2,6 @@
 
 YADM_PATH="$HOME/.config/yadm"
 
-BEST_MIRROR='Server = https://appuals.com/archlinux/$repo/os/$arch'
-
-# Use the fastest mirror
-sudo sed -i "1s#^#$BEST_MIRROR\n#" /etc/pacman.d/mirrorlist
-
 #For less headaches
 cd "$HOME"
 
