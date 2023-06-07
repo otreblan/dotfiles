@@ -24,6 +24,7 @@ export PACMAN_PACKAGES=(
 	gamescope
 	git-lfs
 	gnome-control-center
+	gnome-keyring
 	gnome-screenshot
 	gnome-shell-pomodoro
 	gvfs-google
@@ -43,6 +44,7 @@ export PACMAN_PACKAGES=(
 	man-db
 	man-pages
 	mesa-vdpau
+	moreutils
 	mpv
 	mutter
 	nautilus
@@ -69,6 +71,7 @@ export PACMAN_PACKAGES=(
 	texinfo
 	texlab
 	texlive-most
+	tracker3-miners
 	ttf-inconsolata-go-nerd
 	ttf-roboto-mono
 	vim

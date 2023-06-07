@@ -71,3 +71,4 @@ popd
 source "$YADM_PATH/systemd-units.sh"
 
 sudo systemctl enable --now "${SYSTEMD_UNITS[@]}"
+sudo systemctl enable --now --user "${SYSTEMD_USER_UNITS[@]}"

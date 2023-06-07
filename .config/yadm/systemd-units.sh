@@ -8,3 +8,7 @@ export SYSTEMD_SERVICES=(
 	paccache.timer
 	reflector.timer
 )
+
+export SYSTEMD_USER_SERVICES=(
+	tracker-miner-fs-3.service
+)
