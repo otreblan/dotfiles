@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-export SYSTEMD_SERVICES=(
+export SYSTEMD_UNITS=(
 	NetworkManager.service
 	bluetooth.service
 	cpupower-gui-helper.service
@@ -9,6 +9,6 @@ export SYSTEMD_SERVICES=(
 	reflector.timer
 )
 
-export SYSTEMD_USER_SERVICES=(
+export SYSTEMD_USER_UNITS=(
 	tracker-miner-fs-3.service
 )

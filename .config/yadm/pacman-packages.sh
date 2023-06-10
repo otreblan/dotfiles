@@ -1,5 +1,3 @@
-#!/usr/bin/env bash
-
 export PACMAN_PACKAGES=(
 	alacritty
 	android-file-transfer
@@ -34,6 +32,7 @@ export PACMAN_PACKAGES=(
 	ibus
 	ibus-anthy
 	inkscape
+	jdk-openjdk
 	krita
 	kvantum
 	libva-mesa-driver
@@ -54,7 +53,9 @@ export PACMAN_PACKAGES=(
 	notification-daemon
 	noto-fonts-cjk
 	npm
+	ntp
 	openssl-1.1
+	pacman-contrib
 	paprefs
 	pasystray
 	pavucontrol
@@ -67,10 +68,11 @@ export PACMAN_PACKAGES=(
 	qt5ct
 	ranger
 	redshift
+	reflector
 	rofi
 	texinfo
 	texlab
-	texlive-most
+	texlive
 	tracker3-miners
 	ttf-inconsolata-go-nerd
 	ttf-roboto-mono

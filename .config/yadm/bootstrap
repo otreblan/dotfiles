@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -e
+
 YADM_PATH="$HOME/.config/yadm"
 
 #For less headaches
@@ -25,13 +27,9 @@ else
 	popd
 fi
 
-AURARGS=( \
+AURARGS=(
 	-Syyu
-	--needed
-	--nocleanmenu
-	--nodiffmenu
-	--noeditmenu
-	--noupgrademenu
+	--sudoloop
 	--noconfirm
 )
 
@@ -46,6 +44,12 @@ source "$YADM_PATH/aur-packages.sh"
 pushd "$HOME/.config/ranger/plugins/ranger_devicons"
 make
 popd
+
+# Systemd units
+source "$YADM_PATH/systemd-units.sh"
+
+sudo systemctl enable --now "${SYSTEMD_UNITS[@]}"
+systemctl enable --now --user "${SYSTEMD_USER_UNITS[@]}"
 
 #Neovim bootstraping
 
@@ -63,7 +67,3 @@ pushd ~/.local/share/nvim/site/pack/packer/start/coc.nvim
 yarn install
 popd
 
-source "$YADM_PATH/systemd-units.sh"
-
-sudo systemctl enable --now "${SYSTEMD_UNITS[@]}"
-sudo systemctl enable --now --user "${SYSTEMD_USER_UNITS[@]}"
