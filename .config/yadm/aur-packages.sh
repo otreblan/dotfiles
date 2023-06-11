@@ -2,7 +2,7 @@ export AUR_PACKAGES=(
 	arch-wiki-man
 	cmake-language-server
 	cpupower-gui
-	fastfetch-git
+	fastfetch
 	flat-remix
 	gnome-shell-pomodoro
 	javascript-typescript-langserver
