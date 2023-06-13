@@ -7,6 +7,7 @@ export SYSTEMD_UNITS=(
 	ntpd.service
 	paccache.timer
 	reflector.timer
+	sshd.service
 )
 
 export SYSTEMD_USER_UNITS=(
