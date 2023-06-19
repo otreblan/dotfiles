@@ -112,6 +112,7 @@ type = internal/fs
 interval = 25
 
 mount-0 = /
+mount-1 = /home/aru/data
 
 label-mounted = %{F#0a81f5}%mountpoint%%{F-}: %percentage_used%%
 label-unmounted = %mountpoint% not mounted
@@ -252,7 +253,7 @@ label = %percentage_used%%
 
 [module/wlan]
 type = internal/network
-interface = wlp11s0
+interface = wlp12s0
 interval = 3.0
 
 format-connected = <ramp-signal> <label-connected>
@@ -274,7 +275,7 @@ ramp-signal-foreground = ${colors.foreground-alt}
 
 [module/eth]
 type = internal/network
-interface = enp10s0
+interface = enp11s0
 interval = 3.0
 
 format-connected-underline = #55aa55
@@ -414,7 +415,7 @@ ramp-1 = " "
 ramp-2 = " "
 ramp-foreground = ${colors.foreground-alt}
 
-hwmon-path = /sys/devices/pci0000:00/0000:00:18.3/hwmon/hwmon2/temp3_input
+hwmon-path = /sys/devices/pci0000:00/0000:00:18.3/hwmon/hwmon3/temp3_input
 
 [module/powermenu]
 type = custom/menu
