@@ -69,16 +69,13 @@ export PACMAN_PACKAGES=(
 	ranger
 	redshift
 	reflector
+	ripgrep
 	rofi
 	texinfo
 	texlab
 	texlive
-<<<<<<< Updated upstream
-	texlive-binextra
-=======
-	texlive-meta
->>>>>>> Stashed changes
 	texlive-langspanish
+	texlive-meta
 	tracker3-miners
 	ttf-inconsolata-go-nerd
 	ttf-roboto-mono
