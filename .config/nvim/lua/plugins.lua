@@ -47,6 +47,7 @@ return require("packer").startup(function(use)
 	use {"ms-jpq/chadtree", run = "python3 -m chadtree deps"}
 	use {"neoclide/coc.nvim",               run = "yarn install --frozen-lockfile"}
 	use {"nvim-treesitter/nvim-treesitter", run = ":TSUpdate"}
+	use {"nvim-telescope/telescope-fzf-native.nvim", run = "make" }
 
 	-- This doesn't work if it's loaded before
 	use "ryanoasis/vim-devicons"
