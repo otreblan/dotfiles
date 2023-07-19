@@ -80,6 +80,7 @@ export PACMAN_PACKAGES=(
 	ttf-inconsolata-go-nerd
 	ttf-roboto-mono
 	vim
+	wget
 	xclip
 	xdg-user-dirs
 	xfce4-power-manager
