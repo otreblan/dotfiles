@@ -31,7 +31,6 @@ export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
 # Gtk theme on java
 export _JAVA_OPTIONS='-Djdk.gtk.version=3 -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true -Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel -Dswing.crossplatformlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel'
-export GTK_THEME='Adwaita:dark'
 
 if [ "$TERM" = "linux" ]; then
 echo -en "\e]P0000000"
