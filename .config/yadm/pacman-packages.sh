@@ -21,6 +21,7 @@ export PACMAN_PACKAGES=(
 	fzf
 	gamescope
 	git-lfs
+	github-cli
 	gnome-control-center
 	gnome-keyring
 	gnome-screenshot
