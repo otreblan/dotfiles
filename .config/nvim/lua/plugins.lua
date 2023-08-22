@@ -7,6 +7,7 @@ return require("packer").startup(function(use)
 	use "fannheyward/telescope-coc.nvim"
 	use "honza/vim-snippets"
 	use "igankevich/mesonic"
+	use "jackguo380/vim-lsp-cxx-highlight"
 	use "jacoborus/tender.vim"
 	use "junegunn/vim-easy-align"
 	use "kylechui/nvim-surround"
