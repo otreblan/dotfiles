@@ -44,6 +44,7 @@ export PACMAN_PACKAGES=(
 	man-db
 	man-pages
 	mesa-vdpau
+	mold
 	moreutils
 	mpv
 	mutter
