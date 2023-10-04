@@ -68,6 +68,7 @@ export PACMAN_PACKAGES=(
 	python-pynvim
 	python-unidecode
 	qt5ct
+	qt6ct
 	ranger
 	redshift
 	reflector
