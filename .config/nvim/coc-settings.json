@@ -113,6 +113,10 @@
 					}
 				}
 			}
+		},
+		"glsl": {
+			"command": "glsl_analyzer",
+			"filetypes": ["glsl"]
 		}
 	},
 	"html-css-support.styleSheets": [
