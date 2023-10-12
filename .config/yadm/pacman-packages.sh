@@ -86,6 +86,7 @@ export PACMAN_PACKAGES=(
 	wget
 	xclip
 	xdg-user-dirs
+	xf86-video-amdgpu
 	xfce4-power-manager
 	xorg
 	xorg-twm
