@@ -31,6 +31,7 @@ AURARGS=(
 	-Syyu
 	--sudoloop
 	--noconfirm
+	--disable-download-timeout
 )
 
 echo "Installing packages"
