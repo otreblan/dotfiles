@@ -25,7 +25,7 @@ alias tree='tree -C'
 alias rsync='rsync --compress-choice=zstd --compress-level=3 --checksum-choice=xxh3'
 
 # System information
-fastfetch --load-config neofetch
+fastfetch --load-config neofetch.jsonc
 
 #Fuzzy search
 source /usr/share/fzf/key-bindings.bash
