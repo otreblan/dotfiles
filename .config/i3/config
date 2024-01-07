@@ -184,8 +184,6 @@ bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
 #Brillo (Tuve que instalar acpilight para que funcione https://wiki.archlinux.org/index.php/backlight)
 bindsym XF86MonBrightnessUp exec xbacklight -inc 5 # increase screen brightness
 bindsym XF86MonBrightnessDown exec xbacklight -dec 5 # decrease screen brightness
-# Idioma
-exec "setxkbmap -layout latam"
 
 # Floating zoom notifications
 for_window [title="^zoom$" class="[zoom]*"] floating enable
@@ -211,6 +209,9 @@ exec "picom &"
 
 #Authenticator
 exec "lxsession"
+
+# Idioma
+exec "setxkbmap -layout latam"
 
 #Algo para usar vim donde sea
 bindsym $mod+m exec "alacritty -e vimclip"
