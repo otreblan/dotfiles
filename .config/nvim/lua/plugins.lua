@@ -30,24 +30,24 @@ return require("packer").startup(function(use)
 	use "vim-pandoc/vim-rmarkdown"
 	use "wellle/targets.vim"
 
-	use {"HiPhish/info.vim", cmd = {"Info"}}
-	use {"sakhnik/nvim-gdb", cmd = {"GdbStart"} }
+	use {"HiPhish/info.vim",   cmd = {"Info"}}
+	use {"sakhnik/nvim-gdb",   cmd = {"GdbStart"} }
 	use {"tpope/vim-dispatch", cmd = {"Dispatch", "Make", "Focus", "Start"}}
 
-	use {"andymass/vim-matchup", event = "VimEnter"}
-	use {"dag/vim-fish", ft = "fish"}
+	use {"andymass/vim-matchup",    event = "VimEnter"}
+	use {"dag/vim-fish",            ft = "fish"}
 	use {"ekalinin/Dockerfile.vim", ft = "Dockerfile"}
-	use {"gelguy/wilder.nvim", requires = {"romgrk/fzy-lua-native"}}
-	use {"glepnir/dashboard-nvim", event = "VimEnter", requires = {"nvim-tree/nvim-web-devicons"}}
+	use {"gelguy/wilder.nvim",      requires = {"romgrk/fzy-lua-native"}}
+	use {"glepnir/dashboard-nvim",  event = "VimEnter", requires = {"nvim-tree/nvim-web-devicons"}}
 	use {"habamax/vim-asciidoctor", ft = "asciidoctor"}
-	use {"jvirtanen/vim-octave", ft = "octave"}
-	use {"lervag/vimtex", ft = "tex"}
-	use {"tikhomirov/vim-glsl", ft = "glsl"}
+	use {"jvirtanen/vim-octave",    ft = "octave"}
+	use {"lervag/vimtex",           ft = "tex"}
+	use {"tikhomirov/vim-glsl",     ft = "glsl"}
 
-	use {"iamcco/markdown-preview.nvim",    run = "cd app & yarn install"}
-	use {"ms-jpq/chadtree", run = "python3 -m chadtree deps"}
-	use {"neoclide/coc.nvim",               run = "yarn install --frozen-lockfile"}
-	use {"nvim-treesitter/nvim-treesitter", run = ":TSUpdate"}
+	use {"iamcco/markdown-preview.nvim",             run = "cd app & yarn install"}
+	use {"ms-jpq/chadtree",                          run = "python3 -m chadtree deps"}
+	use {"neoclide/coc.nvim",                        run = "yarn install --frozen-lockfile"}
+	use {"nvim-treesitter/nvim-treesitter",          run = ":TSUpdate"}
 	use {"nvim-telescope/telescope-fzf-native.nvim", run = "make" }
 
 	-- This doesn't work if it's loaded before
