@@ -10,6 +10,7 @@ export AUR_PACKAGES=(
 	kcc
 	kindlegen
 	latex2e-help-texinfo
+	lib32-gperftools
 	makepkg-optimize
 	mkinitcpio-firmware
 	monophony
