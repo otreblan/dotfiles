@@ -5,7 +5,6 @@ export AUR_PACKAGES=(
 	csharp-ls
 	fastfetch
 	flat-remix
-	gnome-shell-pomodoro
 	javascript-typescript-langserver
 	kcc
 	kindlegen
