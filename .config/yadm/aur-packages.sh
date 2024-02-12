@@ -1,4 +1,6 @@
 export AUR_PACKAGES=(
+	alhp-keyring
+	alhp-mirrorlist
 	arch-wiki-man
 	cmake-language-server
 	cpupower-gui
