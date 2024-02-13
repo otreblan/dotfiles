@@ -29,6 +29,7 @@ return require("packer").startup(function(use)
 	use "vim-pandoc/vim-pandoc-syntax"
 	use "vim-pandoc/vim-rmarkdown"
 	use "wellle/targets.vim"
+	use "zadirion/Unreal.nvim"
 
 	use {"HiPhish/info.vim",   cmd = {"Info"}}
 	use {"sakhnik/nvim-gdb",   cmd = {"GdbStart"} }
