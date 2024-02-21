@@ -16,13 +16,14 @@ then
 fi #}}}
 
 alias diff='diff --color=auto'
+alias gnome-control-center='XDG_CURRENT_DESKTOP=GNOME gnome-control-center'
 alias grep='grep --colour'
 alias ip='ip -c'
 alias less='less -RN --incsearch'
 alias ls='ls --color=auto'
 alias mpv='mpv --hwdec=auto'
-alias tree='tree -C'
 alias rsync='rsync --compress-choice=zstd --compress-level=3 --checksum-choice=xxh3'
+alias tree='tree -C'
 
 # System information
 fastfetch --load-config neofetch.jsonc
