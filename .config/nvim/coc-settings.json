@@ -117,6 +117,11 @@
 		"glsl": {
 			"command": "glsl_analyzer",
 			"filetypes": ["glsl"]
+		},
+		"godot": {
+			"host": "127.0.0.1",
+			"filetypes": ["gd", "gdscript", "gdscript3"],
+			"port": 6005
 		}
 	},
 	"html-css-support.styleSheets": [
