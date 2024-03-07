@@ -38,6 +38,7 @@ export PACMAN_PACKAGES=(
 	kvantum
 	libva-mesa-driver
 	libxcrypt-compat
+	locate
 	lua-language-server
 	lxappearance-gtk3
 	lxsession-gtk3
