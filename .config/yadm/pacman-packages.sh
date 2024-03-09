@@ -13,6 +13,7 @@ export PACMAN_PACKAGES=(
 	ccls
 	cmake
 	ctags
+	cups-pdf
 	deno
 	diff-so-fancy
 	dnsmasq
@@ -75,6 +76,7 @@ export PACMAN_PACKAGES=(
 	reflector
 	ripgrep
 	rofi
+	system-config-printer
 	texinfo
 	texlab
 	texlive
