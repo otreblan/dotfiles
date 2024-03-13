@@ -3,6 +3,7 @@ export PACMAN_PACKAGES=(
 	android-file-transfer
 	arandr
 	asciidoctor
+	autorandr
 	base-devel
 	bash-completion
 	bash-language-server
