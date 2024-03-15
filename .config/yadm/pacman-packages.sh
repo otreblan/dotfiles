@@ -3,6 +3,7 @@ export PACMAN_PACKAGES=(
 	android-file-transfer
 	arandr
 	asciidoctor
+	autorandr
 	base-devel
 	bash-completion
 	bash-language-server
@@ -13,6 +14,7 @@ export PACMAN_PACKAGES=(
 	ccls
 	cmake
 	ctags
+	cups-pdf
 	deno
 	diff-so-fancy
 	dnsmasq
@@ -38,6 +40,7 @@ export PACMAN_PACKAGES=(
 	kvantum
 	libva-mesa-driver
 	libxcrypt-compat
+	locate
 	lua-language-server
 	lxappearance-gtk3
 	lxsession-gtk3
@@ -74,6 +77,7 @@ export PACMAN_PACKAGES=(
 	reflector
 	ripgrep
 	rofi
+	system-config-printer
 	texinfo
 	texlab
 	texlive
