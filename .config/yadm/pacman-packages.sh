@@ -22,6 +22,7 @@ export PACMAN_PACKAGES=(
 	ffmpegthumbnailer
 	fzf
 	gamescope
+	gammastep
 	git-lfs
 	github-cli
 	gnome-control-center
@@ -77,6 +78,8 @@ export PACMAN_PACKAGES=(
 	reflector
 	ripgrep
 	rofi
+	sway
+	swaybg
 	system-config-printer
 	texinfo
 	texlab
@@ -87,6 +90,7 @@ export PACMAN_PACKAGES=(
 	ttf-inconsolata-go-nerd
 	ttf-roboto-mono
 	vim
+	waybar
 	wget
 	xclip
 	xdg-user-dirs
