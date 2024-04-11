@@ -57,5 +57,9 @@ fi
 [[ -f ~/.bashrc ]] && . ~/.bashrc
 
 if systemctl -q is-active graphical.target && [[ ! $DISPLAY && $XDG_VTNR -eq 1 ]]; then
-  exec sway
+	if [[ "$HOSTNAME" == "aru2" ]]; then
+		exec sway
+	else
+		exec startx
+	fi
 fi
