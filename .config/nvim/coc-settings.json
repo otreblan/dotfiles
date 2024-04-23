@@ -134,7 +134,7 @@
 	},
 	"coc.preferences.enableMessageDialog":   true,
 	"codeLens.enable":                       true,
-	"codeLens.position":                   "eol",
+	"codeLens.position":                     "eol",
 	"diagnostic.virtualText":                true,
 	"diagnostic.virtualTextCurrentLineOnly": false,
 	"diagnostic.warningSign":                " ",
