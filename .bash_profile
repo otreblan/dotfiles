@@ -58,7 +58,7 @@ fi
 
 if systemctl -q is-active graphical.target && [[ ! $DISPLAY && $XDG_VTNR -eq 1 ]]; then
 	if [[ "$HOSTNAME" == "aru2" ]]; then
-		exec sway
+		dbus-run-session sway
 	else
 		exec startx
 	fi

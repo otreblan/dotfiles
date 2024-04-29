@@ -216,6 +216,10 @@ exec "ibus-daemon -drx"
 #Authenticator
 exec "lxsession"
 
+# Fix screen capture
+# https://wiki.gentoo.org/wiki/Sway#Screen_sharing_does_not_work
+exec --no-startup-id dbus-update-activation-environment --all
+
 #Algo para usar vim donde sea
 bindsym $mod+m exec "alacritty -e vimclip"
 
