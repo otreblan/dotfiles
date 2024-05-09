@@ -80,6 +80,7 @@ export PACMAN_PACKAGES=(
 	rofi
 	sway
 	swaybg
+	swaync
 	system-config-printer
 	texinfo
 	texlab
