@@ -22,5 +22,6 @@ export AUR_PACKAGES=(
 	qogir-gtk-theme-git
 	ruby-nokogiri
 	ttf-unifont
+	wlrobs
 	zoom
 )

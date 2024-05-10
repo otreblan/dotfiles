@@ -93,6 +93,7 @@ export PACMAN_PACKAGES=(
 	vim
 	waybar
 	wget
+	wireplumber
 	wl-clipboard
 	xclip
 	xdg-user-dirs
