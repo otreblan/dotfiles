@@ -93,6 +93,7 @@ export PACMAN_PACKAGES=(
 	vim
 	waybar
 	wget
+	wl-clipboard
 	xclip
 	xdg-user-dirs
 	xf86-video-amdgpu

@@ -30,7 +30,7 @@ font pango:monospace 8
 exec swaybg --image .bg.* &
 
 #Captura de pantalla
-bindsym Print exec "spectacle"
+bindsym Print exec grim -g "$(slurp -d)"
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
