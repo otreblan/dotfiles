@@ -1,1 +1,3 @@
 MAKEFLAGS = -j12
+CFLAGS = -march=native -mtune=native -O2 -flto=auto
+CXXFLAGS = -march=native -mtune=native -O2 -flto=auto
