@@ -18,6 +18,8 @@ export PACMAN_PACKAGES=(
 	deno
 	diff-so-fancy
 	dnsmasq
+	fcitx5-configtool
+	fcitx5-mozc
 	feh
 	ffmpegthumbnailer
 	fzf
