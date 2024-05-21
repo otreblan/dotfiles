@@ -196,6 +196,9 @@ for_window [title="^zoom$" class="[zoom]*"] floating enable
 # Cosas para que i3 gaps funcione
 for_window [class="^.*"] border pixel 0
 
+# Firefox picture in picture
+for_window [app_id="firefox" title="^Picture-in-Picture$"] floating enable
+
 gaps inner 10
 smart_gaps on
 
