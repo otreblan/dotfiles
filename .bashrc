@@ -16,6 +16,7 @@ then
 fi #}}}
 
 alias diff='diff --color=auto'
+alias feh='feh -.'
 alias gnome-control-center='XDG_CURRENT_DESKTOP=GNOME gnome-control-center'
 alias grep='grep --colour'
 alias ip='ip -c'
