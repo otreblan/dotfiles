@@ -47,7 +47,7 @@
 		},
 		"ccls": {
 			"command":      "ccls",
-			"filetypes":    ["c", "cpp", "objc", "objcpp"],
+			"filetypes":    ["c", "cpp", "objc", "objcpp", "arduino"],
 			"rootPatterns": [".ccls", "compile_commands.json", ".vim/", ".git/", ".hg/"],
 			"initializationOptions": {
 				"cache": {
