@@ -25,6 +25,7 @@ alias ls='ls --color=auto'
 alias mpv='mpv --hwdec=auto'
 alias rsync='rsync --compress-choice=zstd --compress-level=3 --checksum-choice=xxh3'
 alias tree='tree -C'
+alias sysyadm='sudo yadm --yadm-dir /etc/yadm --yadm-data /etc/yadm/data'
 
 # System information
 fastfetch --load-config neofetch.jsonc
