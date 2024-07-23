@@ -156,7 +156,7 @@ require("nvim-treesitter.configs").setup {
 	},
 	highlight = {
 		enable  = true,
-		disable = { "latex", "lua"},
+		disable = {"latex", "lua"},
 	},
 	indent = {
 		enable = true,
@@ -275,7 +275,9 @@ wilder.set_option("renderer", wilder.renderer_mux({
 	substitute = wildmenu_renderer,
 }))
 
-require("godbolt").setup()
+require("godbolt").setup({
+})
+
 require("hop").setup()
 require("notify").setup()
 require("nvim-surround").setup()
