@@ -27,6 +27,11 @@
 		"default":       "\uf29c"
 	},
 	"languageserver": {
+		"java": {
+			"command": "jdtls",
+			"rootPatterns": [".git/"],
+			"filetypes": ["java"]
+		},
 		"lua": {
 			"command":   "lua-language-server",
 			"filetypes": ["lua"],
@@ -143,5 +148,5 @@
 	"signature.target":                      "float",
 	"suggest.enablePreview":                 true,
 	"suggest.maxCompleteItemCount":          1000,
-	"suggest.labelMaxLength":                40
+	"suggest.labelMaxLength": 40
 }

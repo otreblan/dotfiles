@@ -101,7 +101,6 @@ g.coc_global_extensions = {
 	"coc-gitignore",
 	"coc-html",
 	"coc-html-css-support",
-	"coc-java",
 	"coc-json",
 	"coc-marketplace",
 	"coc-pyright",
