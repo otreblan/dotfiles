@@ -8,6 +8,7 @@ export AUR_PACKAGES=(
 	fastfetch
 	flat-remix
 	javascript-typescript-langserver
+	jdtls
 	kcc
 	kindlegen
 	latex2e-help-texinfo

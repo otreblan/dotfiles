@@ -71,6 +71,7 @@ export PACMAN_PACKAGES=(
 	pipewire-pulse
 	polybar
 	pstoedit
+	python-i3ipc
 	python-pynvim
 	python-unidecode
 	qt5ct
