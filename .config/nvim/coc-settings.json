@@ -62,7 +62,8 @@
 				"client": {
 					"snippetSupport": true
 				}
-			}
+			},
+			"trace.server": "verbose"
 		},
 		"rust":
 		{
@@ -148,5 +149,6 @@
 	"signature.target":                      "float",
 	"suggest.enablePreview":                 true,
 	"suggest.maxCompleteItemCount":          1000,
-	"suggest.labelMaxLength": 40
+	"suggest.labelMaxLength":                40,
+	"java.compile.nullAnalysis.mode":        "disabled"
 }
