@@ -10,6 +10,17 @@ cd "$HOME"
 #Submodules
 yadm submodule update --recursive --init
 
+#Groups
+GROUPS=(
+	docker
+	uucp
+)
+
+for group in "${GROUPS[@]}"; do
+	sudo groupadd -f "${group}"
+	sudo usermod -aG "${group}" aru
+done
+
 #Installing packages
 AUR="paru"
 
