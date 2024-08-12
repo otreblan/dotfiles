@@ -37,6 +37,7 @@ floating_modifier $mod
 
 # start a terminal
 bindsym $mod+Return exec "alacritty"
+bindsym $mod+p exec "alacritty --command ssh -L 10010:localhost:10010 -L 4200:localhost:4200 otreblan.ddns.net"
 
 #Toggle polybar
 bindsym $mod+Tab exec "polybar-msg cmd toggle"
