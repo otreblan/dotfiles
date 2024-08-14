@@ -27,6 +27,12 @@
 		"default":       "\uf29c"
 	},
 	"languageserver": {
+		"sonarlint": {
+			"command": "sonarlint-ls",
+			"args":      ["-stdio", "-analyzers=/usr/share/java/sonarlint-ls/analyzers/sonarjava.jar"],
+			"rootPatterns": [".git/"],
+			"filetypes": ["java"]
+		},
 		"java": {
 			"command": "jdtls",
 			"rootPatterns": [".git/"],
