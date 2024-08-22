@@ -70,6 +70,7 @@ export PACMAN_PACKAGES=(
 	picom
 	pipewire-pulse
 	polybar
+	prusa-slicer
 	pstoedit
 	python-i3ipc
 	python-pynvim
