@@ -48,6 +48,9 @@ nmap <leader>ac  <Plug>(coc-codeaction)
 " Fix autofix problem of current line
 nmap <leader>qf  <Plug>(coc-fix-current)
 
+" Telescope mappings
+nmap <leader>tg  <cmd>Telescope live_grep<cr>
+
 " Copied from ccls github wiki
 " bases
 nmap <silent> gxb :call CocLocations('ccls','$ccls/inheritance')<cr>
