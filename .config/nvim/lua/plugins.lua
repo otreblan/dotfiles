@@ -24,6 +24,7 @@ return require("packer").startup(function(use)
 	use "phaazon/hop.nvim"
 	use "rcarriga/nvim-notify"
 	use "sQVe/sort.nvim"
+	use "sindrets/diffview.nvim"
 	use "sirver/ultisnips"
 	use "vim-airline/vim-airline"
 	use "vim-denops/denops.vim"
