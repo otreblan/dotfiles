@@ -33,6 +33,12 @@
 			"rootPatterns": [".git/"],
 			"filetypes": ["java"]
 		},
+		"docker": {
+			"command": "docker-langserver",
+			"args":      ["--stdio"],
+			"rootPatterns": [".git/"],
+			"filetypes": ["Dockerfile"]
+		},
 		"java": {
 			"command": "jdtls",
 			"rootPatterns": [".git/"],
