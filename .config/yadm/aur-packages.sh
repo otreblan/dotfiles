@@ -24,5 +24,6 @@ export AUR_PACKAGES=(
 	ruby-nokogiri
 	ttf-unifont
 	wlrobs
+	wshowkeys
 	zoom
 )
