@@ -52,6 +52,7 @@ export PACMAN_PACKAGES=(
 	mesa-vdpau
 	mold
 	moreutils
+	mosh
 	mpv
 	mutter
 	nautilus
