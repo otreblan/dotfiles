@@ -27,7 +27,7 @@ export ALSOFT_DRIVERS=pulse
 
 export TERMINAL=/usr/bin/alacritty
 
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+export PATH="$HOME/.dotnet/tools:$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
 # Gtk theme on java
 export _JAVA_OPTIONS='-Djdk.gtk.version=3 -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true -Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel -Dswing.crossplatformlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel'
