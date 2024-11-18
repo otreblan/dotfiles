@@ -79,7 +79,7 @@
 		},
 		"rust":
 		{
-			"command": "rls",
+			"command": "rust-analyzer",
 			"filetypes": ["rust"],
 			"rootPatterns": [".git/", "Cargo.toml"]
 		},
