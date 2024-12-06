@@ -33,6 +33,7 @@ export PACMAN_PACKAGES=(
 	gnome-shell-pomodoro
 	gvfs-google
 	gvfs-mtp
+	hiprt
 	hub
 	i3-wm
 	ibus
