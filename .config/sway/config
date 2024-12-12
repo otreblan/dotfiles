@@ -202,9 +202,8 @@ for_window [app_id="firefox" title="^Picture-in-Picture$"] floating enable
 gaps inner 10
 smart_gaps on
 
-output HDMI-A-1 res 1920x1080 pos 0,0
-output DP-2 res --custom 1920x1080 pos 3000,0
-
+output HDMI-A-1 res 1920x1080 pos 2560,0
+output DP-2 res 2560x1440@180Hz pos 0,0 adaptive_sync on
 
 #Variables que algunos programas necesitan
 exec "export QT_QPA_PLATFORMTHEME=qt5ct"
