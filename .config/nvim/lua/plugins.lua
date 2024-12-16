@@ -2,6 +2,7 @@ return require("packer").startup(function(use)
 	use "wbthomason/packer.nvim"
 
 	use "DanilaMihailov/beacon.nvim"
+	use "benlubas/molten-nvim"
 	use "cdelledonne/vim-cmake"
 	use "edkolev/promptline.vim"
 	use "fannheyward/telescope-coc.nvim"
