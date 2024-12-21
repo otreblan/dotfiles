@@ -51,6 +51,7 @@ nmap <leader>qf  <Plug>(coc-fix-current)
 " Telescope mappings
 nmap <leader>tg  <cmd>Telescope live_grep<cr>
 nmap <leader>tf  <cmd>Telescope find_files<cr>
+nmap <leader>tq  <cmd>Telescope quickfix<cr>
 
 " Copied from ccls github wiki
 " bases
