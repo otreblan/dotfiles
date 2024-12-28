@@ -163,9 +163,6 @@ require("nvim-treesitter.configs").setup {
 	}
 }
 
-require("telescope").load_extension("coc")
-require("telescope").load_extension("notify")
-
 require("telescope").setup {
 	defaults = {
 		layout_strategy = "vertical",
@@ -174,6 +171,10 @@ require("telescope").setup {
 		},
 	}
 }
+
+require("telescope").load_extension("coc")
+require("telescope").load_extension("notify")
+require('telescope').load_extension("fzf")
 
 require("dashboard").setup {
 	theme = 'hyper',
