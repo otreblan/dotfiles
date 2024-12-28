@@ -283,3 +283,6 @@ require("notify").setup()
 require("nvim-surround").setup()
 require("nvim-web-devicons").setup()
 require("sort").setup()
+
+require("diffview")
+require("gitlab").setup()

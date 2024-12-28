@@ -54,6 +54,16 @@ return require("packer").startup(function(use)
 	use {"neoclide/coc.nvim",                        run = "yarn install --frozen-lockfile"}
 	use {"nvim-treesitter/nvim-treesitter",          run = ":TSUpdate"}
 	use {"nvim-telescope/telescope-fzf-native.nvim", run = "make" }
+	use {"harrisoncramer/gitlab.nvim",
+		requires = {
+			"MunifTanjim/nui.nvim",
+			"nvim-lua/plenary.nvim",
+			"sindrets/diffview.nvim",
+			"stevearc/dressing.nvim", -- Recommended but not required. Better UI for pickers.
+			"nvim-tree/nvim-web-devicons", -- Recommended but not required. Icons in discussion tree.
+		},
+		run = ':lua require("gitlab.server").build()'
+	}
 
 	-- This doesn't work if it's loaded before
 	use "ryanoasis/vim-devicons"
