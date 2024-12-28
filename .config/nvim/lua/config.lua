@@ -175,6 +175,7 @@ require("telescope").setup {
 require("telescope").load_extension("coc")
 require("telescope").load_extension("notify")
 require('telescope').load_extension("fzf")
+require("telescope").load_extension("zf-native")
 
 require("dashboard").setup {
 	theme = 'hyper',

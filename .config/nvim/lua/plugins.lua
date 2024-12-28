@@ -16,6 +16,7 @@ return require("packer").startup(function(use)
 	use "lewis6991/impatient.nvim"
 	use "liuchengxu/vista.vim"
 	use "myusuf3/numbers.vim"
+	use "natecraddock/telescope-zf-native.nvim"
 	use "neo4j-contrib/cypher-vim-syntax"
 	use "nvim-lua/plenary.nvim"
 	use "nvim-lua/popup.nvim"
