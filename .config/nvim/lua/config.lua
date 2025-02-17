@@ -120,6 +120,9 @@ g.man_hardwrap = true
 g.chadtree_settings = {
 	theme = {
 		text_colour_set = "nerdtree_syntax_dark"
+	},
+	view = {
+		width = 50
 	}
 }
 
