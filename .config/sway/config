@@ -223,6 +223,3 @@ exec "lxsession"
 # https://wiki.gentoo.org/wiki/Sway#Screen_sharing_does_not_work
 exec --no-startup-id dbus-update-activation-environment --all
 
-
-#Calculadora
-bindsym $mod+n exec "speedcrunch"
