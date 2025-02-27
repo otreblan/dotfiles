@@ -223,3 +223,6 @@ exec "lxsession"
 # https://wiki.gentoo.org/wiki/Sway#Screen_sharing_does_not_work
 exec --no-startup-id dbus-update-activation-environment --all
 
+# Auto dev environment
+bindsym $mod+m exec "~/code/msa-seguridad/utils/auto-env.py"
+bindsym $mod+n exec "~/code/msa-arqueologico/utils/auto-env.py"
