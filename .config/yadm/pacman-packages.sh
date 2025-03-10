@@ -34,7 +34,6 @@ export PACMAN_PACKAGES=(
 	gvfs-google
 	gvfs-mtp
 	hiprt
-	hub
 	i3-wm
 	ibus
 	ibus-anthy
