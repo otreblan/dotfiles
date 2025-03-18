@@ -27,6 +27,8 @@ export ALSOFT_DRIVERS=pulse
 
 export TERMINAL=/usr/bin/alacritty
 
+export _JAVA_AWT_WM_NONREPARENTING=1
+
 export PATH="$HOME/.dotnet/tools:$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
 # Gtk theme on java
