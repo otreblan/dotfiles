@@ -1,6 +1,6 @@
 # Just some dotfiles
 
-- Window manager: `i3-gaps`
+- Window manager: `i3-gaps/sway`
 - Editor: `neovim`
 
 Btw, I use Arch.
