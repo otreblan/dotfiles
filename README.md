@@ -1,7 +1,8 @@
 # Just some dotfiles
 
-- Window manager: `i3-gaps/sway`
+- Browser: `firefox`
 - Editor: `neovim`
+- Window manager: `i3-gaps/sway`
 
 Btw, I use Arch.
 
