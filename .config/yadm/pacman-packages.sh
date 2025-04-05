@@ -92,6 +92,7 @@ export PACMAN_PACKAGES=(
 	texlive
 	texlive-langspanish
 	texlive-meta
+	tify
 	tracker3-miners
 	ttf-inconsolata-go-nerd
 	ttf-roboto-mono
