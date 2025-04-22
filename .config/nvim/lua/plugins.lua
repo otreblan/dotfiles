@@ -24,6 +24,7 @@ return require("packer").startup(function(use)
 	use "nvim-treesitter/playground"
 	use "p00f/godbolt.nvim"
 	use "phaazon/hop.nvim"
+	use "prisma/vim-prisma"
 	use "rcarriga/nvim-notify"
 	use "sQVe/sort.nvim"
 	use "sindrets/diffview.nvim"

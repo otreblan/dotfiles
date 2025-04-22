@@ -103,6 +103,7 @@ g.coc_global_extensions = {
 	"coc-html-css-support",
 	"coc-json",
 	"coc-marketplace",
+	"coc-prisma",
 	"coc-pyright",
 	"coc-r-lsp",
 	"coc-sql",
