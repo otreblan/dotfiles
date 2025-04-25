@@ -5,6 +5,7 @@ export SYSTEMD_UNITS=(
 	bluetooth.service
 	cpupower-gui-helper.service
 	cups.service
+	docker.service
 	ntpd.service
 	paccache.timer
 	reflector.timer
