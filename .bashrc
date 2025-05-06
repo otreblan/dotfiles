@@ -47,3 +47,4 @@ PERL_MB_OPT="--install_base \"/home/aru/perl5\""; export PERL_MB_OPT;
 PERL_MM_OPT="INSTALL_BASE=/home/aru/perl5"; export PERL_MM_OPT;
 
 export NPM_TOKEN="a gitlab personal token"
+export DATABASE_URL="Local db"
