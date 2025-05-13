@@ -6,6 +6,7 @@ export SYSTEMD_UNITS=(
 	cpupower-gui-helper.service
 	cups.service
 	docker.service
+	input-remapper.service
 	ntpd.service
 	paccache.timer
 	reflector.timer

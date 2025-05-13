@@ -7,6 +7,7 @@ export AUR_PACKAGES=(
 	csharp-ls
 	fastfetch
 	flat-remix
+	input-remapper-git
 	javascript-typescript-langserver
 	jdtls
 	kcc
