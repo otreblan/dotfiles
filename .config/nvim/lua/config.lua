@@ -102,6 +102,7 @@ g.coc_global_extensions = {
 	"coc-html",
 	"coc-html-css-support",
 	"coc-json",
+	"coc-julia",
 	"coc-marketplace",
 	"coc-prisma",
 	"coc-pyright",
