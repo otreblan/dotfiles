@@ -53,7 +53,7 @@ return require("packer").startup(function(use)
 
 	use {"iamcco/markdown-preview.nvim",             run = "cd app & yarn install"}
 	use {"ms-jpq/chadtree",                          run = "python3 -m chadtree deps"}
-	use {"neoclide/coc.nvim",                        run = "yarn install --frozen-lockfile"}
+	use {"neoclide/coc.nvim",                        run = "npm ci"}
 	use {"nvim-treesitter/nvim-treesitter",          run = ":TSUpdate"}
 	use {"nvim-telescope/telescope-fzf-native.nvim", run = "make" }
 	use {"harrisoncramer/gitlab.nvim",
