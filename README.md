@@ -11,3 +11,7 @@ Btw, I use Arch.
 # Installation
 
 `yadm clone git@github.com:otreblan/dotfiles.git`
+
+# Wii u pro controller
+`ClassicBondedOnly=false`
+https://github.com/bluez/bluez/issues/800#issuecomment-2056987584
