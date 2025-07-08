@@ -29,6 +29,7 @@ alias sysyadm='sudo yadm --yadm-dir /etc/yadm --yadm-data /etc/yadm/data'
 alias tree='tree -C'
 alias watch='watch --color'
 alias gp='git add -u && git commit && git push'
+alias ga='git add -A && git commit && git push'
 
 # System information
 fastfetch --load-config neofetch.jsonc
@@ -48,3 +49,6 @@ PERL_MM_OPT="INSTALL_BASE=/home/aru/perl5"; export PERL_MM_OPT;
 
 export NPM_TOKEN="a gitlab personal token"
 export DATABASE_URL="Local db"
+
+# Allow gpg sign over ssh
+export GPG_TTY="$(tty)"
