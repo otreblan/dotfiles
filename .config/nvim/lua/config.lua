@@ -96,7 +96,7 @@ w.nvimgdb_termwin_command = "belowright vnew"
 -- Coc extensions
 g.coc_global_extensions = {
 	"coc-angular",
-	"coc-eslint",
+	--"coc-eslint",
 	"coc-git",
 	"coc-gitignore",
 	"coc-html",
@@ -104,7 +104,6 @@ g.coc_global_extensions = {
 	"coc-json",
 	"coc-julia",
 	"coc-marketplace",
-	"coc-prisma",
 	"coc-pyright",
 	"coc-r-lsp",
 	"coc-sql",

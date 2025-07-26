@@ -1,18 +1,15 @@
 export AUR_PACKAGES=(
 	alhp-keyring
 	alhp-mirrorlist
-	arch-wiki-man
 	cmake-language-server
 	cpupower-gui
 	csharp-ls
 	fastfetch
 	flat-remix
 	input-remapper-git
-	javascript-typescript-langserver
 	jdtls
 	kcc
 	kindlegen
-	latex2e-help-texinfo
 	lib32-gperftools
 	makepkg-optimize
 	mkinitcpio-firmware
