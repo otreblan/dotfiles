@@ -32,7 +32,7 @@ alias gp='git add -u && git commit && git push'
 alias ga='git add -A && git commit && git push'
 
 # System information
-fastfetch --load-config neofetch.jsonc
+fastfetch --config neofetch.jsonc
 
 #Fuzzy search
 source /usr/share/fzf/key-bindings.bash
