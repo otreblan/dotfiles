@@ -162,5 +162,6 @@
 	"suggest.enablePreview":                 true,
 	"suggest.maxCompleteItemCount":          1000,
 	"suggest.labelMaxLength":                40,
-	"java.compile.nullAnalysis.mode":        "disabled"
+	"java.compile.nullAnalysis.mode":        "disabled",
+	"semanticTokens.enable": true
 }
