@@ -27,6 +27,11 @@
 		"default":       "\uf29c"
 	},
 	"languageserver": {
+		"slang": {
+			"command": "slangd",
+			"rootPatterns": [".git/"],
+			"filetypes": ["shaderslang"]
+		},
 		"docker": {
 			"command": "docker-langserver",
 			"args":      ["--stdio"],
