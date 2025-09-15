@@ -62,9 +62,10 @@ g.vimtex_toc_config        = {
 g.markdown_fenced_languages = {"cmake", "help", "sh", "vim"}
 
 -- This is for c/c++ autocompletion
-g.cmake_default_config        = "build"
+g.cmake_default_config        = "Debug"
 g.cmake_link_compile_commands = true
 g.cmake_root_makers           = {".git", "build"}
+g.cmake_generate_options      = {"-G", "Ninja", "-DCMAKE_C_COMPILER_LAUNCHER=ccache", "-DCMAKE_CXX_COMPILER_LAUNCHER=ccache"}
 
 -- c++ syntax highlighting
 g.cpp_class_decl_highlight            = true
