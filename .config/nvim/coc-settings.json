@@ -38,12 +38,6 @@
 			"rootPatterns": [".git/"],
 			"filetypes": ["Dockerfile"]
 		},
-		"prisma": {
-			"command": "prisma-language-server",
-			"args":      ["--stdio"],
-			"rootPatterns": [".git/"],
-			"filetypes": ["prisma"]
-		},
 		"java": {
 			"command": "jdtls",
 			"rootPatterns": [".git/"],
