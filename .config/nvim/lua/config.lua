@@ -65,7 +65,7 @@ g.markdown_fenced_languages = {"cmake", "help", "sh", "vim"}
 g.cmake_default_config        = "Debug"
 g.cmake_link_compile_commands = true
 g.cmake_root_makers           = {".git", "build"}
-g.cmake_generate_options      = {"-G", "Ninja", "-DCMAKE_C_COMPILER_LAUNCHER=ccache", "-DCMAKE_CXX_COMPILER_LAUNCHER=ccache"}
+g.cmake_generate_options      = {"-G", "Ninja"}
 
 -- c++ syntax highlighting
 g.cpp_class_decl_highlight            = true
@@ -161,7 +161,7 @@ require("nvim-treesitter.configs").setup {
 	},
 	highlight = {
 		enable  = true,
-		disable = {"latex", "lua"},
+		disable = {"latex", "lua", "cpp"},
 	},
 	indent = {
 		enable = true,
