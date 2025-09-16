@@ -49,6 +49,19 @@
 			"rootPatterns": [".git/"],
 			"filetypes": ["java"]
 		},
+		"prisma": {
+			"command":   "prisma-language-server",
+			"args":      ["--stdio"],
+			"filetypes": ["prisma"],
+			"rootPatterns": [".git/"],
+			"settings": {
+				"prisma": {
+					"diagnostics": {
+						"enable": true
+					}
+				}
+			}
+		},
 		"lua": {
 			"command":   "lua-language-server",
 			"filetypes": ["lua"],
