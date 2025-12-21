@@ -85,6 +85,7 @@ export PACMAN_PACKAGES=(
 	reflector
 	ripgrep
 	rofi
+	rust-analyzer
 	sway
 	swaybg
 	swaync
