@@ -1,0 +1,16 @@
+[Unit]
+Description=Remove unused docker resources
+Documentation=https://docs.docker.com/v17.09/engine/admin/pruning/
+After=docker.service
+
+[Service]
+Type=oneshot
+
+ExecStart=/usr/bin/docker system prune -f --filter "until=744h"
+ExecStart=/usr/bin/docker volume prune -f
+ExecStart=/usr/bin/docker builder prune -f
+
+TimeoutSec=10m
+
+[Install]
+WantedBy=multi-user.target
