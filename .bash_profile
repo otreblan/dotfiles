@@ -31,6 +31,8 @@ export _JAVA_AWT_WM_NONREPARENTING=1
 
 export PATH="$HOME/.dotnet/tools:$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
+export VDPAU_DRIVER=radeonsi
+
 # Gtk theme on java
 export _JAVA_OPTIONS='-Djdk.gtk.version=3 -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true -Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel -Dswing.crossplatformlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel'
 
@@ -58,9 +60,14 @@ fi
 
 [[ -f ~/.bashrc ]] && . ~/.bashrc
 
-if systemctl -q is-active graphical.target && [[ ! $DISPLAY && $XDG_VTNR -eq 1 ]]; then
-	if [[ "$HOSTNAME" == "aru2" ]]; then
-		dbus-run-session sway
+if [[ ! $DISPLAY && $XDG_VTNR -eq 1 ]]; then
+	until systemctl -q is-active graphical.target; do
+		:
+	done
+
+	if [[ "$HOSTNAME" == "aruhost" ]]; then
+		export XDG_CURRENT_DESKTOP=sway
+		exec dbus-run-session sway
 	else
 		exec startx
 	fi
