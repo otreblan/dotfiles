@@ -2,6 +2,8 @@
 # ~/.bash_profile
 #
 
+export OLLAMA_VULKAN=1
+
 export QT_QPA_PLATFORMTHEME='qt5ct'
 export PDFVIEWER=zathura
 export BROWSER=firefox
