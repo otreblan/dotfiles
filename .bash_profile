@@ -35,6 +35,9 @@ export PATH="$HOME/.dotnet/tools:$HOME/.yarn/bin:$HOME/.config/yarn/global/node_
 
 export VDPAU_DRIVER=radeonsi
 
+export HISTSIZE=10000
+export HISTFILESIZE=10000
+
 # Gtk theme on java
 export _JAVA_OPTIONS='-Djdk.gtk.version=3 -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true -Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel -Dswing.crossplatformlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel'
 
