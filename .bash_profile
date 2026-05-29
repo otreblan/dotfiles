@@ -71,6 +71,7 @@ if [[ ! $DISPLAY && $XDG_VTNR -eq 1 ]]; then
 	done
 
 	if [[ "$HOSTNAME" == "aruhost" ]]; then
+		export QT_QPA_PLATFORM=wayland
 		export XDG_CURRENT_DESKTOP=sway
 		exec dbus-run-session sway
 	else
