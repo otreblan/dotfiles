@@ -147,7 +147,9 @@ augroup vim-cmake-group
 augroup end
 
 " --option is a single word
-autocmd FileType sh set iskeyword+=45
+"autocmd FileType sh set iskeyword+=45
+" Add - to triggerCharacters, change the script path and copy it into the
+" deploy package
 
 " systemlist() is used to delete the ^@ at the end of the line
 let $MAKEFLAGS = "-j".systemlist("nproc")[0]
