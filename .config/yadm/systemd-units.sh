@@ -15,4 +15,5 @@ export SYSTEMD_UNITS=(
 
 export SYSTEMD_USER_UNITS=(
 	tracker-miner-fs-3.service
+	cpupower-gui-user.service
 )
